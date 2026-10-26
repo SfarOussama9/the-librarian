@@ -32,10 +32,10 @@ Open http://localhost:8000 and ask a question. The index is included in the repo
 embedding and reranker models (~0.7 GB) download automatically, so the first answer takes about a
 minute.
 
-From the command line:
+From the terminal (the models load once, then ask questions one after another; an empty line exits):
 
 ```bash
-python scripts/ask.py "Combien faut-il sur le compte bloqué pour l'Allemagne ?"
+python scripts/ask.py
 ```
 
 ## Results
