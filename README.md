@@ -9,11 +9,18 @@ when the documents don't answer.
 
 ## Setup
 
-Python 3.11. Create `.env` from `.env.example` with an OpenAI API key, then:
+Requires Python 3.11 and an OpenAI API key.
 
 ```bash
+git clone https://github.com/SfarOussama9/the-librarian.git
+cd the-librarian
+python -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+cp .env.example .env               # Windows: copy .env.example .env
 ```
+
+Then put your key in `.env`: `OPENAI_API_KEY=sk-...`
 
 ## Run
 
@@ -21,9 +28,15 @@ pip install -r requirements.txt
 uvicorn app.server:app --port 8000
 ```
 
-Open http://localhost:8000. The index is in the repository; the embedding and reranker models
-(~0.7 GB) download on the first question. From the command line:
-`python scripts/ask.py "Combien faut-il sur le compte bloqué pour l'Allemagne ?"`.
+Open http://localhost:8000 and ask a question. The index is included in the repository. The
+embedding and reranker models (~0.7 GB) download automatically, so the first answer takes about a
+minute.
+
+From the command line:
+
+```bash
+python scripts/ask.py "Combien faut-il sur le compte bloqué pour l'Allemagne ?"
+```
 
 ## Results
 
@@ -67,6 +80,7 @@ Week 8 details: [`optimisation.md`](optimisation.md).
 
 Rebuild the corpus and index: `python scripts/fetch_corpus.py && python scripts/extract_text.py && python scripts/chunk.py && python scripts/build_index.py`.
 Run the evals: `python eval/retrieval_eval.py`, `python eval/generation_eval.py`.
+Deploy to Modal: `pip install modal`, `modal token new`, then `modal deploy deploy/modal_app.py`.
 
 Design and failure cases: [`design.md`](design.md) · Postmortem: [`postmortem.md`](postmortem.md)
 
