@@ -1,0 +1,5076 @@
+{
+  "label": "baseline",
+  "summary": {
+    "n_questions": 125,
+    "errors": 0,
+    "accuracy": 0.904,
+    "correctness_answerable": 0.8909090909090909,
+    "strictly_correct_answerable": 0.8727272727272727,
+    "faithfulness": 0.9902912621359223,
+    "citation_accuracy": 0.9805825242718447,
+    "refused_unanswerable": 1.0,
+    "refused_answerable": 0.06363636363636363,
+    "correct_but_gold_not_retrieved": 8,
+    "cost_per_question_usd": 0.0014538552,
+    "judge_cost_usd": 0.2213904,
+    "latency_total_p50_s": 5.557250199999544,
+    "latency_total_p95_s": 9.609127519999308,
+    "latency_generation_p50_s": 1.5739838000008604,
+    "tokens_in_mean": 1254.992,
+    "tokens_out_mean": 119.136,
+    "model": "gpt-5.4-mini",
+    "minutes": 16.675028479099275
+  },
+  "records": [
+    {
+      "id": "q001",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien d'heures par an un étudiant étranger peut-il travailler en France avec un titre de séjour « étudiant » ?",
+      "gold": "964 heures par an au maximum, l'activité devant rester accessoire aux études.",
+      "answer": "Un étudiant étranger titulaire d’un titre de séjour « étudiant » peut travailler jusqu’à 964 heures par an en France. [S3]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-faq-q12#1"
+      ],
+      "sources": [
+        "fr-fv-etudiant#14",
+        "fr-cft-travail-etudes#1",
+        "fr-cft-faq-q12#1",
+        "fr-cft-travail-etudes#2"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1256,
+        "cached_input_tokens": 1152,
+        "output_tokens": 73,
+        "reasoning_tokens": 19
+      },
+      "cost_usd": 0.0004929,
+      "latency_s": {
+        "retrieval": 3.661193700001604,
+        "generation": 1.8960564999979397,
+        "total": 5.557250199999544
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne bien le maximum de 964 heures par an, conforme au gold. La citation [S3] soutient directement cette affirmation et il n’y a pas d’autre fait non cité."
+      }
+    },
+    {
+      "id": "q002",
+      "split": "test",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "en",
+      "question": "Do I need to apply for a work authorisation to work part-time while studying in France on a student visa?",
+      "gold": "No. A foreign student holding a residence permit or long-stay visa marked 'étudiant' can work as an employee without a work authorisation, as long as the work stays secondary to studies (max 964 hours a year).",
+      "answer": "I don’t know from these sources, because they only discuss work authorization for international students in Canada, not France. [S1][S2][S3][S4]",
+      "answerable_pred": false,
+      "citations": [
+        "ca-ircc-work-intern#7",
+        "ca-ircc-work-on-campus#3",
+        "ca-ircc-work-on-campus#8",
+        "ca-ircc-pgwp-path-to-pr#1"
+      ],
+      "sources": [
+        "ca-ircc-work-intern#7",
+        "ca-ircc-work-on-campus#3",
+        "ca-ircc-work-on-campus#8",
+        "ca-ircc-pgwp-path-to-pr#1"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1162,
+        "cached_input_tokens": 1024,
+        "output_tokens": 94,
+        "reasoning_tokens": 24
+      },
+      "cost_usd": 0.0006033,
+      "latency_s": {
+        "retrieval": 3.3904645000002347,
+        "generation": 1.4190292000021145,
+        "total": 4.809493700002349
+      }
+    },
+    {
+      "id": "q003",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien de temps avant l'embauche l'employeur doit-il déclarer un étudiant étranger à la préfecture ?",
+      "gold": "Au moins 2 jours ouvrables avant la date d'effet de l'embauche, avec une copie du titre de séjour ou du visa.",
+      "answer": "L’employeur doit effectuer la déclaration au moins 2 jours ouvrables avant la date d’effet de l’embauche. [S2]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-faq-q12#1"
+      ],
+      "sources": [
+        "fr-cft-faq-q12#2",
+        "fr-cft-faq-q12#1",
+        "fr-cft-faq-q23#1",
+        "fr-cft-faq-q23#2"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1271,
+        "cached_input_tokens": 1152,
+        "output_tokens": 80,
+        "reasoning_tokens": 26
+      },
+      "cost_usd": 0.0005356499999999999,
+      "latency_s": {
+        "retrieval": 4.497989999999845,
+        "generation": 1.3044402999985323,
+        "total": 5.8024302999983774
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה répond exactement à la question : la déclaration doit être faite au moins 2 jours ouvrables avant la date d’effet de l’embauche. Cette information est bien soutenue par la source citée."
+      }
+    },
+    {
+      "id": "q004",
+      "split": "test",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien de temps ai-je pour valider mon VLS-TS après mon arrivée en France ?",
+      "gold": "Trois mois après l'arrivée ; la validation se fait en ligne.",
+      "answer": "Vous disposez de 3 mois après votre arrivée en France pour valider votre VLS-TS, et ces démarches se font en ligne depuis le 18 février 2019. [S2][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-vls-ts#5",
+        "fr-cft-formalites-arrivee#3"
+      ],
+      "sources": [
+        "fr-cft-vls-ts#6",
+        "fr-cft-vls-ts#5",
+        "fr-cft-formalites-arrivee#4",
+        "fr-cft-formalites-arrivee#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1195,
+        "cached_input_tokens": 1024,
+        "output_tokens": 85,
+        "reasoning_tokens": 13
+      },
+      "cost_usd": 0.0005875499999999999,
+      "latency_s": {
+        "retrieval": 4.187850300000719,
+        "generation": 1.479355100000248,
+        "total": 5.667205400000967
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’assistant donne bien le délai de 3 mois après l’arrivée et précise correctement que la validation se fait en ligne. Les affirmations sont toutes étayées par les sources citées."
+      }
+    },
+    {
+      "id": "q005",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "en",
+      "question": "Since when is the validation of the French VLS-TS student visa done online?",
+      "gold": "Since 18 February 2019.",
+      "answer": "La validation du VLS-TS se fait en ligne depuis le 18 février 2019. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-formalites-arrivee#3"
+      ],
+      "sources": [
+        "fr-cft-formalites-arrivee#3",
+        "fr-cft-formalites-arrivee#4",
+        "fr-cft-accepte#14",
+        "fr-cft-arts#11"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1191,
+        "cached_input_tokens": 0,
+        "output_tokens": 77,
+        "reasoning_tokens": 28
+      },
+      "cost_usd": 0.00123975,
+      "latency_s": {
+        "retrieval": 4.076421500001743,
+        "generation": 1.4042125999985728,
+        "total": 5.480634100000316
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the correct date and matches the source. The single citation supports the sentence, and there are no unsupported factual claims."
+      }
+    },
+    {
+      "id": "q006",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien faut-il payer pour obtenir un deuxième rendez-vous si on a manqué son entretien Campus France ?",
+      "gold": "100 TND de frais supplémentaires.",
+      "answer": "Il faut payer **100 TND** pour obtenir un deuxième rendez-vous si vous avez manqué votre entretien Campus France. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-entretien#8"
+      ],
+      "sources": [
+        "fr-cft-entretien#8",
+        "fr-cft-arts#9",
+        "fr-cft-entretien#7",
+        "fr-cft-architecture#16"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1127,
+        "cached_input_tokens": 0,
+        "output_tokens": 67,
+        "reasoning_tokens": 14
+      },
+      "cost_usd": 0.00114675,
+      "latency_s": {
+        "retrieval": 3.891273999997793,
+        "generation": 1.2631221000010555,
+        "total": 5.1543960999988485
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L პასუხে 100 TND indiqué, ce qui correspond à la réponse attendue. La citation [S1] soutient bien cette information."
+      }
+    },
+    {
+      "id": "q007",
+      "split": "test",
+      "type": "date",
+      "country": "france",
+      "lang": "fr",
+      "question": "Quelle est la date limite de dépôt des candidatures sur la plateforme CampusArt pour la rentrée 2027 ?",
+      "gold": "Le 28 février 2027 (constitution du dossier du 1er octobre 2026 au 28 février 2027).",
+      "answer": "La date limite de dépôt des candidatures sur la plateforme CampusArt pour la rentrée 2027 est le 28 février 2027. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-arts#3"
+      ],
+      "sources": [
+        "fr-cft-arts#3",
+        "fr-cft-arts#1",
+        "de-daad-base-bourses#3",
+        "fr-cft-arts#4"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1312,
+        "cached_input_tokens": 0,
+        "output_tokens": 81,
+        "reasoning_tokens": 24
+      },
+      "cost_usd": 0.0013485,
+      "latency_s": {
+        "retrieval": 3.91410790000009,
+        "generation": 1.3773041999993438,
+        "total": 5.291412099999434
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה answer donne bien la date limite demandée: le 28 février 2027. La citation [S1] soutient directement cette information et aucune autre affirmation factuelle n’est faite."
+      }
+    },
+    {
+      "id": "q008",
+      "split": "test",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "en",
+      "question": "By when do CampusArt applicants have to confirm their enrolment in a programme?",
+      "gold": "By 31 May 2027, on their CampusArt account.",
+      "answer": "CampusArt applicants must confirm their enrolment by **31 May 2027**. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-arts#3"
+      ],
+      "sources": [
+        "fr-cft-arts#3",
+        "fr-cft-arts#4",
+        "fr-cft-arts#1",
+        "fr-cft-arts#2"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1268,
+        "cached_input_tokens": 0,
+        "output_tokens": 81,
+        "reasoning_tokens": 35
+      },
+      "cost_usd": 0.0013155,
+      "latency_s": {
+        "retrieval": 4.360171600001195,
+        "generation": 1.4292060999978276,
+        "total": 5.789377699999022
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the source: applicants must confirm their enrolment by 31 May 2027. The cited source supports both the date and the CampusArt account context."
+      }
+    },
+    {
+      "id": "q009",
+      "split": "test",
+      "type": "date",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien d'années dure le BUT et quand peut-on candidater pour la rentrée 2027 ?",
+      "gold": "3 ans (6 semestres) ; candidature ouverte du 1er octobre 2026 au 18 décembre 2026.",
+      "answer": "Le BUT dure 3 ans. [S1] Pour la rentrée 2027, la candidature pour le BUT est ouverte du 01/10/2026 au 18/12/2026. [S2]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-but#1",
+        "fr-cft-calendrier-2026-2027-pdf#2"
+      ],
+      "sources": [
+        "fr-cft-but#1",
+        "fr-cft-calendrier-2026-2027-pdf#2",
+        "fr-cft-calendrier#1",
+        "fr-cft-calendrier#2"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1298,
+        "cached_input_tokens": 0,
+        "output_tokens": 174,
+        "reasoning_tokens": 100
+      },
+      "cost_usd": 0.0017565,
+      "latency_s": {
+        "retrieval": 4.172704799999337,
+        "generation": 1.8359120999994047,
+        "total": 6.008616899998742
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה réponse donne bien la durée du BUT et les dates de candidature pour la rentrée 2027, exactement comme dans la réponse attendue. Les deux affirmations sont appuyées par les sources citées."
+      }
+    },
+    {
+      "id": "q010",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "en",
+      "question": "What diploma did the French BUT replace, and since when?",
+      "gold": "It replaced the DUT (Diplôme universitaire de technologie) from the 2021 academic year.",
+      "answer": "Le BUT a remplacé le DUT depuis la rentrée 2021. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-but#1"
+      ],
+      "sources": [
+        "fr-cft-but#1",
+        "fr-cf-choisir-la-france-pdf#17",
+        "fr-cf-choisir-la-france-pdf#32",
+        "fr-cf-eiffel-implementation#14"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1110,
+        "cached_input_tokens": 0,
+        "output_tokens": 67,
+        "reasoning_tokens": 24
+      },
+      "cost_usd": 0.001134,
+      "latency_s": {
+        "retrieval": 4.52409770000304,
+        "generation": 1.2377310999982,
+        "total": 5.76182880000124
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer exactly: the BUT replaced the DUT, and this has been the case since the 2021 academic year. The citation provided supports the statement."
+      }
+    },
+    {
+      "id": "q011",
+      "split": "dev",
+      "type": "date",
+      "country": "france",
+      "lang": "fr",
+      "question": "Jusqu'à quand puis-je soumettre mon dossier DAP pour une Licence 1 à la rentrée 2027 ?",
+      "gold": "Jusqu'au 11/12/2026 pour soumettre le dossier et payer (création à partir du 01/10/2026 ; entretien Campus France jusqu'au 15/03/2027 ; réponses des établissements jusqu'au 30/04/2027 ; choix définitif au plus tard le 31/05/2027).",
+      "answer": "Vous pouvez soumettre votre dossier DAP pour une Licence 1 jusqu’au **11 décembre 2026**. [S2][S3]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-calendrier-2026-2027-pdf#2",
+        "fr-cft-licence1#11"
+      ],
+      "sources": [
+        "fr-cft-licence1#16",
+        "fr-cft-calendrier-2026-2027-pdf#2",
+        "fr-cft-licence1#11",
+        "fr-cft-licence1#6"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1383,
+        "cached_input_tokens": 0,
+        "output_tokens": 168,
+        "reasoning_tokens": 110
+      },
+      "cost_usd": 0.00179325,
+      "latency_s": {
+        "retrieval": 4.432732499997655,
+        "generation": 1.8650192999994033,
+        "total": 6.297751799997059
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne bien la date limite du 11 décembre 2026, conforme à la source et à l’attendu. La phrase est correctement étayée par les citations fournies."
+      }
+    },
+    {
+      "id": "q012",
+      "split": "dev",
+      "type": "conflict",
+      "country": "france",
+      "lang": "fr",
+      "question": "Quelle est la date limite pour déposer un dossier DAP ?",
+      "gold": "Selon le calendrier officiel 2026/2027, jusqu'au 11/12/2026. Une ancienne page FAQ de Campus France indique encore le 31 janvier : le calendrier 2026/2027 est la référence actuelle.",
+      "answer": "La date limite pour déposer un dossier DAP est le **11 décembre 2026**. [S1][S2][S4] Une autre source mentionne **le 31 janvier**, mais elle semble différente de ces sources. [S3]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-licence1#11",
+        "fr-cft-architecture#11",
+        "fr-cft-architecture#13",
+        "fr-cft-faq-q34#2"
+      ],
+      "sources": [
+        "fr-cft-licence1#11",
+        "fr-cft-architecture#11",
+        "fr-cft-faq-q34#2",
+        "fr-cft-architecture#13"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1310,
+        "cached_input_tokens": 0,
+        "output_tokens": 320,
+        "reasoning_tokens": 234
+      },
+      "cost_usd": 0.0024225,
+      "latency_s": {
+        "retrieval": 4.222089700000652,
+        "generation": 2.7573116999992635,
+        "total": 6.979401399999915
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne bien la date limite actuelle du dossier DAP : le 11 décembre 2026. Elle mentionne aussi correctement qu’une ancienne source parle du 31 janvier, sans contredire les sources fournies."
+      }
+    },
+    {
+      "id": "q013",
+      "split": "dev",
+      "type": "date",
+      "country": "france",
+      "lang": "fr",
+      "question": "Pour la procédure hors-DAP (BUT, master, école d'ingénieurs), jusqu'à quand puis-je soumettre mon dossier pour la rentrée 2027 ?",
+      "gold": "Jusqu'au 18/12/2026 pour soumettre le dossier et payer (création à partir du 01/10/2026 ; entretien jusqu'au 15/03/2027 ; réponses des établissements jusqu'au 30/04/2027 ; choix définitif au plus tard le 31/05/2027). Ces dates valent pour BUT, Licence 2/3, Master 1/2, écoles d'ingénieurs et de commerce.",
+      "answer": "Pour la procédure hors-DAP (BUT, master, école d’ingénieurs), vous pouvez soumettre votre dossier jusqu’au **18/12/2026** pour la rentrée 2027. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-calendrier-2026-2027-pdf#2"
+      ],
+      "sources": [
+        "fr-cft-calendrier-2026-2027-pdf#2",
+        "fr-cft-licence1#11",
+        "fr-cft-architecture#11",
+        "fr-cft-architecture#6"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1441,
+        "cached_input_tokens": 0,
+        "output_tokens": 388,
+        "reasoning_tokens": 319
+      },
+      "cost_usd": 0.00282675,
+      "latency_s": {
+        "retrieval": 4.57798990000083,
+        "generation": 3.364183400000911,
+        "total": 7.942173300001741
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’answer donne la bonne date limite hors-DAP pour la rentrée 2027, conforme à la source. La citation [S1] soutient bien l’énoncé et aucune affirmation supplémentaire non sourcée n’apparaît."
+      }
+    },
+    {
+      "id": "q014",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien coûtent les frais de dossier Campus France en Tunisie ?",
+      "gold": "400 DT depuis le 1er août 2025.",
+      "answer": "Les frais de dossier Campus France en Tunisie sont de **400 TND**. [S3] À noter que les frais d’authentification mentionnés dans d’autres sources sont de **150 TND** et concernent l’instruction du dossier, pas les frais de dossier. [S1][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-accepte#18",
+        "fr-cft-etudes-sante-pdf#13",
+        "fr-cft-etudes-sante#8"
+      ],
+      "sources": [
+        "fr-cft-etudes-sante-pdf#13",
+        "fr-cft-etudes-sante#9",
+        "fr-cft-accepte#18",
+        "fr-cft-etudes-sante#8"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1285,
+        "cached_input_tokens": 0,
+        "output_tokens": 150,
+        "reasoning_tokens": 53
+      },
+      "cost_usd": 0.00163875,
+      "latency_s": {
+        "retrieval": 3.9296155000010913,
+        "generation": 1.9152267999998003,
+        "total": 5.8448423000008916
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה répond bien que les frais de dossier sont de 400 TND, conforme à la réponse de référence. Les mentions sur les 150 TND d’authentification sont aussi soutenues par les sources citées."
+      }
+    },
+    {
+      "id": "q015",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "en",
+      "question": "Can I pay my Campus France application fees by cheque or send my application by post?",
+      "gold": "No. Postal applications and payments are no longer accepted, and cheque payment has been suspended since 20 January 2025. Pay by card at the Campus France office or online.",
+      "answer": "Je ne sais pas pour l’envoi de la demande par la poste. En revanche, les règlements en espèces ou par chèque ne sont pas acceptés pour le site de Campus France Tunisie. [S1]",
+      "answerable_pred": false,
+      "citations": [
+        "fr-cft-vigilance#4"
+      ],
+      "sources": [
+        "fr-cft-vigilance#4",
+        "fr-cf-cvec#4",
+        "fr-cf-cvec#5",
+        "fr-cf-eiffel-phd-pdf#1"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1269,
+        "cached_input_tokens": 0,
+        "output_tokens": 229,
+        "reasoning_tokens": 159
+      },
+      "cost_usd": 0.00198225,
+      "latency_s": {
+        "retrieval": 3.4897310999986075,
+        "generation": 2.738253800001985,
+        "total": 6.2279849000005925
+      }
+    },
+    {
+      "id": "q016",
+      "split": "test",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien de temps dure l'entretien Campus France ?",
+      "gold": "Environ 20 minutes.",
+      "answer": "L’entretien Campus France dure environ 20 minutes. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-faq-q11#1"
+      ],
+      "sources": [
+        "fr-cft-faq-q11#1",
+        "fr-cft-entretien#1",
+        "fr-cft-faq-q15#1",
+        "fr-cft-entretien#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1122,
+        "cached_input_tokens": 0,
+        "output_tokens": 68,
+        "reasoning_tokens": 29
+      },
+      "cost_usd": 0.0011475,
+      "latency_s": {
+        "retrieval": 3.609781600000133,
+        "generation": 1.541113100000075,
+        "total": 5.150894700000208
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה apporte la bonne durée, conforme à la réponse attendue. La citation [S1] soutient bien l’affirmation et il n’y a pas d’autre fait non sourcé."
+      }
+    },
+    {
+      "id": "q017",
+      "split": "dev",
+      "type": "fact",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien de temps à l'avance dois-je arriver à l'espace Campus France le jour de mon entretien ?",
+      "gold": "Une demi-heure à l'avance ; tout retard entraîne l'annulation de l'entretien.",
+      "answer": "Vous devez vous présenter une demi-heure à l’avance à l’espace Campus France le jour de votre entretien. [S1][S2][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-entretien#6",
+        "fr-cft-entretien#3",
+        "fr-cft-accepte#21"
+      ],
+      "sources": [
+        "fr-cft-entretien#6",
+        "fr-cft-entretien#3",
+        "fr-cft-entretien#5",
+        "fr-cft-accepte#21"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1033,
+        "cached_input_tokens": 0,
+        "output_tokens": 89,
+        "reasoning_tokens": 26
+      },
+      "cost_usd": 0.00117525,
+      "latency_s": {
+        "retrieval": 3.7292568999982905,
+        "generation": 1.5965329999999085,
+        "total": 5.325789899998199
+      },
+      "judge": {
+        "correctness": "partially_correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne bien le délai d’une demi-heure à l’avance, mais elle omet la précision du gold selon laquelle tout retard entraîne l’annulation de l’entretien. Les citations fournies soutiennent bien l’affirmation avancée."
+      }
+    },
+    {
+      "id": "q018",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "en",
+      "question": "Are certified photocopies of my diplomas accepted at the Campus France interview?",
+      "gold": "No. You must bring the originals (Arabic and French versions); photocopies and certified copies are not accepted.",
+      "answer": "No. You must present the original documents at the Campus France interview; photocopies and certified copies are not accepted. [S2][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-entretien#2",
+        "fr-cft-entretien#6"
+      ],
+      "sources": [
+        "fr-cft-accepte#8",
+        "fr-cft-entretien#2",
+        "fr-cft-licence1#21",
+        "fr-cft-entretien#6"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1256,
+        "cached_input_tokens": 0,
+        "output_tokens": 91,
+        "reasoning_tokens": 33
+      },
+      "cost_usd": 0.0013515,
+      "latency_s": {
+        "retrieval": 3.676742200001172,
+        "generation": 1.431560699998954,
+        "total": 5.108302900000126
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": false,
+        "citation_problems": [
+          "The first sentence (“No.”) is a factual answer but has no citation attached. All factual sentences should be cited."
+        ],
+        "reason": "The answer matches the gold answer: certified photocopies are not accepted and originals must be brought. Its factual content is supported by the sources, but the opening “No.” is uncited."
+      }
+    },
+    {
+      "id": "q019",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien de demandes de préinscription puis-je faire via Campus France pour un master ?",
+      "gold": "Au maximum 15 demandes hors DAP. (En DAP : trois vœux d'universités et deux en écoles d'architecture.)",
+      "answer": "Pour un master, vous pouvez formuler un maximum de 15 demandes de préinscription via Campus France. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-faq-q32#1"
+      ],
+      "sources": [
+        "fr-cft-faq-q32#1",
+        "fr-cft-faq-q32#2",
+        "fr-cft-faq-q34#2",
+        "fr-cft-refus-visa#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1313,
+        "cached_input_tokens": 0,
+        "output_tokens": 83,
+        "reasoning_tokens": 32
+      },
+      "cost_usd": 0.00135825,
+      "latency_s": {
+        "retrieval": 4.3514759999998205,
+        "generation": 1.6572722000018985,
+        "total": 6.008748200001719
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne bien le maximum de 15 demandes pour un master, conformément à la source. La citation [S1] soutient directement cette affirmation."
+      }
+    },
+    {
+      "id": "q020",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien de temps dure le TCF pour la DAP ?",
+      "gold": "3 heures au total (1 h 30 d'épreuves de compréhension et de structures, 1 h 30 d'expression écrite).",
+      "answer": "Le TCF pour la DAP dure au total 3 heures. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-faq-q28#1"
+      ],
+      "sources": [
+        "fr-cft-faq-q28#1",
+        "fr-cft-licence1#3",
+        "fr-cft-architecture#3",
+        "fr-cft-architecture#2"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1396,
+        "cached_input_tokens": 0,
+        "output_tokens": 64,
+        "reasoning_tokens": 21
+      },
+      "cost_usd": 0.001335,
+      "latency_s": {
+        "retrieval": 4.125570199998037,
+        "generation": 1.623610099999496,
+        "total": 5.749180299997533
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה donne bien la durée totale exacte du TCF pour la DAP : 3 heures, comme dans la source. La citation [S1] soutient directement cette affirmation."
+      }
+    },
+    {
+      "id": "q021",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "en",
+      "question": "Are Tunisian students exempt from the TCF-DAP French test since French is widely spoken in Tunisia?",
+      "gold": "No. Tunisia's only official language is Arabic, so Tunisian candidates must take the TCF-DAP unless they hold another exemption, such as a DELF B2, a DALF C1/C2 or a French baccalauréat.",
+      "answer": "No. Tunisia is specifically listed as a country where Arabic is the only official language and French has only a special status, so Tunisian candidates are concerned by the TCF-DAP. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-faq-q27#1"
+      ],
+      "sources": [
+        "fr-cft-faq-q27#1",
+        "fr-cft-faq-q27#2",
+        "fr-cft-architecture#6",
+        "fr-cft-licence1#4"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1347,
+        "cached_input_tokens": 0,
+        "output_tokens": 110,
+        "reasoning_tokens": 44
+      },
+      "cost_usd": 0.00150525,
+      "latency_s": {
+        "retrieval": 4.407452499999636,
+        "generation": 1.7059399999998277,
+        "total": 6.113392499999463
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer: Tunisian students are not exempt from the TCF-DAP just because French is widely spoken. Its factual claim is supported by the cited source, and the citation is appropriate."
+      }
+    },
+    {
+      "id": "q022",
+      "split": "test",
+      "type": "fact",
+      "country": "france",
+      "lang": "fr",
+      "question": "Je candidate en master en France : où dois-je m'inscrire pour passer un test de français ?",
+      "gold": "Il faut contacter directement l'antenne de l'Institut français de Tunisie la plus proche de chez vous (le TCF-DAP ne concerne que la licence 1/2 et les écoles d'architecture).",
+      "answer": "Pour une candidature en master, vous devez contacter directement l’antenne de l’Institut français de Tunisie la plus proche de votre domicile pour vous inscrire au test de français. [S1] Vous pouvez aussi vous renseigner auprès de l’établissement où vous souhaitez poursuivre vos études pour savoir si un test est demandé et lequel passer. [S2]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-faq-q29#1",
+        "fr-cft-faq-q33#2"
+      ],
+      "sources": [
+        "fr-cft-faq-q29#1",
+        "fr-cft-faq-q33#2",
+        "fr-cft-faq-q33#1",
+        "fr-cft-faq-p4#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1102,
+        "cached_input_tokens": 0,
+        "output_tokens": 228,
+        "reasoning_tokens": 130
+      },
+      "cost_usd": 0.0018525,
+      "latency_s": {
+        "retrieval": 3.4459349999997357,
+        "generation": 2.1560934000008274,
+        "total": 5.602028400000563
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the correct place to register for a master’s application: the nearest Institut français de Tunisie office. It also adds a supported clarification that you can ask the institution itself about the needed test."
+      }
+    },
+    {
+      "id": "q023",
+      "split": "dev",
+      "type": "date",
+      "country": "france",
+      "lang": "fr",
+      "question": "Avant quelle date l'université de mon premier choix DAP doit-elle me répondre ?",
+      "gold": "Avant le 30 avril (deuxième choix avant le 31 mai, troisième avant le 30 juin).",
+      "answer": "L’université correspondant à votre premier choix doit vous faire savoir si elle admet ou non votre candidature **avant le 30 avril**. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-faq-q16#1"
+      ],
+      "sources": [
+        "fr-cft-faq-q16#1",
+        "fr-cft-faq-q34#2",
+        "fr-cf-choisir-la-france-pdf#24",
+        "fr-cft-architecture#11"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1425,
+        "cached_input_tokens": 0,
+        "output_tokens": 81,
+        "reasoning_tokens": 24
+      },
+      "cost_usd": 0.00143325,
+      "latency_s": {
+        "retrieval": 4.925380100001348,
+        "generation": 1.4462762999974075,
+        "total": 6.371656399998756
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’answer donne bien la date limite demandée pour le premier choix DAP : avant le 30 avril. La citation [S1] soutient directement cette information."
+      }
+    },
+    {
+      "id": "q024",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "en",
+      "question": "What share of students admitted to French engineering programmes hold a DUT or BTS?",
+      "gold": "About 12% (closer to 5% in the top grandes écoles d'ingénieurs).",
+      "answer": "Environ 12% des étudiants admis dans les formations d’ingénieurs sont titulaires d’un DUT ou d’un BTS. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-faq-q30#3"
+      ],
+      "sources": [
+        "fr-cft-faq-q30#3",
+        "fr-cft-faq-q30#2",
+        "fr-cft-but#1",
+        "fr-cf-choisir-la-france-pdf#32"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1157,
+        "cached_input_tokens": 0,
+        "output_tokens": 77,
+        "reasoning_tokens": 21
+      },
+      "cost_usd": 0.00121425,
+      "latency_s": {
+        "retrieval": 3.729944099999557,
+        "generation": 1.3658116000005975,
+        "total": 5.095755700000154
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer states the same share as the gold answer: about 12% of admitted students hold a DUT or BTS. The cited source directly supports this claim, and the citation is correctly attached."
+      }
+    },
+    {
+      "id": "q025",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien de crédits ECTS valent une licence et un master en France ?",
+      "gold": "Licence : 6 semestres, 180 ECTS ; master : 4 semestres, 120 ECTS.",
+      "answer": "Une licence en France vaut 180 crédits ECTS et un master vaut 120 crédits ECTS. [S3][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cf-choisir-la-france-pdf#37",
+        "fr-cft-lmd-equivalence#3"
+      ],
+      "sources": [
+        "fr-cf-choisir-la-france-pdf#41",
+        "fr-cft-lmd-equivalence#3",
+        "fr-cf-choisir-la-france-pdf#37",
+        "fr-cft-lmd-equivalence#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1179,
+        "cached_input_tokens": 0,
+        "output_tokens": 84,
+        "reasoning_tokens": 29
+      },
+      "cost_usd": 0.00126225,
+      "latency_s": {
+        "retrieval": 10.904822299999068,
+        "generation": 1.8848558999998204,
+        "total": 12.789678199998889
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne bien les bons nombres de crédits ECTS pour une licence et un master en France : 180 et 120. Les sources citées soutiennent ces deux informations."
+      }
+    },
+    {
+      "id": "q026",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "en",
+      "question": "How much are tuition fees for a Master's at a French public university for a non-EU student in 2026-2027?",
+      "gold": "€3,950 per year.",
+      "answer": "For a non-EU student at a French public university, the tuition fee for a Master's degree in 2026–2027 is €3,950 per year. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cf-tuition-fees#4"
+      ],
+      "sources": [
+        "fr-cf-tuition-fees#4",
+        "fr-cf-tuition-fees#2",
+        "fr-cf-choisir-la-france-pdf#26",
+        "fr-cf-choisir-la-france-pdf#42"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1336,
+        "cached_input_tokens": 0,
+        "output_tokens": 85,
+        "reasoning_tokens": 22
+      },
+      "cost_usd": 0.0013845,
+      "latency_s": {
+        "retrieval": 4.470267799999419,
+        "generation": 1.3839298999992025,
+        "total": 5.854197699998622
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the exact Master's tuition fee for a non-EU student in 2026–2027, matching the gold answer and Source S1. The citation supports the claim and no unsupported factual claims are made."
+      }
+    },
+    {
+      "id": "q027",
+      "split": "test",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "fr",
+      "question": "Quels sont les frais d'inscription en licence et en doctorat pour un étudiant non européen en France en 2026-2027 ?",
+      "gold": "2 902 € par an en licence et 398 € par an en doctorat.",
+      "answer": "Pour une licence, un étudiant non européen doit payer 2 895 € en 2026/2027. [S1][S4] Je ne trouve pas dans les sources le montant des frais d’inscription pour le doctorat en 2026/2027. [S1][S2][S3][S4]",
+      "answerable_pred": false,
+      "citations": [
+        "fr-cf-choisir-la-france-pdf#38",
+        "fr-cf-choisir-la-france-pdf#39"
+      ],
+      "sources": [
+        "fr-cf-choisir-la-france-pdf#38",
+        "fr-cf-choisir-la-france-pdf#26",
+        "fr-cf-choisir-la-france-pdf#43",
+        "fr-cf-choisir-la-france-pdf#39"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1317,
+        "cached_input_tokens": 0,
+        "output_tokens": 171,
+        "reasoning_tokens": 74
+      },
+      "cost_usd": 0.00175725,
+      "latency_s": {
+        "retrieval": 4.626497400000517,
+        "generation": 1.904188399999839,
+        "total": 6.530685800000356
+      }
+    },
+    {
+      "id": "q028",
+      "split": "dev",
+      "type": "yes_no",
+      "country": "france",
+      "lang": "en",
+      "question": "Do non-EU PhD students in France pay the higher differentiated tuition fees?",
+      "gold": "No. Doctoral programmes are not subject to differentiated tuition fees.",
+      "answer": "No. Non-EU PhD students are not subject to the differentiated tuition fees in France, and the 2026–2027 PhD fee is listed separately at €398 per year. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cf-tuition-fees#4",
+        "fr-cf-tuition-fees#5"
+      ],
+      "sources": [
+        "fr-cf-tuition-fees#4",
+        "fr-cf-tuition-fees#5",
+        "fr-cf-tuition-fees#2",
+        "fr-cf-tuition-fees#6"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1189,
+        "cached_input_tokens": 0,
+        "output_tokens": 127,
+        "reasoning_tokens": 53
+      },
+      "cost_usd": 0.00146325,
+      "latency_s": {
+        "retrieval": 4.063073199999053,
+        "generation": 2.0005056000009063,
+        "total": 6.063578799999959
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer: non-EU PhD students do not pay the higher differentiated tuition fees. The extra statement about the separate €398 PhD fee is supported by the sources and does not contradict the gold answer."
+      }
+    },
+    {
+      "id": "q029",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "en",
+      "question": "How much is the CVEC for the 2026/27 academic year?",
+      "gold": "€105, paid once per academic year.",
+      "answer": "The CVEC for the 2026/27 academic year is €105. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cf-cvec#7",
+        "fr-cf-cvec#6"
+      ],
+      "sources": [
+        "fr-cf-cvec#7",
+        "fr-cf-cvec#6",
+        "fr-cf-tuition-fees#2",
+        "ca-ircc-financial-support#8"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1271,
+        "cached_input_tokens": 0,
+        "output_tokens": 62,
+        "reasoning_tokens": 11
+      },
+      "cost_usd": 0.00123225,
+      "latency_s": {
+        "retrieval": 3.717217499997787,
+        "generation": 1.1524294000009832,
+        "total": 4.86964689999877
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the correct CVEC amount for 2026/27 and matches the gold answer. The cited sources support that amount, and the citation placement is appropriate."
+      }
+    },
+    {
+      "id": "q030",
+      "split": "test",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "fr",
+      "question": "Si j'ai une bourse du gouvernement tunisien, suis-je exonéré de la CVEC ?",
+      "gold": "Non. Les étudiants qui reçoivent une bourse d'un gouvernement étranger ne sont pas exonérés de la CVEC.",
+      "answer": "Non, une bourse du gouvernement tunisien n’exonère pas de la CVEC : les étudiants recevant une bourse d’un gouvernement étranger ne sont pas exemptés de la CVEC. [S2]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cf-cvec#3"
+      ],
+      "sources": [
+        "fr-cft-entretien#9",
+        "fr-cf-cvec#3",
+        "fr-cf-cvec#6",
+        "fr-cf-cvec#7"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1319,
+        "cached_input_tokens": 0,
+        "output_tokens": 124,
+        "reasoning_tokens": 54
+      },
+      "cost_usd": 0.00154725,
+      "latency_s": {
+        "retrieval": 3.8142765000011423,
+        "generation": 1.937512999997125,
+        "total": 5.751789499998267
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer: a Tunisian government scholarship does not exempt a student from the CVEC. The cited source explicitly says students receiving foreign government scholarships are not exempt from the CVEC."
+      }
+    },
+    {
+      "id": "q031",
+      "split": "dev",
+      "type": "fact",
+      "country": "france",
+      "lang": "en",
+      "question": "How can I get a refund of the CVEC if I become exempt during the year?",
+      "gold": "Apply to CROUS before 31 May of the academic year concerned.",
+      "answer": "If you become exempt during the year, you may be eligible for a CVEC refund. To request it, apply to CROUS before May 31 of the academic year for which you want the refund. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cf-cvec#7"
+      ],
+      "sources": [
+        "fr-cf-cvec#7",
+        "fr-cf-cvec#6",
+        "fr-cf-cvec#3",
+        "fr-cf-cvec#5"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1242,
+        "cached_input_tokens": 0,
+        "output_tokens": 114,
+        "reasoning_tokens": 44
+      },
+      "cost_usd": 0.0014445,
+      "latency_s": {
+        "retrieval": 3.7484331999985443,
+        "generation": 1.5608504000010726,
+        "total": 5.309283599999617
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the source and the gold answer: apply to CROUS before May 31 of the relevant academic year. The cited source directly supports the statement."
+      }
+    },
+    {
+      "id": "q032",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "en",
+      "question": "What is the age limit for the Eiffel scholarship?",
+      "gold": "Up to 29 years old at master's level and up to 35 at PhD level.",
+      "answer": "The age limit depends on the level: applicants must be up to 29 years old at master’s level and up to 35 years old at PhD level. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cf-eiffel#1"
+      ],
+      "sources": [
+        "fr-cf-eiffel#1",
+        "fr-cf-eiffel-implementation#11",
+        "fr-cf-eiffel-implementation#12",
+        "fr-cf-eiffel-implementation#10"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1129,
+        "cached_input_tokens": 0,
+        "output_tokens": 97,
+        "reasoning_tokens": 35
+      },
+      "cost_usd": 0.00128325,
+      "latency_s": {
+        "retrieval": 3.369513099998585,
+        "generation": 1.6255976000029477,
+        "total": 4.995110700001533
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the source and gold answer: up to 29 years old for master’s level and up to 35 years old for PhD level. The citation supports the statement."
+      }
+    },
+    {
+      "id": "q033",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "fr",
+      "question": "Est-ce que je peux postuler moi-même à la bourse Eiffel ?",
+      "gold": "Non. Seules les candidatures déposées par les établissements d'enseignement supérieur français sont acceptées ; il faut passer par l'établissement visé.",
+      "answer": "Je ne sais pas à partir de ces sources si vous pouvez postuler vous-même à la bourse Eiffel. Les sources indiquent seulement que le programme est réservé aux étudiants internationaux et que les établissements français d’accueil s’engagent à inscrire les lauréats. [S4]",
+      "answerable_pred": false,
+      "citations": [
+        "fr-cf-eiffel-phd-pdf#9"
+      ],
+      "sources": [
+        "fr-cf-choisir-la-france-pdf#48",
+        "fr-cf-choisir-la-france-pdf#74",
+        "fr-cf-eiffel-implementation#22",
+        "fr-cf-eiffel-phd-pdf#9"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1349,
+        "cached_input_tokens": 0,
+        "output_tokens": 279,
+        "reasoning_tokens": 198
+      },
+      "cost_usd": 0.00226725,
+      "latency_s": {
+        "retrieval": 3.4247937000000093,
+        "generation": 2.707341199999064,
+        "total": 6.132134899999073
+      }
+    },
+    {
+      "id": "q034",
+      "split": "dev",
+      "type": "stale",
+      "country": "france",
+      "lang": "fr",
+      "question": "Quelle est la date limite pour la bourse Eiffel ?",
+      "gold": "Le corpus ne décrit que la campagne 2026 : réception des candidatures par Campus France jusqu'au 8 janvier 2026 (ouverture le 1er octobre 2025). Le calendrier de la campagne suivante n'y figure pas ; il faut le vérifier sur le site de Campus France.",
+      "answer": "La date limite de réception des candidatures par Campus France pour la campagne 2026 est le 8 janvier 2026 inclus. [S3]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cf-eiffel#1"
+      ],
+      "sources": [
+        "fr-cf-choisir-la-france-pdf#74",
+        "fr-cf-choisir-la-france-pdf#48",
+        "fr-cf-eiffel#1",
+        "de-daad-base-bourses#4"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1232,
+        "cached_input_tokens": 0,
+        "output_tokens": 112,
+        "reasoning_tokens": 56
+      },
+      "cost_usd": 0.001428,
+      "latency_s": {
+        "retrieval": 3.446654799998214,
+        "generation": 1.777797400001873,
+        "total": 5.224452200000087
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה donne bien la date limite demandée pour la campagne 2026 : le 8 janvier 2026 inclus. La citation [S3] soutient directement cette information."
+      }
+    },
+    {
+      "id": "q035",
+      "split": "dev",
+      "type": "fact",
+      "country": "france",
+      "lang": "fr",
+      "question": "Où un étudiant étranger peut-il consulter un médecin dans son université en France ?",
+      "gold": "Au service de santé universitaire, le SUMPPS (Service universitaire de Médecine préventive et de Promotion de la Santé), où certaines consultations sont gratuites.",
+      "answer": "Un étudiant étranger peut consulter un médecin au sein du service de santé de l’université, appelé le Service universitaire de Médecine préventive et de Promotion de la Santé (SUMPPS). [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-sante#1"
+      ],
+      "sources": [
+        "fr-cft-sante#1",
+        "fr-cft-etudes-sante#7",
+        "fr-cf-choisir-la-france-pdf#128",
+        "fr-cft-sante#5"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1270,
+        "cached_input_tokens": 0,
+        "output_tokens": 85,
+        "reasoning_tokens": 15
+      },
+      "cost_usd": 0.001335,
+      "latency_s": {
+        "retrieval": 3.980087600000843,
+        "generation": 1.2471033000001626,
+        "total": 5.2271909000010055
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’answer donne bien le lieu de consultation demandé : le service de santé universitaire, le SUMPPS, comme dans la source et l’oracle. La citation [S1] soutient correctement cette phrase."
+      }
+    },
+    {
+      "id": "q036",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Quel salaire minimum faut-il pour obtenir une carte de séjour après les études en France avec un contrat de plus de 3 mois, et combien de temps est-elle valable ?",
+      "gold": "Il faut un diplôme de niveau master (ou équivalent) et un contrat de travail de plus de 3 mois avec une rémunération brute annuelle d'au moins 1,5 fois le SMIC ; la page indique 42 243 € bruts annuels en 2025. La carte est valable 4 ans maximum et renouvelable.",
+      "answer": "Il faut un salaire brut annuel supérieur ou égal à une fois et demie le SMIC, soit 42 243 € bruts annuels en 2025. [S1] Cette carte de séjour est valable 4 ans maximum et est renouvelable. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-travail-apres#2"
+      ],
+      "sources": [
+        "fr-cft-travail-apres#2",
+        "fr-cft-travail-apres#3",
+        "fr-cft-faq-q23#1",
+        "fr-cft-faq-q23#4"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1239,
+        "cached_input_tokens": 0,
+        "output_tokens": 149,
+        "reasoning_tokens": 67
+      },
+      "cost_usd": 0.00159975,
+      "latency_s": {
+        "retrieval": 3.852413099997648,
+        "generation": 1.902295400002913,
+        "total": 5.754708500000561
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה répond exactement au salaire minimum demandé et à la durée de validité, sans contradiction avec la réponse de référence. Les deux phrases sont bien soutenues par [S1] et correctement citées."
+      }
+    },
+    {
+      "id": "q037",
+      "split": "dev",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien d'heures maximum un étudiant peut-il travailler dans un emploi étudiant à l'université entre septembre et juin ?",
+      "gold": "670 heures entre le 1er septembre et le 30 juin (et 300 heures entre le 1er juillet et le 31 août).",
+      "answer": "Un étudiant peut travailler au maximum **670 heures** dans un emploi étudiant à l’université entre le **1er septembre et le 30 juin**. [S2]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-travail-etudes#3"
+      ],
+      "sources": [
+        "fr-cft-travail-etudes#4",
+        "fr-cft-travail-etudes#3",
+        "fr-cf-choisir-la-france-pdf#124",
+        "fr-cft-travail-etudes#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1312,
+        "cached_input_tokens": 0,
+        "output_tokens": 108,
+        "reasoning_tokens": 48
+      },
+      "cost_usd": 0.00147,
+      "latency_s": {
+        "retrieval": 3.7639933999998902,
+        "generation": 1.6766747000001487,
+        "total": 5.440668100000039
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה donne bien le maximum de 670 heures entre le 1er septembre et le 30 juin, ce qui correspond à la réponse attendue. La citation [S2] soutient directement cette information."
+      }
+    },
+    {
+      "id": "q038",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "en",
+      "question": "Do I have to go through Campus France to book my French student visa appointment at TLScontact?",
+      "gold": "Yes. Since 1 May 2022, students in the Campus France procedure must book their TLScontact visa appointment through their Campus France office, after filling in the France-Visas form.",
+      "answer": "Yes. The sources say that students and applicants covered by the Campus France procedure must go through their Campus France space to book the visa appointment at TLS-Contact/TLScontact. [S1][S3] They also say Campus France only sets the TLS-Contact appointment, and the procedure stops at that step. [S1][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-accepte#10",
+        "fr-cft-vls-ts#2",
+        "fr-cft-accepte#25"
+      ],
+      "sources": [
+        "fr-cft-accepte#10",
+        "fr-cft-licence1#23",
+        "fr-cft-vls-ts#2",
+        "fr-cft-accepte#25"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1234,
+        "cached_input_tokens": 0,
+        "output_tokens": 115,
+        "reasoning_tokens": 14
+      },
+      "cost_usd": 0.001443,
+      "latency_s": {
+        "retrieval": 3.7538378999997803,
+        "generation": 1.5854708000006212,
+        "total": 5.339308700000402
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer correctly says you must go through Campus France to book the TLScontact appointment, which matches the sources and gold answer. It also correctly notes that Campus France handles only the appointment step and the procedure ends there."
+      }
+    },
+    {
+      "id": "q039",
+      "split": "test",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Quelle est la durée de validité d'un visa de long séjour pour la France ?",
+      "gold": "Entre 3 mois et un an ; au-delà, il faut demander un titre de séjour en préfecture.",
+      "answer": "La durée de validité d’un visa de long séjour pour la France est comprise entre 3 mois et un an. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-fv-long-sejour#1"
+      ],
+      "sources": [
+        "fr-fv-long-sejour#1",
+        "fr-fv-long-sejour#3",
+        "fr-cf-choisir-la-france-pdf#75",
+        "fr-fv-long-sejour#7"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1269,
+        "cached_input_tokens": 0,
+        "output_tokens": 84,
+        "reasoning_tokens": 31
+      },
+      "cost_usd": 0.00132975,
+      "latency_s": {
+        "retrieval": 3.576503700001922,
+        "generation": 1.4843411000001652,
+        "total": 5.060844800002087
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the visa validity period asked for and matches the source. It is fully supported by [S1], and the citation is placed appropriately."
+      }
+    },
+    {
+      "id": "q040",
+      "split": "test",
+      "type": "number",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien d'étudiants tunisiens étudient en France et en Allemagne selon la fiche mobilité de Campus France ?",
+      "gold": "10 068 en France et 7 062 en Allemagne (chiffres 2022 de la fiche mobilité Tunisie 2023-2024).",
+      "answer": "Selon la fiche mobilité de Campus France, 10 068 étudiants tunisiens étudient en France et 7 062 en Allemagne. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-statistiques-pdf#1"
+      ],
+      "sources": [
+        "fr-cft-statistiques-pdf#1",
+        "fr-cft-statistiques-pdf#2",
+        "fr-cft-statistiques-pdf#3",
+        "fr-cft-procedure#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1956,
+        "cached_input_tokens": 0,
+        "output_tokens": 116,
+        "reasoning_tokens": 58
+      },
+      "cost_usd": 0.001989,
+      "latency_s": {
+        "retrieval": 6.820835599999555,
+        "generation": 2.423692399999709,
+        "total": 9.244527999999264
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה répond exactement avec les deux chiffres demandés et ils correspondent à la fiche mobilité. La citation [S1] soutient bien ces données."
+      }
+    },
+    {
+      "id": "q041",
+      "split": "dev",
+      "type": "date",
+      "country": "france",
+      "lang": "fr",
+      "question": "À partir de quand faut-il candidater sur la nouvelle plateforme « Études en France » ?",
+      "gold": "À partir du 1er octobre 2026, sur https://etudesenfrance.diplomatie.gouv.fr/.",
+      "answer": "A compter du 01 octobre 2026, il faut candidater sur la nouvelle plateforme « Études en France ». [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-plateforme-eef#1"
+      ],
+      "sources": [
+        "fr-cft-plateforme-eef#1",
+        "fr-cft-plateforme-eef#2",
+        "fr-cf-choisir-la-france-pdf#43",
+        "fr-cft-plateforme-eef#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1253,
+        "cached_input_tokens": 0,
+        "output_tokens": 71,
+        "reasoning_tokens": 18
+      },
+      "cost_usd": 0.00125925,
+      "latency_s": {
+        "retrieval": 3.8591653000003134,
+        "generation": 1.330371699998068,
+        "total": 5.189536999998381
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne bien la date demandée : à partir du 1er octobre 2026. La citation [S1] soutient directement cette information."
+      }
+    },
+    {
+      "id": "q042",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "france",
+      "lang": "en",
+      "question": "I forgot my Études en France password. What should I do?",
+      "gold": "On the Études en France site, click 'mot de passe oublié', enter your account e-mail, then open the link you receive to set a new password. Check your spam folder if the e-mail doesn't arrive.",
+      "answer": "Go to the “Etudes en France” website and click “mot de passe oublié”. [S1] Then enter the email address of your account, open your personal email inbox, and activate the link you receive to create a new password. [S1] If you do not see the email, check your spam/junk folder. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "fr-cft-faq-q36#1"
+      ],
+      "sources": [
+        "fr-cft-faq-q36#1",
+        "fr-cft-faq-p5#1",
+        "fr-cft-plateforme-eef#3",
+        "fr-cft-accepte#15"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1118,
+        "cached_input_tokens": 0,
+        "output_tokens": 115,
+        "reasoning_tokens": 18
+      },
+      "cost_usd": 0.001356,
+      "latency_s": {
+        "retrieval": 3.7873259000007238,
+        "generation": 1.561231299998326,
+        "total": 5.34855719999905
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold instructions: use “mot de passe oublié,” enter the account email, follow the emailed link to set a new password, and check spam if needed. Every factual sentence is supported by [S1] and the citations are placed correctly."
+      }
+    },
+    {
+      "id": "q043",
+      "split": "dev",
+      "type": "number",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Combien d'argent faut-il prévoir sur le compte bloqué pour un visa étudiant en Allemagne ?",
+      "gold": "11 904 EUR pour une année d'études, soit 992 EUR par mois.",
+      "answer": "Pour un visa étudiant en Allemagne, il faut prévoir **11.904 EUR** pour le financement d’une année d’études, selon la source la plus récente. [S4] Une source plus ancienne indiquait **10.332,00 €**. [S3]",
+      "answerable_pred": true,
+      "citations": [
+        "de-amb-preparation-etudes#4",
+        "de-amb-preparation-etudes-pdf#2"
+      ],
+      "sources": [
+        "de-amb-cours-langue-pdf#2",
+        "de-amb-preparation-etudes-pdf#3",
+        "de-amb-preparation-etudes-pdf#2",
+        "de-amb-preparation-etudes#4"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1525,
+        "cached_input_tokens": 0,
+        "output_tokens": 103,
+        "reasoning_tokens": 19
+      },
+      "cost_usd": 0.00160725,
+      "latency_s": {
+        "retrieval": 4.576945900000283,
+        "generation": 1.6393432000004395,
+        "total": 6.216289100000722
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה donne le bon montant de 11 904 EUR, conforme à la réponse de référence. Les deux phrases sont appuyées par les sources citées, et les citations correspondent aux montants indiqués."
+      }
+    },
+    {
+      "id": "q044",
+      "split": "test",
+      "type": "conflict",
+      "country": "germany",
+      "lang": "en",
+      "question": "How much money do I need in a German blocked account for a student visa?",
+      "gold": "€11,904 per year (€992 per month), according to the embassy's current pages. An older embassy PDF checklist from 2020 still gives €10,332, which is outdated.",
+      "answer": "I don’t know the exact amount for a student visa from these sources. They say the required amount for a blocked account varies depending on the purpose of your stay and should be checked with the competent mission abroad or in the Consular Services Portal. [S1]",
+      "answerable_pred": false,
+      "citations": [
+        "de-aa-compte-bloque-etudiants#3"
+      ],
+      "sources": [
+        "de-aa-compte-bloque-etudiants#3",
+        "de-aa-compte-bloque-etudiants#4",
+        "de-aa-compte-bloque-etudiants#1",
+        "de-aa-compte-bloque#1"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 930,
+        "cached_input_tokens": 0,
+        "output_tokens": 120,
+        "reasoning_tokens": 42
+      },
+      "cost_usd": 0.0012375,
+      "latency_s": {
+        "retrieval": 3.180201200000738,
+        "generation": 1.9529511000000639,
+        "total": 5.133152300000802
+      }
+    },
+    {
+      "id": "q045",
+      "split": "dev",
+      "type": "conflict",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Quelles sont les conditions de cours et de financement pour un visa « cours de langue » préparatoire aux études en Allemagne ?",
+      "gold": "Selon la page actuelle de l'ambassade (mise à jour le 7 octobre 2025) : inscription dans une école de langues en Allemagne à raison d'au moins 20 heures par semaine, et un financement de 11 904 EUR pour une année. Un ancien PDF de l'ambassade (décembre 2022) indique 1027 €/mois : ce montant est dépassé.",
+      "answer": "Pour un visa « cours de langue » préparatoire, le cours doit être suivi dans une école de langues en Allemagne et durer au moins 20 heures par semaine ; une source plus ancienne indiquait au moins 18 heures par semaine. [S2][S4]\nPour le financement, vous devez fournir une attestation de financement ; l’Ambassade indique un montant annuel de 11 904 EUR, et une autre source mentionne, en cas de compte bloqué, au moins 1 027 EUR par mois. [S1][S3]",
+      "answerable_pred": true,
+      "citations": [
+        "de-amb-preparation-etudes#3",
+        "de-amb-faq-visas#6",
+        "de-amb-preparation-etudes#4",
+        "de-amb-cours-langue-pdf#2"
+      ],
+      "sources": [
+        "de-amb-preparation-etudes#4",
+        "de-amb-preparation-etudes#3",
+        "de-amb-cours-langue-pdf#2",
+        "de-amb-faq-visas#6"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1335,
+        "cached_input_tokens": 0,
+        "output_tokens": 299,
+        "reasoning_tokens": 151
+      },
+      "cost_usd": 0.00234675,
+      "latency_s": {
+        "retrieval": 4.688267499997892,
+        "generation": 2.7913312000018777,
+        "total": 7.4795986999997695
+      },
+      "judge": {
+        "correctness": "partially_correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’assistant donne bien la condition de cours actuelle (école de langues en Allemagne, au moins 20 h/semaine) et le montant de financement annuel de 11 904 EUR. En revanche, il ajoute un ancien montant mensuel de 1 027 EUR sans préciser qu’il est dépassé, alors que la réponse attendue met l’accent sur le montant actuel."
+      }
+    },
+    {
+      "id": "q046",
+      "split": "test",
+      "type": "number",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Combien de photos d'identité et quelle validité de passeport faut-il pour un visa d'études en Allemagne ?",
+      "gold": "3 photos d'identité biométriques et un passeport valable au moins 6 mois.",
+      "answer": "Il faut **3 photos d’identité biométriques** et un passeport **en cours de validité avec au moins 6 mois restants**. [S1] Une ancienne source indiquait **2 photos** et une validité minimale de **3 mois après la date de retour**. [S4]",
+      "answerable_pred": true,
+      "citations": [
+        "de-amb-preparation-etudes#2",
+        "de-amb-stage-recherche#1"
+      ],
+      "sources": [
+        "de-amb-preparation-etudes#2",
+        "de-amb-etudes#1",
+        "de-amb-preparation-etudes-pdf#1",
+        "de-amb-stage-recherche#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1454,
+        "cached_input_tokens": 0,
+        "output_tokens": 197,
+        "reasoning_tokens": 105
+      },
+      "cost_usd": 0.001977,
+      "latency_s": {
+        "retrieval": 4.490938700000697,
+        "generation": 2.329942000000301,
+        "total": 6.820880700000998
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה répond exactement : 3 photos d’identité biométriques et un passeport valable au moins 6 mois. Les deux phrases sont bien appuyées par les sources citées."
+      }
+    },
+    {
+      "id": "q047",
+      "split": "test",
+      "type": "cross_lingual",
+      "country": "germany",
+      "lang": "en",
+      "question": "Which language certificates does the German embassy in Tunis accept for a student visa?",
+      "gold": "DSH or TestDaF for programmes taught in German; IELTS, TOEFL or others for programmes taught in English.",
+      "answer": "Je ne sais pas : les sources fournies ne précisent pas quels certificats de langue sont acceptés pour un visa étudiant à l’ambassade d’Allemagne à Tunis. [S1][S4]",
+      "answerable_pred": false,
+      "citations": [
+        "de-amb-faq-visas#3",
+        "de-amb-chercheur-pdf#1"
+      ],
+      "sources": [
+        "de-amb-faq-visas#3",
+        "de-daaddb-57593632#10",
+        "de-daaddb-57593632#11",
+        "de-amb-chercheur-pdf#1"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1374,
+        "cached_input_tokens": 0,
+        "output_tokens": 122,
+        "reasoning_tokens": 52
+      },
+      "cost_usd": 0.0015795,
+      "latency_s": {
+        "retrieval": 3.53933749999851,
+        "generation": 1.685272900002019,
+        "total": 5.224610400000529
+      }
+    },
+    {
+      "id": "q048",
+      "split": "test",
+      "type": "fact",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Si j'arrive en Allemagne avant mon immatriculation, quelle assurance maladie dois-je avoir ?",
+      "gold": "Une assurance maladie privée pour 90 jours à compter de l'arrivée, car l'assurance légale n'est possible qu'après l'immatriculation.",
+      "answer": "Si vous arrivez en Allemagne avant votre immatriculation, vous devez prouver que vous avez une assurance maladie privée. [S1][S2] La source la plus récente précise que, pour un cours de langue préparatoire, cette couverture doit valoir pendant toute la durée du visa, en général 6 mois, et qu’une assurance limitée à 90 jours ne convient pas. [S1] Une source plus ancienne indiquait 90 jours à compter de l’arrivée. [S2]",
+      "answerable_pred": true,
+      "citations": [
+        "de-amb-preparation-etudes#5",
+        "de-amb-etudes#3"
+      ],
+      "sources": [
+        "de-amb-preparation-etudes#5",
+        "de-amb-etudes#3",
+        "de-amb-etudes#2",
+        "de-amb-preparation-etudes#4"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1676,
+        "cached_input_tokens": 0,
+        "output_tokens": 186,
+        "reasoning_tokens": 57
+      },
+      "cost_usd": 0.002094,
+      "latency_s": {
+        "retrieval": 4.639336899999762,
+        "generation": 2.8208248000009917,
+        "total": 7.460161700000754
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’answer dit bien qu’il faut une assurance privée avant l’immatriculation, mais elle contredit l’énoncé attendu en affirmant qu’une couverture de 90 jours ne convient pas et qu’il faut en général couvrir toute la durée du visa. Le GOLD demande une assurance privée de 90 jours à compter de l’arrivée."
+      }
+    },
+    {
+      "id": "q049",
+      "split": "test",
+      "type": "yes_no",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Puis-je agrafer ou relier mon dossier de visa étudiant allemand déposé chez TLScontact ?",
+      "gold": "Non, le dossier ne doit être ni agrafé ni relié.",
+      "answer": "Non. Si vous soumettez votre dossier de candidature via TLScontact, il ne doit pas être agrafé ni relié. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-amb-preparation-etudes#2"
+      ],
+      "sources": [
+        "de-amb-preparation-etudes#2",
+        "fr-cft-arts#11",
+        "fr-cft-architecture#22",
+        "fr-cft-vls-ts#4"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1228,
+        "cached_input_tokens": 0,
+        "output_tokens": 106,
+        "reasoning_tokens": 50
+      },
+      "cost_usd": 0.001398,
+      "latency_s": {
+        "retrieval": 4.054413399997429,
+        "generation": 1.47951219999959,
+        "total": 5.533925599997019
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer exactly: the dossier must not be stapled or bound. The cited source [S1] directly supports this statement, and the citation is placed appropriately."
+      }
+    },
+    {
+      "id": "q050",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "germany",
+      "lang": "en",
+      "question": "Do translations for my German visa application have to be done by a sworn translator?",
+      "gold": "No. For the visa procedure, translations by local non-sworn translators are enough; the embassy no longer keeps its own translator list.",
+      "answer": "I don’t know from the provided sources whether the translations must be done by a sworn translator. [S2][S3][S4]",
+      "answerable_pred": false,
+      "citations": [
+        "ca-ircc-graduate-faster#4",
+        "de-daaddb-50035295#8",
+        "de-daaddb-50015492#8"
+      ],
+      "sources": [
+        "de-daaddb-57655437#9",
+        "ca-ircc-graduate-faster#4",
+        "de-daaddb-50035295#8",
+        "de-daaddb-50015492#8"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1179,
+        "cached_input_tokens": 0,
+        "output_tokens": 84,
+        "reasoning_tokens": 24
+      },
+      "cost_usd": 0.00126225,
+      "latency_s": {
+        "retrieval": 3.834028199999011,
+        "generation": 1.882636400001502,
+        "total": 5.716664600000513
+      }
+    },
+    {
+      "id": "q051",
+      "split": "test",
+      "type": "number",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Combien d'universités allemandes acceptent les candidatures de l'étranger via uni-assist ?",
+      "gold": "Environ 180 universités.",
+      "answer": "Environ 180 universités allemandes acceptent les candidatures de l’étranger via le portail en ligne uni-assist. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "de-amb-faq-visas#5",
+        "de-amb-faq-etudes-ar-pdf#3"
+      ],
+      "sources": [
+        "de-amb-faq-visas#5",
+        "de-amb-faq-etudes-ar-pdf#3",
+        "de-amb-faq-visas#3",
+        "de-daad-etudier-rechercher#2"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1410,
+        "cached_input_tokens": 0,
+        "output_tokens": 87,
+        "reasoning_tokens": 27
+      },
+      "cost_usd": 0.001449,
+      "latency_s": {
+        "retrieval": 3.9528806999987864,
+        "generation": 1.8723582000020542,
+        "total": 5.825238900000841
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה répond exactement à la question avec le même nombre approximatif d’universités. La phrase est bien étayée par les sources citées, et les citations pointent vers des passages qui le confirment."
+      }
+    },
+    {
+      "id": "q052",
+      "split": "dev",
+      "type": "number",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Pour un visa de stage de recherche en Allemagne, combien de temps mon passeport doit-il encore être valable ?",
+      "gold": "Au moins 3 mois après la date de retour.",
+      "answer": "Votre passeport doit être valable au minimum 3 mois après la date de retour. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-amb-stage-recherche#1"
+      ],
+      "sources": [
+        "de-amb-stage-recherche#1",
+        "de-amb-preparation-etudes#2",
+        "de-amb-etudiant-boursier#1",
+        "de-amb-etudes#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1389,
+        "cached_input_tokens": 0,
+        "output_tokens": 90,
+        "reasoning_tokens": 44
+      },
+      "cost_usd": 0.00144675,
+      "latency_s": {
+        "retrieval": 4.1443079999990005,
+        "generation": 1.5823664000017743,
+        "total": 5.726674400000775
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne exactement la durée demandée : au moins 3 mois après la date de retour. Cette information est bien supportée par [S1] et la citation est correctement placée."
+      }
+    },
+    {
+      "id": "q053",
+      "split": "dev",
+      "type": "yes_no",
+      "country": "germany",
+      "lang": "en",
+      "question": "Does the German Federal Foreign Office recommend a specific blocked account provider?",
+      "gold": "No. It makes no recommendations and accepts no liability for providers; its old list of providers (until mid-2022) has been deleted.",
+      "answer": "No. The Federal Foreign Office says it does not make any recommendations about blocked account providers and that listing providers did not amount to a recommendation. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "de-aa-compte-bloque#2",
+        "de-aa-compte-bloque-etudiants#7"
+      ],
+      "sources": [
+        "de-aa-compte-bloque#2",
+        "de-aa-compte-bloque-etudiants#7",
+        "de-aa-compte-bloque-etudiants#2",
+        "de-aa-compte-bloque-etudiants#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 952,
+        "cached_input_tokens": 0,
+        "output_tokens": 85,
+        "reasoning_tokens": 22
+      },
+      "cost_usd": 0.0010965,
+      "latency_s": {
+        "retrieval": 3.166406000000279,
+        "generation": 1.860827500000596,
+        "total": 5.027233500000875
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the sources: the Federal Foreign Office does not recommend blocked account providers, and its former provider list was not a recommendation."
+      }
+    },
+    {
+      "id": "q054",
+      "split": "dev",
+      "type": "fact",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Qui peut postuler au programme KOSPIE du DAAD et en quoi consiste-t-il ?",
+      "gold": "Les étudiants tunisiens en ingénierie ou en informatique inscrits en deuxième année du cycle d'ingénieur ; la bourse finance un séjour de six mois dans une université allemande pour réaliser le projet de fin d'études.",
+      "answer": "Peuvent postuler les étudiants tunisiens en ingénierie et en informatique inscrits en deuxième année du cycle d’ingénieur, ainsi que les étudiants de master ou de diplôme dans les sciences de l’ingénieur et l’informatique dans une université publique ou reconnue par l’État en Tunisie. [S1][S2]\nLe programme KOSPIE finance un séjour de 6 mois dans une université allemande pour réaliser un projet de fin d’études dans le cadre d’un cursus d’ingénieur, afin de renforcer les compétences scientifiques, techniques, pratiques et interculturelles. [S1][S3]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daad-kospie-2027#1",
+        "de-daaddb-57593632#3",
+        "de-daaddb-57593632#1"
+      ],
+      "sources": [
+        "de-daad-kospie-2027#1",
+        "de-daaddb-57593632#3",
+        "de-daaddb-57593632#1",
+        "de-daaddb-57593632#10"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1320,
+        "cached_input_tokens": 0,
+        "output_tokens": 193,
+        "reasoning_tokens": 27
+      },
+      "cost_usd": 0.0018585,
+      "latency_s": {
+        "retrieval": 4.226986500001658,
+        "generation": 2.321887300000526,
+        "total": 6.548873800002184
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne bien le séjour de 6 mois en université allemande pour un projet de fin d’études, mais elle ajoute une catégorie de candidats (master/diplôme) qui ne correspond pas à la réponse attendue. Toutes les affirmations sont toutefois appuyées par les स्रोतs fournis."
+      }
+    },
+    {
+      "id": "q055",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "germany",
+      "lang": "en",
+      "question": "How do I apply for the KOSPIE scholarship?",
+      "gold": "Through the DAAD scholarship database, which also gives the application details.",
+      "answer": "You apply through the DAAD portal: first register in the portal, then request the recommendation form there, have a university teacher complete it, and upload it under “Letter of Recommendation.” [S2] You then complete the online application in the DAAD portal and upload the required documents, including your ID, CV, motivation statement, school-leaving certificate, university certificates, proof of admission or cycle préparatoire exam, language proof, the “Selection of host higher education institution” form, one recommendation letter, and any other relevant documents. [S1][S3] If you submit documents in your national language, you must include German or English translations. [S1][S3]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-57593632#16",
+        "de-daaddb-57593632#10",
+        "de-daaddb-57593632#11"
+      ],
+      "sources": [
+        "de-daaddb-57593632#10",
+        "de-daaddb-57593632#16",
+        "de-daaddb-57593632#11",
+        "de-daaddb-57593632#6"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1289,
+        "cached_input_tokens": 0,
+        "output_tokens": 188,
+        "reasoning_tokens": 18
+      },
+      "cost_usd": 0.00181275,
+      "latency_s": {
+        "retrieval": 6.61268100000234,
+        "generation": 2.3542855999985477,
+        "total": 8.966966600000887
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer by stating that applications are made through the DAAD portal/database and gives the application steps and details. All factual claims are supported by the provided sources and the citations are placed correctly."
+      }
+    },
+    {
+      "id": "q056",
+      "split": "dev",
+      "type": "date",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Quelle est la durée minimale des cours d'été universitaires financés par le DAAD et quelle était la date limite de candidature ?",
+      "gold": "Au moins 18 jours de cours (25 heures par semaine, généralement entre juin et septembre) ; date limite : 30 octobre 2025.",
+      "answer": "Les cours ont une durée minimale de 18 jours de cours. [S1] La date limite de candidature était le 30 octobre 2025 à 23h59 (heure d’Europe centrale). [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daad-hsk-2026#3"
+      ],
+      "sources": [
+        "de-daad-hsk-2026#3",
+        "de-daaddb-50035295#7",
+        "de-daad-hsk-2026#1",
+        "de-daad-base-bourses#2"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1246,
+        "cached_input_tokens": 0,
+        "output_tokens": 108,
+        "reasoning_tokens": 38
+      },
+      "cost_usd": 0.0014205,
+      "latency_s": {
+        "retrieval": 3.6802566000005754,
+        "generation": 1.6920711999991909,
+        "total": 5.372327799999766
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the minimum duration and the application deadline exactly as in the sources and gold answer. Both factual sentences are supported by [S1] and the citations are placed correctly."
+      }
+    },
+    {
+      "id": "q057",
+      "split": "test",
+      "type": "date",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Quel niveau d'allemand faut-il pour le programme VORsprung et quelle était la date limite ?",
+      "gold": "Au moins B1.2 ; date limite le 15 janvier 2026 (23h59 CET).",
+      "answer": "Il faut un niveau d’allemand d’au moins B1.2 (ou équivalent). [S1] La date limite de candidature était le 15 janvier 2026 à 23h59 CET. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daad-vorsprung-2025#2"
+      ],
+      "sources": [
+        "de-daad-vorsprung-2025#2",
+        "de-daad-vorsprung-2025#1",
+        "de-daad-base-bourses#4",
+        "de-daad-hsk-2026#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1291,
+        "cached_input_tokens": 0,
+        "output_tokens": 116,
+        "reasoning_tokens": 43
+      },
+      "cost_usd": 0.00149025,
+      "latency_s": {
+        "retrieval": 3.967219499998464,
+        "generation": 1.6360438000010618,
+        "total": 5.603263299999526
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the required German level and deadline exactly as stated in the source. Both factual sentences are supported by [S1] and correctly cited."
+      }
+    },
+    {
+      "id": "q058",
+      "split": "dev",
+      "type": "date",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Quand a eu lieu le séminaire en ligne du DAAD Tunis sur le doctorat en Allemagne ?",
+      "gold": "Le 21 mai 2026, de 14h00 à 15h00 (heure tunisienne), en anglais.",
+      "answer": "Le séminaire en ligne du DAAD Tunis sur le doctorat en Allemagne a eu lieu le 21 mai 2026, de 14h00 à 15h00 (heure tunisienne). [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daad-doctorat-2026#1",
+        "de-daad-doctorat-2026#2"
+      ],
+      "sources": [
+        "de-daad-doctorat-2026#1",
+        "de-daad-doctorat-2026#2",
+        "de-daad-master-financement-2026#1",
+        "de-daad-doctorat#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1295,
+        "cached_input_tokens": 0,
+        "output_tokens": 132,
+        "reasoning_tokens": 55
+      },
+      "cost_usd": 0.00156525,
+      "latency_s": {
+        "retrieval": 3.909006199999567,
+        "generation": 1.7026421999980812,
+        "total": 5.611648399997648
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne la bonne date et le bon créneau horaire, conformément aux sources et au gold answer. Elle ne contient pas de fait non appuyé par les sources, et les citations renvoient bien au passage pertinent."
+      }
+    },
+    {
+      "id": "q059",
+      "split": "test",
+      "type": "list",
+      "country": "germany",
+      "lang": "fr",
+      "question": "En quelles langues sont disponibles les brochures du DAAD pour les parents ?",
+      "gold": "En allemand, anglais, français et arabe.",
+      "answer": "Les brochures du DAAD pour les parents sont disponibles en allemand, en anglais, en français et en arabe. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daad-parents-15-questions#2"
+      ],
+      "sources": [
+        "de-daad-parents-15-questions#2",
+        "de-daad-telechargements#1",
+        "de-daad-etudier#2",
+        "de-daad-parents-15-questions#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1179,
+        "cached_input_tokens": 0,
+        "output_tokens": 81,
+        "reasoning_tokens": 30
+      },
+      "cost_usd": 0.00124875,
+      "latency_s": {
+        "retrieval": 3.3818248999996285,
+        "generation": 2.0351854000000458,
+        "total": 5.417010299999674
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה répond exactement à la question et correspond à la liste donnée dans la source. La citation [S1] soutient bien l’affirmation sur les langues disponibles."
+      }
+    },
+    {
+      "id": "q060",
+      "split": "dev",
+      "type": "number",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Combien de cours de langue et cours spécialisés en Allemagne le DAAD recense-t-il ?",
+      "gold": "Plus de 350 cours, surtout en été.",
+      "answer": "Le DAAD recense plus de 350 cours de langue et cours spécialisés en Allemagne. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daad-allemand-allemagne#1"
+      ],
+      "sources": [
+        "de-daad-allemand-allemagne#1",
+        "de-daad-etudier-rechercher#5",
+        "de-daad-hsk-2026#1",
+        "de-daad-vorsprung-2025#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1156,
+        "cached_input_tokens": 0,
+        "output_tokens": 70,
+        "reasoning_tokens": 23
+      },
+      "cost_usd": 0.001182,
+      "latency_s": {
+        "retrieval": 3.969281300000148,
+        "generation": 1.2681384999996226,
+        "total": 5.2374197999997705
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne bien « plus de 350 cours », conforme au texte source et au gold. La citation [S1] soutient directement cette information."
+      }
+    },
+    {
+      "id": "q061",
+      "split": "dev",
+      "type": "number",
+      "country": "germany",
+      "lang": "en",
+      "question": "How much is the Deutschlandstipendium per month?",
+      "gold": "300 EUR per month, for at least 2 semesters (about 34,000 students received it in 2025).",
+      "answer": "The Deutschlandstipendium is 300 EUR per month. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000207#3",
+        "de-daaddb-10000207#1"
+      ],
+      "sources": [
+        "de-daaddb-10000207#3",
+        "de-daaddb-10000207#1",
+        "de-daaddb-10000178#3",
+        "de-daaddb-10000406#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1199,
+        "cached_input_tokens": 0,
+        "output_tokens": 70,
+        "reasoning_tokens": 24
+      },
+      "cost_usd": 0.00121425,
+      "latency_s": {
+        "retrieval": 3.3206467000018165,
+        "generation": 1.7812210000010964,
+        "total": 5.101867700002913
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the monthly amount as 300 EUR, which matches the gold answer and is supported by the sources. The citation placement is appropriate and every factual claim is cited."
+      }
+    },
+    {
+      "id": "q062",
+      "split": "test",
+      "type": "number",
+      "country": "germany",
+      "lang": "en",
+      "question": "How much does the Friedrich Ebert Foundation pay international scholarship holders per month?",
+      "gold": "A monthly base amount of 992 EUR, plus health insurance costs; it does not have to be repaid.",
+      "answer": "The Friedrich Ebert Foundation pays international scholarship holders a monthly base amount of 992 EUR. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000153#3"
+      ],
+      "sources": [
+        "de-daaddb-10000153#3",
+        "de-daaddb-10000126#3",
+        "de-daaddb-10000153#2",
+        "de-daaddb-10000126#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1049,
+        "cached_input_tokens": 0,
+        "output_tokens": 94,
+        "reasoning_tokens": 47
+      },
+      "cost_usd": 0.00120975,
+      "latency_s": {
+        "retrieval": 3.3193501999994623,
+        "generation": 1.5693773000020883,
+        "total": 4.888727500001551
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the monthly base amount of 992 EUR, which matches the source and answers the question. The citation to [S1] supports the statement, and there are no unsupported factual claims."
+      }
+    },
+    {
+      "id": "q063",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Quelles sont les dates limites de candidature pour la bourse d'études de la fondation Heinrich Böll ?",
+      "gold": "Le 1er mars et le 1er septembre de chaque année.",
+      "answer": "Les dates limites de candidature pour la bourse d’études de la fondation Heinrich Böll sont le 1er mars et le 1er septembre de chaque année. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000124#3"
+      ],
+      "sources": [
+        "de-daaddb-10000124#3",
+        "de-daaddb-10000113#3",
+        "de-daad-base-bourses#4",
+        "de-daaddb-10000113#2"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1142,
+        "cached_input_tokens": 0,
+        "output_tokens": 109,
+        "reasoning_tokens": 45
+      },
+      "cost_usd": 0.001347,
+      "latency_s": {
+        "retrieval": 3.867448400000285,
+        "generation": 2.1711213999988104,
+        "total": 6.038569799999095
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the two application deadlines exactly as in the gold answer and they are supported by [S1]. The citation is attached to the factual sentence and is appropriate."
+      }
+    },
+    {
+      "id": "q064",
+      "split": "dev",
+      "type": "number",
+      "country": "germany",
+      "lang": "en",
+      "question": "How much does the Hertie School Human Rights Scholarship cover?",
+      "gold": "The full tuition fees of the Master of International Affairs, up to 38,500 EUR; 2 scholarships are offered.",
+      "answer": "The Hertie School Human Rights Scholarship covers the full tuition fees of the Master’s programme, up to 38,500 EUR. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000429#2",
+        "de-daaddb-10000429#3"
+      ],
+      "sources": [
+        "de-daaddb-10000429#2",
+        "de-daaddb-10000429#3",
+        "de-daaddb-10000429#1",
+        "eu-guide-he-mobility#14"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1145,
+        "cached_input_tokens": 0,
+        "output_tokens": 91,
+        "reasoning_tokens": 30
+      },
+      "cost_usd": 0.00126825,
+      "latency_s": {
+        "retrieval": 4.184276500000124,
+        "generation": 1.5966631000010238,
+        "total": 5.7809396000011475
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer states that the scholarship covers full tuition fees up to 38,500 EUR, which matches the sources and answers the question. It omits the number of scholarships and the specific programme name, but those were not required by the question."
+      }
+    },
+    {
+      "id": "q065",
+      "split": "dev",
+      "type": "date",
+      "country": "germany",
+      "lang": "en",
+      "question": "What is the deadline for the RWTH Women in Engineering Scholarship for a Tunisian applicant?",
+      "gold": "1 March (the deadline for non-EU applicants), with a 500-word scholarship motivation letter.",
+      "answer": "For a Tunisian applicant, the deadline is 1 March, since Tunisia is a non-European country. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000422#2",
+        "de-daaddb-10000422#3"
+      ],
+      "sources": [
+        "de-daaddb-10000422#2",
+        "de-daaddb-10000422#3",
+        "de-daaddb-57593632#8",
+        "de-daaddb-57593632#11"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1247,
+        "cached_input_tokens": 0,
+        "output_tokens": 96,
+        "reasoning_tokens": 40
+      },
+      "cost_usd": 0.00136725,
+      "latency_s": {
+        "retrieval": 4.2586670000018785,
+        "generation": 1.3942013999985647,
+        "total": 5.652868400000443
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": false,
+        "unsupported_claims": [
+          "Tunisia is a non-European country."
+        ],
+        "citations_correct": false,
+        "citation_problems": [
+          "The sentence is cited with [S1][S2], but neither source explicitly states that Tunisia is non-European; [S1] only says the deadline is 1 March for non-European applicants. The citation [S2] is also unnecessary for the stated deadline."
+        ],
+        "reason": "The answer gives the correct deadline of 1 March, matching the gold answer. However, it adds an unsupported reason about Tunisia being non-European, and the citation does not fully support that claim."
+      }
+    },
+    {
+      "id": "q066",
+      "split": "dev",
+      "type": "number",
+      "country": "germany",
+      "lang": "en",
+      "question": "What are the age and German language requirements for the Bundestag International Parliamentary Scholarship?",
+      "gold": "Under 35 at the start of the scholarship and at least B2 German.",
+      "answer": "For the general Bundestag International Parliamentary Scholarship, applicants must be under 30 years old at the start of the scholarship and have very good German skills at B2 level.[S2] For the Arab Countries programme, applicants must be under 35 years old at the programme start and have at least B2 German.[S1][S3]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000212#4",
+        "de-daaddb-10000398#3",
+        "de-daaddb-10000398#1"
+      ],
+      "sources": [
+        "de-daaddb-10000398#3",
+        "de-daaddb-10000212#4",
+        "de-daaddb-10000398#1",
+        "de-daaddb-10000212#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1231,
+        "cached_input_tokens": 0,
+        "output_tokens": 223,
+        "reasoning_tokens": 123
+      },
+      "cost_usd": 0.00192675,
+      "latency_s": {
+        "retrieval": 3.5615231999981916,
+        "generation": 2.4856436000009126,
+        "total": 6.047166799999104
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the wrong requirement for the scholarship asked about: it says under 30 for the general Bundestag scholarship, while the gold answer says under 35 at the start. It does mention the correct B2 German level, but the main age requirement is not correct for the question."
+      }
+    },
+    {
+      "id": "q067",
+      "split": "dev",
+      "type": "number",
+      "country": "germany",
+      "lang": "en",
+      "question": "What does every Foundation of German Business (sdw) scholarship holder receive regardless of family income?",
+      "gold": "A study allowance of 300 EUR per month that is not means-tested (living support of up to 855 EUR depends on family finances).",
+      "answer": "Every sdw scholarship holder receives a not means-tested study allowance of 300 EUR per month, regardless of family income. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000119#3"
+      ],
+      "sources": [
+        "de-daaddb-10000119#3",
+        "de-daaddb-10000150#4",
+        "de-daaddb-10000150#2",
+        "de-daaddb-10000119#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1255,
+        "cached_input_tokens": 0,
+        "output_tokens": 96,
+        "reasoning_tokens": 43
+      },
+      "cost_usd": 0.00137325,
+      "latency_s": {
+        "retrieval": 3.6501347000012174,
+        "generation": 3.336172600000282,
+        "total": 6.986307300001499
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the required benefit: a not means-tested study allowance of 300 EUR per month. This matches the gold answer and is supported by S1."
+      }
+    },
+    {
+      "id": "q068",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Combien rapporte par mois la bourse Baden-Württemberg-STIPENDIUM ?",
+      "gold": "Entre 800 EUR et 1 400 EUR par mois selon l'établissement et l'avancement des études.",
+      "answer": "La bourse Baden-Württemberg-STIPENDIUM rapporte entre 800 et 1 400 EUR par mois. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000178#3"
+      ],
+      "sources": [
+        "de-daaddb-10000178#3",
+        "de-daaddb-10000178#2",
+        "de-daaddb-10000178#1",
+        "de-daaddb-10000172#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1241,
+        "cached_input_tokens": 0,
+        "output_tokens": 81,
+        "reasoning_tokens": 30
+      },
+      "cost_usd": 0.00129525,
+      "latency_s": {
+        "retrieval": 3.6097945000001346,
+        "generation": 1.418728500000725,
+        "total": 5.02852300000086
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne la bonne fourchette mensuelle, conforme à la source et à l’attendu. La citation [S1] soutient bien l’énoncé."
+      }
+    },
+    {
+      "id": "q069",
+      "split": "dev",
+      "type": "number",
+      "country": "germany",
+      "lang": "en",
+      "question": "What German level is required for the Bavarian Max Weber Programme, and what does it pay?",
+      "gold": "At least B2/C1 German; it pays a semester allowance of 1,800 EUR plus funding for study projects abroad.",
+      "answer": "The programme requires sufficient German, at least B2/C1 according to the Common European Framework of Reference for Languages. [S1] It pays a semester allowance of 1,800 EUR and also provides funding for study projects abroad. [S2][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000101#4",
+        "de-daaddb-10000101#1",
+        "de-daaddb-10000101#3"
+      ],
+      "sources": [
+        "de-daaddb-10000101#4",
+        "de-daaddb-10000101#1",
+        "de-daaddb-10000101#2",
+        "de-daaddb-10000101#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1085,
+        "cached_input_tokens": 0,
+        "output_tokens": 169,
+        "reasoning_tokens": 84
+      },
+      "cost_usd": 0.00157425,
+      "latency_s": {
+        "retrieval": 4.030339000000822,
+        "generation": 1.9178240000001097,
+        "total": 5.948163000000932
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer: it states the required German level (at least B2/C1) and the payment (1,800 EUR semester allowance plus funding for study projects abroad). Each factual sentence is supported by the cited sources."
+      }
+    },
+    {
+      "id": "q070",
+      "split": "test",
+      "type": "yes_no",
+      "country": "germany",
+      "lang": "en",
+      "question": "Can I apply directly to IAESTE for a technical internship in Germany as an individual?",
+      "gold": "No. IAESTE internships are offered only through the IAESTE national committee in your home country, not to individual applicants.",
+      "answer": "No. The IAESTE programme offers no internships to individual applicants outside the national committee procedure, and applications must be submitted through the IAESTE committee in the country where you are enrolled. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-57352834#3",
+        "de-daaddb-57352834#4"
+      ],
+      "sources": [
+        "de-daaddb-57352834#3",
+        "de-daaddb-57352834#4",
+        "de-daaddb-57352834#1",
+        "de-daaddb-57352834#2"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1156,
+        "cached_input_tokens": 0,
+        "output_tokens": 97,
+        "reasoning_tokens": 24
+      },
+      "cost_usd": 0.0013035,
+      "latency_s": {
+        "retrieval": 3.7941643000012846,
+        "generation": 1.5408231000001251,
+        "total": 5.33498740000141
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer: you cannot apply directly as an individual and must go through the IAESTE national committee in your home country. The cited sources support both claims."
+      }
+    },
+    {
+      "id": "q071",
+      "split": "dev",
+      "type": "number",
+      "country": "germany",
+      "lang": "en",
+      "question": "How much and for how long does the Mecklenburg-Western Pomerania doctoral scholarship pay?",
+      "gold": "1,500 EUR per month as standard funding, generally for up to 3 years (extendable by up to 6 months).",
+      "answer": "The Mecklenburg-Western Pomerania doctoral scholarship pays 1,500 EUR per month and generally lasts for 3 years. [S1] In exceptional cases, it can be extended by up to 6 months. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000107#3"
+      ],
+      "sources": [
+        "de-daaddb-10000107#3",
+        "de-daaddb-10000107#1",
+        "de-daaddb-10000107#2",
+        "de-daaddb-10000107#5"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1292,
+        "cached_input_tokens": 0,
+        "output_tokens": 110,
+        "reasoning_tokens": 37
+      },
+      "cost_usd": 0.001464,
+      "latency_s": {
+        "retrieval": 4.223632400000497,
+        "generation": 1.4233779000023787,
+        "total": 5.647010300002876
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer exactly: 1,500 EUR per month, generally for 3 years, with a possible 6-month extension. Both factual sentences are supported by [S1]."
+      }
+    },
+    {
+      "id": "q072",
+      "split": "dev",
+      "type": "fact",
+      "country": "germany",
+      "lang": "en",
+      "question": "With a DAAD Doctoral Programmes scholarship, can I spend part of my PhD outside Germany?",
+      "gold": "Yes, if it is critical for the doctorate, but such visits must be no more than one quarter of the total funding period.",
+      "answer": "Yes. Research phases outside Germany can also be funded if they are critical for the successful completion of your doctorate, and the visits must be no more than one quarter of the anticipated total funding period. [S2]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-57135739#2"
+      ],
+      "sources": [
+        "de-daaddb-10000406#9",
+        "de-daaddb-57135739#2",
+        "de-daaddb-57135739#5",
+        "de-daaddb-57135739#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1100,
+        "cached_input_tokens": 0,
+        "output_tokens": 110,
+        "reasoning_tokens": 42
+      },
+      "cost_usd": 0.00132,
+      "latency_s": {
+        "retrieval": 3.2811689999980445,
+        "generation": 2.5563254000007873,
+        "total": 5.837494399998832
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold: outside-Germany research phases are allowed if critical for the doctorate, and they may not exceed one quarter of the total funding period. The citation [S2] supports both claims, and all factual content is cited."
+      }
+    },
+    {
+      "id": "q073",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Qui finance les bourses DAAD « Doctoral Programmes in Germany » ?",
+      "gold": "Le ministère fédéral allemand des Affaires étrangères (German Federal Foreign Office).",
+      "answer": "Les bourses DAAD « Doctoral Programmes in Germany » sont financées par le ministère fédéral des Affaires étrangères allemand (German Federal Foreign Office). [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-57135739#1"
+      ],
+      "sources": [
+        "de-daaddb-57135739#1",
+        "de-daaddb-57135739#4",
+        "de-daaddb-57135739#3",
+        "de-daad-base-bourses#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1047,
+        "cached_input_tokens": 0,
+        "output_tokens": 92,
+        "reasoning_tokens": 31
+      },
+      "cost_usd": 0.00119925,
+      "latency_s": {
+        "retrieval": 3.21678890000112,
+        "generation": 1.598777200000768,
+        "total": 4.815566100001888
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer identifies the funding body as the German Federal Foreign Office, which matches the gold answer and is supported by [S1]. The single citation is appropriate and supports the factual statement."
+      }
+    },
+    {
+      "id": "q074",
+      "split": "dev",
+      "type": "yes_no",
+      "country": "germany",
+      "lang": "en",
+      "question": "Does the KAAD scholarship fund German language courses?",
+      "gold": "Yes. Funding can be requested for a language course of up to 6 months (full-time or during studies), and candidates are expected to do preparatory German courses at home.",
+      "answer": "Yes. The KAAD scholarship can fund a language course of up to 6 months, either full-time or during studies. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "de-daaddb-10000168#4"
+      ],
+      "sources": [
+        "de-daaddb-10000168#4",
+        "de-daaddb-10000168#1",
+        "de-daaddb-10000168#2",
+        "de-daaddb-10000168#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1202,
+        "cached_input_tokens": 0,
+        "output_tokens": 84,
+        "reasoning_tokens": 30
+      },
+      "cost_usd": 0.0012795,
+      "latency_s": {
+        "retrieval": 3.493106900001294,
+        "generation": 1.5313860999995086,
+        "total": 5.024493000000803
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer correctly says KAAD can fund a language course of up to 6 months. That is supported by the source, and it answers the question asked."
+      }
+    },
+    {
+      "id": "q075",
+      "split": "dev",
+      "type": "conflict",
+      "country": "canada",
+      "lang": "en",
+      "question": "How much money do I need to show for living expenses for a Canadian study permit if I'm coming alone (not to Quebec)?",
+      "gold": "If you apply on or after 1 September 2026: CAN$23,448 for the first year, excluding tuition and travel. CAN$22,895 applied to applications between 1 January 2025 and 31 August 2026. Quebec has its own requirements (CAQ).",
+      "answer": "For one person coming to a province or territory outside Quebec, you need to show $23,448 per year if you apply on or after September 1, 2026, and $22,895 per year if your application falls between January 1, 2025 and August 31, 2026.[S2][S1] The amounts exclude tuition and transportation costs.[S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-financial-support#9",
+        "ca-ircc-financial-support#8"
+      ],
+      "sources": [
+        "ca-ircc-financial-support#9",
+        "ca-ircc-financial-support#8",
+        "ca-ircc-financial-support#7",
+        "ca-ircc-financial-support#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1183,
+        "cached_input_tokens": 0,
+        "output_tokens": 189,
+        "reasoning_tokens": 77
+      },
+      "cost_usd": 0.00173775,
+      "latency_s": {
+        "retrieval": 3.8431821999984095,
+        "generation": 1.9512491000023147,
+        "total": 5.794431300000724
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the correct amount for a single applicant outside Quebec and includes the correct dates for the two applicable fee periods. It also correctly notes that tuition and transportation are excluded, and all factual claims are supported by the cited sources."
+      }
+    },
+    {
+      "id": "q076",
+      "split": "dev",
+      "type": "number",
+      "country": "canada",
+      "lang": "en",
+      "question": "How many hours per week can I work off campus in Canada during the school term?",
+      "gold": "Up to 24 hours per week during regular school terms.",
+      "answer": "You can work up to **24 hours per week** off campus during the school term. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-work-off-campus#6"
+      ],
+      "sources": [
+        "ca-ircc-work-off-campus#6",
+        "ca-ircc-work-off-campus#14",
+        "ca-ircc-work-off-campus#7",
+        "ca-ircc-work-off-campus#8"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1139,
+        "cached_input_tokens": 0,
+        "output_tokens": 79,
+        "reasoning_tokens": 32
+      },
+      "cost_usd": 0.00120975,
+      "latency_s": {
+        "retrieval": 2.718951200000447,
+        "generation": 1.5421428000008746,
+        "total": 4.2610940000013215
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer exactly: 24 hours per week during the school term. The cited source directly supports this statement, and there are no unsupported factual claims."
+      }
+    },
+    {
+      "id": "q077",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "canada",
+      "lang": "fr",
+      "question": "Combien d'heures par semaine puis-je travailler hors campus au Canada pendant les cours ?",
+      "gold": "Jusqu'à 24 heures par semaine pendant les sessions régulières.",
+      "answer": "Pendant les périodes de cours, vous pouvez travailler jusqu’à **24 heures par semaine** hors campus. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-work-off-campus#6"
+      ],
+      "sources": [
+        "ca-ircc-work-off-campus#6",
+        "ca-ircc-work-off-campus#14",
+        "ca-ircc-work-off-campus#15",
+        "ca-ircc-work-off-campus#5"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1141,
+        "cached_input_tokens": 0,
+        "output_tokens": 61,
+        "reasoning_tokens": 12
+      },
+      "cost_usd": 0.00113025,
+      "latency_s": {
+        "retrieval": 3.5801830000018526,
+        "generation": 1.2470135999974445,
+        "total": 4.827196599999297
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne bien la limite de 24 heures par semaine pendant les sessions régulières, ce qui correspond à la réponse de référence. La citation [S1] soutient directement cette affirmation."
+      }
+    },
+    {
+      "id": "q078",
+      "split": "dev",
+      "type": "number",
+      "country": "canada",
+      "lang": "en",
+      "question": "How long after graduating do I have to apply for a post-graduation work permit (PGWP) in Canada?",
+      "gold": "Up to 180 days after graduating.",
+      "answer": "You have up to 180 days after you graduate to apply for a PGWP. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-pgwp-apply#7",
+        "ca-ircc-pgwp-eligibility#2"
+      ],
+      "sources": [
+        "ca-ircc-pgwp-apply#7",
+        "ca-ircc-pgwp-eligibility#2",
+        "ca-ircc-pgwp-about#2",
+        "ca-ircc-pgwp-about#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1248,
+        "cached_input_tokens": 0,
+        "output_tokens": 63,
+        "reasoning_tokens": 11
+      },
+      "cost_usd": 0.0012195,
+      "latency_s": {
+        "retrieval": 2.933322400000179,
+        "generation": 1.2742693000000145,
+        "total": 4.207591700000194
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the source and gold answer: you have up to 180 days after graduating to apply for a PGWP. The citation supports the claim, and there are no unsupported statements."
+      }
+    },
+    {
+      "id": "q079",
+      "split": "test",
+      "type": "number",
+      "country": "canada",
+      "lang": "en",
+      "question": "How much is the fee for a post-graduation work permit?",
+      "gold": "CAN$255.",
+      "answer": "The fee for a post-graduation work permit (PGWP) is $255. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-pgwp#1"
+      ],
+      "sources": [
+        "ca-ircc-pgwp#1",
+        "ca-ircc-pgwp-apply#7",
+        "ca-ircc-graduate-work-after#3",
+        "ca-ircc-graduate-work-after#10"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1157,
+        "cached_input_tokens": 0,
+        "output_tokens": 79,
+        "reasoning_tokens": 32
+      },
+      "cost_usd": 0.00122325,
+      "latency_s": {
+        "retrieval": 2.750989500000287,
+        "generation": 1.4440549999999348,
+        "total": 4.195044500000222
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the PGWP fee as $255, which matches the gold answer. The cited source explicitly states “PGWP: $255,” so the citation is correct."
+      }
+    },
+    {
+      "id": "q080",
+      "split": "test",
+      "type": "cross_lingual",
+      "country": "canada",
+      "lang": "fr",
+      "question": "Combien coûtent les données biométriques pour une demande canadienne individuelle ?",
+      "gold": "85 CAD pour un demandeur individuel (170 CAD maximum pour une famille).",
+      "answer": "Les données biométriques coûtent 85 CAD pour une demande individuelle. [S2]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-apply#10"
+      ],
+      "sources": [
+        "ca-ircc-pgwp-apply#7",
+        "ca-ircc-apply#10",
+        "ca-ircc-apply#19",
+        "ca-ircc-apply#23"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1249,
+        "cached_input_tokens": 0,
+        "output_tokens": 68,
+        "reasoning_tokens": 24
+      },
+      "cost_usd": 0.00124275,
+      "latency_s": {
+        "retrieval": 4.089199199999712,
+        "generation": 1.4486997999993037,
+        "total": 5.537898999999015
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse donne le bon montant pour un demandeur individuel et correspond à la source. La citation [S2] soutient bien l’énoncé."
+      }
+    },
+    {
+      "id": "q081",
+      "split": "dev",
+      "type": "number",
+      "country": "canada",
+      "lang": "en",
+      "question": "What is the minimum length of a study programme to be eligible for a PGWP?",
+      "gold": "The programme must have been full-time and 8 months or longer.",
+      "answer": "The minimum length is at least 8 months, or 900 hours for Quebec credentials, to be eligible for a PGWP. [S3][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-pgwp-about#3",
+        "ca-ircc-pgwp-about#2"
+      ],
+      "sources": [
+        "ca-ircc-pgwp-eligibility#10",
+        "ca-ircc-pgwp-eligibility#3",
+        "ca-ircc-pgwp-about#3",
+        "ca-ircc-pgwp-about#2"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1237,
+        "cached_input_tokens": 0,
+        "output_tokens": 100,
+        "reasoning_tokens": 39
+      },
+      "cost_usd": 0.00137775,
+      "latency_s": {
+        "retrieval": 3.793106400000397,
+        "generation": 1.3521906000023591,
+        "total": 5.145297000002756
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the minimum programme length as 8 months, which matches the sources. It also notes the Quebec-hours exception, and the citation supports the statement."
+      }
+    },
+    {
+      "id": "q082",
+      "split": "dev",
+      "type": "yes_no",
+      "country": "canada",
+      "lang": "en",
+      "question": "Do I need a provincial attestation letter (PAL) to apply for a Canadian study permit for a master's at a public university?",
+      "gold": "No. Since 1 January 2026, master's and doctoral students in degree-granting programmes at public institutions don't need a PAL/TAL (Quebec still has its own requirements).",
+      "answer": "No. If you are applying to study in a degree-granting graduate program at the master’s level at a public DLI, you do not need a PAL/TAL starting January 1, 2026. [S2]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-pal#5"
+      ],
+      "sources": [
+        "ca-ircc-graduate-apply#3",
+        "ca-ircc-pal#5",
+        "ca-ircc-pal#8",
+        "ca-ircc-pal#7"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1358,
+        "cached_input_tokens": 0,
+        "output_tokens": 188,
+        "reasoning_tokens": 115
+      },
+      "cost_usd": 0.0018645,
+      "latency_s": {
+        "retrieval": 3.7406356999999844,
+        "generation": 1.851074599999265,
+        "total": 5.591710299999249
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer correctly says that a master’s program at a public DLI does not require a PAL/TAL starting January 1, 2026. It is supported by the cited source and does not contradict the Quebec exception, which the question did not specifically ask about."
+      }
+    },
+    {
+      "id": "q083",
+      "split": "test",
+      "type": "cross_lingual",
+      "country": "canada",
+      "lang": "fr",
+      "question": "Combien de temps prend le traitement d'un permis d'études canadien pour un doctorant ?",
+      "gold": "Environ 2 semaines grâce au traitement accéléré pour les doctorants (après vérification de la lettre d'acceptation par l'établissement, qui peut prendre jusqu'à 10 jours).",
+      "answer": "Le traitement est de **2 semaines** pour les doctorants (et les membres de leur famille). [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-graduate-apply#4"
+      ],
+      "sources": [
+        "ca-ircc-graduate-apply#4",
+        "ca-ircc-while-you-study#6",
+        "ca-ircc-study-permit#1",
+        "ca-ircc-graduate-apply#10"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1146,
+        "cached_input_tokens": 0,
+        "output_tokens": 78,
+        "reasoning_tokens": 29
+      },
+      "cost_usd": 0.0012105,
+      "latency_s": {
+        "retrieval": 3.5225196999999753,
+        "generation": 1.3747103000023344,
+        "total": 4.89723000000231
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה indique bien un délai de 2 semaines pour les doctorants, ce qui correspond à la source et à la réponse de référence. La citation [S1] soutient directement cette affirmation."
+      }
+    },
+    {
+      "id": "q084",
+      "split": "dev",
+      "type": "number",
+      "country": "canada",
+      "lang": "en",
+      "question": "How long is a Canadian study permit usually valid?",
+      "gold": "For the length of the study programme plus an extra 90 days.",
+      "answer": "A Canadian study permit is usually valid for the length of your study program plus an extra 90 days. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-while-you-study#6",
+        "ca-ircc-extend-permit#1"
+      ],
+      "sources": [
+        "ca-ircc-while-you-study#6",
+        "ca-ircc-extend-permit#1",
+        "ca-ircc-while-you-study#7",
+        "ca-ircc-after-apply#9"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1069,
+        "cached_input_tokens": 0,
+        "output_tokens": 80,
+        "reasoning_tokens": 24
+      },
+      "cost_usd": 0.00116175,
+      "latency_s": {
+        "retrieval": 3.1900531999999657,
+        "generation": 1.5488358000002336,
+        "total": 4.738889000000199
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer exactly: a study permit is usually valid for the length of the study program plus 90 days. The citations provided support that statement, and there are no unsupported factual claims."
+      }
+    },
+    {
+      "id": "q085",
+      "split": "dev",
+      "type": "number",
+      "country": "canada",
+      "lang": "en",
+      "question": "When must I apply to extend my Canadian study permit?",
+      "gold": "At least 30 days before the original expiry date.",
+      "answer": "You must apply to extend your Canadian study permit at least 30 days before it expires. [S1][S2] If you’re changing schools, you should apply before you finish your studies at your current school. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-extend-when#2",
+        "ca-ircc-extend-when#4"
+      ],
+      "sources": [
+        "ca-ircc-extend-when#2",
+        "ca-ircc-extend-when#4",
+        "ca-ircc-graduate-apply#8",
+        "ca-ircc-graduate-apply#10"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1095,
+        "cached_input_tokens": 0,
+        "output_tokens": 115,
+        "reasoning_tokens": 39
+      },
+      "cost_usd": 0.00133875,
+      "latency_s": {
+        "retrieval": 2.6586506999992707,
+        "generation": 1.8249894000000495,
+        "total": 4.48364009999932
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the required timing: at least 30 days before the permit expires, which matches the gold answer. The extra note about changing schools is also supported by the sources."
+      }
+    },
+    {
+      "id": "q086",
+      "split": "dev",
+      "type": "yes_no",
+      "country": "canada",
+      "lang": "en",
+      "question": "Can I work in Canada during an authorized leave from my studies, and how long can the leave be?",
+      "gold": "No, you can't work on or off campus during an authorized leave, and the leave can't be longer than 150 days.",
+      "answer": "No. You can’t work on or off campus during an authorized leave from your study program, even if your study permit says you’re allowed to work in Canada. [S2] An authorized leave can be up to a maximum of 150 days. [S2]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-permit-conditions#6"
+      ],
+      "sources": [
+        "ca-ircc-permit-conditions#7",
+        "ca-ircc-permit-conditions#6",
+        "ca-ircc-pgwp-eligibility#9",
+        "ca-ircc-permit-conditions#4"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1123,
+        "cached_input_tokens": 0,
+        "output_tokens": 120,
+        "reasoning_tokens": 40
+      },
+      "cost_usd": 0.00138225,
+      "latency_s": {
+        "retrieval": 2.7715953000006266,
+        "generation": 1.4827087000012398,
+        "total": 4.254304000001866
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer: you cannot work during an authorized leave, and the leave can be up to 150 days. Both claims are supported by the cited source and are correctly cited."
+      }
+    },
+    {
+      "id": "q087",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "canada",
+      "lang": "fr",
+      "question": "Si je change d'établissement au Canada, ai-je besoin d'une nouvelle lettre d'attestation provinciale ?",
+      "gold": "Oui, sauf exception : depuis le 22 janvier 2025, il faut une nouvelle PAL/TAL valide pour changer d'établissement ou de niveau d'études.",
+      "answer": "Oui. Si vous changez d’établissement au Canada, vous devez obtenir une nouvelle PAL/TAL avant de soumettre votre demande de permis d’études. [S4] Si vous étudiez au Québec, il existe des cas particuliers liés au CAQ et au niveau d’études. [S3]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-pal#14",
+        "ca-ircc-pal#16"
+      ],
+      "sources": [
+        "ca-ircc-change-schools#9",
+        "ca-ircc-pal#15",
+        "ca-ircc-pal#16",
+        "ca-ircc-pal#14"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1202,
+        "cached_input_tokens": 0,
+        "output_tokens": 156,
+        "reasoning_tokens": 65
+      },
+      "cost_usd": 0.0016035,
+      "latency_s": {
+        "retrieval": 3.6735320999978285,
+        "generation": 1.8795621000026586,
+        "total": 5.553094200000487
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה dit bien qu’une nouvelle PAL/TAL est requise pour changer d’établissement, ce qui correspond à la réponse attendue. Les deux phrases factuelles sont appuyées par les sources citées."
+      }
+    },
+    {
+      "id": "q088",
+      "split": "test",
+      "type": "number",
+      "country": "canada",
+      "lang": "en",
+      "question": "How fast is a study permit extension processed if I'm changing to a new post-secondary school in Canada?",
+      "gold": "In 60 days, if you follow the instructions for faster processing.",
+      "answer": "A study permit extension can be processed in 60 days if you’re changing to a new post-secondary DLI in Canada. [S1][S2][S3]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-change-schools#5",
+        "ca-ircc-extend-how#4",
+        "ca-ircc-extend-when#3"
+      ],
+      "sources": [
+        "ca-ircc-change-schools#5",
+        "ca-ircc-extend-how#4",
+        "ca-ircc-extend-when#3",
+        "ca-ircc-graduate-apply#8"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1150,
+        "cached_input_tokens": 0,
+        "output_tokens": 95,
+        "reasoning_tokens": 29
+      },
+      "cost_usd": 0.00129,
+      "latency_s": {
+        "retrieval": 3.10089650000009,
+        "generation": 1.4865718000000925,
+        "total": 4.587468300000182
+      },
+      "judge": {
+        "correctness": "partially_correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "It gives the 60-day processing time, which matches the sources and gold answer. It omits the condition that faster processing applies only if you follow the instructions for that option."
+      }
+    },
+    {
+      "id": "q089",
+      "split": "dev",
+      "type": "date",
+      "country": "canada",
+      "lang": "en",
+      "question": "Until when is a PAL issued in 2026 valid?",
+      "gold": "Until 31 December 2026 (unless it shows an earlier expiry date); a PAL from a previous cap year can't be used.",
+      "answer": "A PAL/TAL issued in 2026 is valid until **December 31, 2026**, unless it has an earlier expiry date on it. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-pal#11"
+      ],
+      "sources": [
+        "ca-ircc-pal#11",
+        "ca-ircc-apply#2",
+        "ca-ircc-pal#8",
+        "ca-ircc-pal#14"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1311,
+        "cached_input_tokens": 0,
+        "output_tokens": 89,
+        "reasoning_tokens": 29
+      },
+      "cost_usd": 0.00138375,
+      "latency_s": {
+        "retrieval": 3.6202769999981683,
+        "generation": 1.4188236000009056,
+        "total": 5.039100599999074
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the source and gold answer: a PAL/TAL issued in 2026 is valid until December 31, 2026 unless it has an earlier expiry date. The citation to [S1] supports the statement."
+      }
+    },
+    {
+      "id": "q090",
+      "split": "dev",
+      "type": "yes_no",
+      "country": "canada",
+      "lang": "en",
+      "question": "Do I need a co-op work permit for an internship that is part of my Canadian college or university programme?",
+      "gold": "No. Since 1 April 2026, post-secondary international students don't need a co-op work permit for student work placements such as co-op placements or internships.",
+      "answer": "No. As of April 1, 2026, post-secondary international students do not need a co-op work permit for student work placements such as internships. [S1][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-work#1",
+        "ca-ircc-work-intern#1"
+      ],
+      "sources": [
+        "ca-ircc-work#1",
+        "ca-ircc-work-intern#6",
+        "ca-ircc-work-off-campus#11",
+        "ca-ircc-work-intern#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1105,
+        "cached_input_tokens": 0,
+        "output_tokens": 136,
+        "reasoning_tokens": 69
+      },
+      "cost_usd": 0.00144075,
+      "latency_s": {
+        "retrieval": 4.876987999999983,
+        "generation": 2.049280800001725,
+        "total": 6.926268800001708
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer and directly states the rule that post-secondary international students do not need a co-op work permit for internships or other student work placements as of April 1, 2026. The cited sources support that statement."
+      }
+    },
+    {
+      "id": "q091",
+      "split": "dev",
+      "type": "yes_no",
+      "country": "canada",
+      "lang": "en",
+      "question": "Can I start working in Canada as soon as I arrive, before my classes start?",
+      "gold": "No. You can't work on or off campus until you begin your studies in Canada.",
+      "answer": "No. You can only start working in Canada when you start your study program, so you cannot work as soon as you arrive if your classes have not begun yet. [S1][S2][S3][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-prepare-arrival#1",
+        "ca-ircc-work-on-campus#1",
+        "ca-ircc-work-off-campus#1",
+        "ca-ircc-graduate-apply#5"
+      ],
+      "sources": [
+        "ca-ircc-prepare-arrival#1",
+        "ca-ircc-work-on-campus#1",
+        "ca-ircc-work-off-campus#1",
+        "ca-ircc-graduate-apply#5"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1119,
+        "cached_input_tokens": 0,
+        "output_tokens": 136,
+        "reasoning_tokens": 56
+      },
+      "cost_usd": 0.00145125,
+      "latency_s": {
+        "retrieval": 2.9514333000006445,
+        "generation": 1.5739838000008604,
+        "total": 4.525417100001505
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the sources and gold answer: international students cannot work in Canada until they begin their studies. Its cited sentence is supported by the IRCC sources, and there are no unsupported factual claims."
+      }
+    },
+    {
+      "id": "q092",
+      "split": "test",
+      "type": "fact",
+      "country": "canada",
+      "lang": "en",
+      "question": "What is a SIN and do I need one to work in Canada as a student?",
+      "gold": "A social insurance number, a 9-digit number from the Government of Canada; you need one to work in Canada, and your study permit must show the right work condition to get it.",
+      "answer": "A social insurance number (SIN) is a 9-digit number given by the Government of Canada, and with it you can work in Canada and get government benefits and services. [S1][S3] Yes, you need one to work in Canada as a student, and the sources say you must have the required condition printed on your study permit to apply for a SIN for work on campus, off campus, or in a student work placement. [S1][S2][S3]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-work-on-campus#4",
+        "ca-ircc-work-off-campus#5",
+        "ca-ircc-work-intern#9"
+      ],
+      "sources": [
+        "ca-ircc-work-on-campus#4",
+        "ca-ircc-work-off-campus#5",
+        "ca-ircc-work-intern#9",
+        "ca-ircc-work-intern#10"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1148,
+        "cached_input_tokens": 0,
+        "output_tokens": 170,
+        "reasoning_tokens": 39
+      },
+      "cost_usd": 0.001626,
+      "latency_s": {
+        "retrieval": 2.8124181000021053,
+        "generation": 1.6517252999983612,
+        "total": 4.4641434000004665
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer correctly defines a SIN and correctly says students need one to work in Canada, matching the gold answer. All factual claims are supported by the provided sources and the citations are placed appropriately."
+      }
+    },
+    {
+      "id": "q093",
+      "split": "dev",
+      "type": "fact",
+      "country": "canada",
+      "lang": "en",
+      "question": "Are Tunisian students eligible for the Study in Canada Scholarships, and can I apply myself?",
+      "gold": "Tunisia is an eligible country, but individuals can't apply directly: a Canadian post-secondary institution selects the students and applies.",
+      "answer": "Yes, Tunisian students are listed among the eligible countries/territories for the Study in Canada Scholarships. [S1] However, you cannot apply yourself: only Canadian post-secondary institutions are eligible to apply, and direct applications from individuals are not accepted. [S3]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-edu-study-in-canada-sep#4",
+        "ca-edu-study-in-canada-sep#1"
+      ],
+      "sources": [
+        "ca-edu-study-in-canada-sep#4",
+        "ca-edu-study-in-canada-sep#9",
+        "ca-edu-study-in-canada-sep#1",
+        "ca-edu-study-in-canada-sep#8"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1241,
+        "cached_input_tokens": 0,
+        "output_tokens": 151,
+        "reasoning_tokens": 68
+      },
+      "cost_usd": 0.00161025,
+      "latency_s": {
+        "retrieval": 3.4797065000020666,
+        "generation": 1.6886242000000493,
+        "total": 5.168330700002116
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the sources and the gold answer: Tunisia is eligible, but only Canadian post-secondary institutions can apply, not individuals. Both factual statements are properly cited."
+      }
+    },
+    {
+      "id": "q094",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "canada",
+      "lang": "fr",
+      "question": "Combien vaut une bourse Study in Canada pour un séjour de 5 à 6 mois en master ?",
+      "gold": "14 000 $ CA pour 5 à 6 mois d'études ou de recherche au niveau master ou doctorat (10 200 $ CA pour 4 mois).",
+      "answer": "Une bourse Study in Canada pour un séjour de 5 à 6 mois en master vaut 14 000 $CA. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-edu-study-in-canada-sep#6"
+      ],
+      "sources": [
+        "ca-edu-study-in-canada-sep#6",
+        "ca-edu-study-in-canada-sep#7",
+        "ca-ircc-study-permit#1",
+        "fr-cf-choisir-la-france-pdf#28"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1049,
+        "cached_input_tokens": 0,
+        "output_tokens": 107,
+        "reasoning_tokens": 51
+      },
+      "cost_usd": 0.00126825,
+      "latency_s": {
+        "retrieval": 6.916149399999995,
+        "generation": 1.521808700003021,
+        "total": 8.437958100003016
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer gives the correct amount for a 5 to 6 month Study in Canada scholarship at the master’s level: 14,000 CA$. The cited source supports this statement."
+      }
+    },
+    {
+      "id": "q095",
+      "split": "test",
+      "type": "yes_no",
+      "country": "canada",
+      "lang": "en",
+      "question": "Can I keep working in Canada while my PGWP application is being processed?",
+      "gold": "Yes, full-time, if you had a valid study permit when you applied, completed your programme, and were eligible to work off campus without exceeding your allowed hours.",
+      "answer": "Yes, but only if your study permit was valid when you submitted your PGWP application and you meet the other conditions to work while IRCC processes it. [S2][S1] The older IRCC page says you can work full-time until a decision is made if you had a valid study permit when you applied, completed your program, and were allowed to work off campus without a permit while studying without exceeding your allowed hours. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-pgwp-apply#9",
+        "ca-ircc-pgwp-path-to-pr#1"
+      ],
+      "sources": [
+        "ca-ircc-pgwp-path-to-pr#1",
+        "ca-ircc-pgwp-apply#9",
+        "ca-ircc-pgwp-path-to-pr#2",
+        "ca-ircc-eligibility#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1165,
+        "cached_input_tokens": 0,
+        "output_tokens": 282,
+        "reasoning_tokens": 163
+      },
+      "cost_usd": 0.00214275,
+      "latency_s": {
+        "retrieval": 3.273974600000656,
+        "generation": 2.3208623999998963,
+        "total": 5.5948370000005525
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer: you can keep working full-time while the PGWP is processed if your study permit was valid when you applied and you meet the other work-eligibility conditions. All factual claims are supported by the provided IRCC sources and are properly cited."
+      }
+    },
+    {
+      "id": "q096",
+      "split": "dev",
+      "type": "fact",
+      "country": "canada",
+      "lang": "en",
+      "question": "What extra document do I need to study in Quebec?",
+      "gold": "A Quebec Acceptance Certificate (Certificat d'acceptation du Québec, CAQ), with Quebec's own financial requirements.",
+      "answer": "If you’re studying in Quebec, you need a Quebec Acceptance Certificate (CAQ) instead of a PAL/TAL. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-get-documents#3",
+        "ca-ircc-pal#2"
+      ],
+      "sources": [
+        "ca-ircc-get-documents#3",
+        "ca-ircc-pal#2",
+        "ca-ircc-pal#3",
+        "ca-ircc-graduate-apply#3"
+      ],
+      "gold_in_sources": false,
+      "usage": {
+        "input_tokens": 1232,
+        "cached_input_tokens": 0,
+        "output_tokens": 91,
+        "reasoning_tokens": 32
+      },
+      "cost_usd": 0.0013335,
+      "latency_s": {
+        "retrieval": 4.130453600002511,
+        "generation": 1.3196274000001722,
+        "total": 5.450081000002683
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer correctly names the Quebec Acceptance Certificate (CAQ) as the extra document needed to study in Quebec. The added note about replacing a PAL/TAL is supported by the sources and does not contradict the gold answer."
+      }
+    },
+    {
+      "id": "q097",
+      "split": "dev",
+      "type": "number",
+      "country": "canada",
+      "lang": "en",
+      "question": "How long can it take my Canadian school to confirm my letter of acceptance for faster doctoral processing?",
+      "gold": "Up to 10 calendar days; after that, IRCC aims to process the application within 2 weeks.",
+      "answer": "Your Canadian school’s confirmation of your letter of acceptance can take up to 10 calendar days. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "ca-ircc-graduate-faster#7"
+      ],
+      "sources": [
+        "ca-ircc-graduate-faster#7",
+        "ca-ircc-graduate-student#1",
+        "ca-ircc-graduate-faster#1",
+        "ca-ircc-graduate-faster#6"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1252,
+        "cached_input_tokens": 0,
+        "output_tokens": 78,
+        "reasoning_tokens": 30
+      },
+      "cost_usd": 0.00129,
+      "latency_s": {
+        "retrieval": 3.8309402000013506,
+        "generation": 1.252636799999891,
+        "total": 5.083577000001242
+      },
+      "judge": {
+        "correctness": "partially_correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer correctly says the DLI/school confirmation can take up to 10 calendar days. It omits the additional IRCC processing-time detail from the gold answer, so it is only partially complete."
+      }
+    },
+    {
+      "id": "q098",
+      "split": "test",
+      "type": "number",
+      "country": "erasmus",
+      "lang": "en",
+      "question": "How long does an Erasmus Mundus Joint Master last?",
+      "gold": "1 to 2 academic years (60, 90 or 120 ECTS credits).",
+      "answer": "An Erasmus Mundus Joint Master lasts 1 to 2 academic years (60, 90 or 120 ECTS credits). [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-emjm-students#2"
+      ],
+      "sources": [
+        "eu-emjm-students#2",
+        "eu-guide-emjm#7",
+        "eu-guide-emjm#20",
+        "eu-eacea-mundus-catalogue-p3#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1231,
+        "cached_input_tokens": 0,
+        "output_tokens": 80,
+        "reasoning_tokens": 25
+      },
+      "cost_usd": 0.00128325,
+      "latency_s": {
+        "retrieval": 8.51183939999828,
+        "generation": 1.4518276000017067,
+        "total": 9.963666999999987
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the source and gold exactly: Erasmus Mundus Joint Masters last 1 to 2 academic years (60, 90 or 120 ECTS credits). The citation to [S1] supports the statement, and there are no unsupported factual claims."
+      }
+    },
+    {
+      "id": "q099",
+      "split": "test",
+      "type": "cross_lingual",
+      "country": "erasmus",
+      "lang": "fr",
+      "question": "Quand faut-il postuler à un master Erasmus Mundus ?",
+      "gold": "En général entre octobre et janvier, pour une rentrée l'année académique suivante.",
+      "answer": "La plupart des masters Erasmus Mundus demandent de déposer sa candidature entre octobre et janvier, pour des cours qui commencent l’année universitaire suivante. [S1][S2][S3]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-tn-ka1#3",
+        "eu-emjm-students#3",
+        "eu-eacea-mundus-catalogue-p9#1"
+      ],
+      "sources": [
+        "eu-tn-ka1#3",
+        "eu-emjm-students#3",
+        "eu-eacea-mundus-catalogue-p9#1",
+        "eu-eacea-mundus-catalogue-p4#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1364,
+        "cached_input_tokens": 0,
+        "output_tokens": 91,
+        "reasoning_tokens": 22
+      },
+      "cost_usd": 0.0014325,
+      "latency_s": {
+        "retrieval": 7.738974299998517,
+        "generation": 1.461020800001279,
+        "total": 9.199995099999796
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer: apply in most cases between October and January for the following academic year. The cited sources support this statement, and every factual claim is cited."
+      }
+    },
+    {
+      "id": "q100",
+      "split": "dev",
+      "type": "fact",
+      "country": "erasmus",
+      "lang": "en",
+      "question": "Where do I send my application for an Erasmus Mundus Joint Master?",
+      "gold": "Directly to the institution (consortium) running the chosen programme.",
+      "answer": "You should send your application directly to the institution running the Erasmus Mundus Joint Master programme. [S1] The programme’s official website also provides the application steps and contact details for the consortium. [S3][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-emjm-students#1",
+        "eu-emjm-students#3",
+        "eu-eacea-mundus-catalogue-p6#1"
+      ],
+      "sources": [
+        "eu-emjm-students#1",
+        "eu-guide-emjm#8",
+        "eu-emjm-students#3",
+        "eu-eacea-mundus-catalogue-p6#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1220,
+        "cached_input_tokens": 0,
+        "output_tokens": 122,
+        "reasoning_tokens": 45
+      },
+      "cost_usd": 0.001464,
+      "latency_s": {
+        "retrieval": 6.954663500000606,
+        "generation": 2.1119352000023355,
+        "total": 9.066598700002942
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer: applications are sent directly to the institution/consortium running the chosen programme. The added sentence about the official website and contacting the consortium is supported by the sources."
+      }
+    },
+    {
+      "id": "q101",
+      "split": "dev",
+      "type": "number",
+      "country": "erasmus",
+      "lang": "en",
+      "question": "How many universities and countries are involved in an Erasmus Mundus Joint Master?",
+      "gold": "At least 3 institutions from at least 3 different countries.",
+      "answer": "An Erasmus Mundus Joint Master involves at least 3 universities (higher education institutions) from at least 3 different countries. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-emjm-students#1"
+      ],
+      "sources": [
+        "eu-emjm-students#1",
+        "eu-guide-emjm#7",
+        "eu-guide-emjm#53",
+        "eu-guide-emjm#11"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1171,
+        "cached_input_tokens": 0,
+        "output_tokens": 102,
+        "reasoning_tokens": 48
+      },
+      "cost_usd": 0.00133725,
+      "latency_s": {
+        "retrieval": 6.874300399998901,
+        "generation": 1.5776452999998583,
+        "total": 8.45194569999876
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer: at least 3 higher education institutions from at least 3 different countries. The cited source directly supports this statement."
+      }
+    },
+    {
+      "id": "q102",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "erasmus",
+      "lang": "fr",
+      "question": "Puis-je postuler à un master Erasmus Mundus si je suis encore en dernière année de licence ?",
+      "gold": "Oui, à condition d'obtenir la licence avant le début du master.",
+      "answer": "Oui, vous pouvez postuler si vous êtes en dernière année de licence, à condition d’obtenir votre diplôme avant le début du master. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-emjm-students#3"
+      ],
+      "sources": [
+        "eu-emjm-students#3",
+        "eu-tn-emjm#4",
+        "eu-tn-ka1#3",
+        "eu-tn-emjm#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1362,
+        "cached_input_tokens": 0,
+        "output_tokens": 91,
+        "reasoning_tokens": 35
+      },
+      "cost_usd": 0.001431,
+      "latency_s": {
+        "retrieval": 8.426503700000467,
+        "generation": 1.2737736999988556,
+        "total": 9.700277399999322
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’ענה reprit exactement la condition indiquée par la source : être en dernière année de licence et obtenir le diplôme avant le début du master. La citation [S1] soutient bien toute la phrase."
+      }
+    },
+    {
+      "id": "q103",
+      "split": "test",
+      "type": "fact",
+      "country": "erasmus",
+      "lang": "en",
+      "question": "Is there an Erasmus Mundus master in cybersecurity?",
+      "gold": "Yes, for example CYBERSURE (Programme in Cybersecurity and Assurance).",
+      "answer": "Yes. The catalogue includes several Erasmus Mundus master’s programmes in cybersecurity, such as “Erasmus Mundus Joint Master in Cybersecurity” (CYBERUS) and “Master of Applied Cybersecurity” (CyberMACS). [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-eacea-mundus-catalogue-p9#2",
+        "eu-eacea-mundus-catalogue-p7#3"
+      ],
+      "sources": [
+        "eu-eacea-mundus-catalogue-p9#2",
+        "eu-eacea-mundus-catalogue-p7#3",
+        "eu-eacea-mundus-catalogue#4",
+        "eu-eacea-mundus-catalogue-p9#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1862,
+        "cached_input_tokens": 0,
+        "output_tokens": 102,
+        "reasoning_tokens": 20
+      },
+      "cost_usd": 0.0018555,
+      "latency_s": {
+        "retrieval": 8.443300800001452,
+        "generation": 1.8360940999991726,
+        "total": 10.279394900000625
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer correctly says yes and gives valid examples of Erasmus Mundus cybersecurity master’s programmes. Both named programmes are supported by the sources, and the citation placement is appropriate."
+      }
+    },
+    {
+      "id": "q104",
+      "split": "dev",
+      "type": "cross_lingual",
+      "country": "erasmus",
+      "lang": "fr",
+      "question": "Existe-t-il un master Erasmus Mundus en data engineering et intelligence artificielle ?",
+      "gold": "Oui, par exemple DEAI (Data Engineering and Artificial Intelligence).",
+      "answer": "Oui, le catalogue Erasmus Mundus mentionne un master intitulé « Data Engineering and Artificial Intelligence » (DEAI). [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-eacea-mundus-catalogue#4"
+      ],
+      "sources": [
+        "eu-eacea-mundus-catalogue#4",
+        "eu-eacea-mundus-catalogue-p8#3",
+        "eu-eacea-mundus-catalogue-p7#1",
+        "eu-eacea-mundus-catalogue-p7#2"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1834,
+        "cached_input_tokens": 0,
+        "output_tokens": 85,
+        "reasoning_tokens": 32
+      },
+      "cost_usd": 0.001758,
+      "latency_s": {
+        "retrieval": 8.870676700000331,
+        "generation": 1.294581799997104,
+        "total": 10.165258499997435
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "L’answer dit qu’il existe un master Erasmus Mundus intitulé « Data Engineering and Artificial Intelligence », ce que confirme la source [S1]. La citation est placée correctement et aucune autre affirmation factuelle n’est faite."
+      }
+    },
+    {
+      "id": "q105",
+      "split": "dev",
+      "type": "list",
+      "country": "erasmus",
+      "lang": "en",
+      "question": "Which Erasmus Mundus masters deal with renewable energy?",
+      "gold": "For example REM Plus Plus (Renewable Energy in the Marine environment), EU-CORE (control of renewable energy systems) and RESCO (Renewable Energy and Sustainable Construction).",
+      "answer": "Based on the titles shown, the Erasmus Mundus masters that clearly deal with renewable energy are: EU-CORE (EUropean master on COntrol of Renewable Energy systems), RESCO (Renewable Energy and Sustainable Construction), MIRET (Mobility for Innovative Renewable Energy Technologies), and REM Plus Plus (Renewable Energy in the Marine environment). [S1][S2][S3][S4]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-eacea-mundus-catalogue-p4#2",
+        "eu-eacea-mundus-catalogue#3",
+        "eu-eacea-mundus-catalogue-p4#3",
+        "eu-eacea-mundus-catalogue#4"
+      ],
+      "sources": [
+        "eu-eacea-mundus-catalogue-p4#2",
+        "eu-eacea-mundus-catalogue#3",
+        "eu-eacea-mundus-catalogue-p4#3",
+        "eu-eacea-mundus-catalogue#4"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1900,
+        "cached_input_tokens": 0,
+        "output_tokens": 420,
+        "reasoning_tokens": 302
+      },
+      "cost_usd": 0.003315,
+      "latency_s": {
+        "retrieval": 7.415342299998883,
+        "generation": 2.5347684000007575,
+        "total": 9.950110699999641
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer names the renewable-energy-related masters shown in the sources and includes the three in the gold answer, plus an additional clearly supported one (MIRET). All factual claims are supported by the cited sources."
+      }
+    },
+    {
+      "id": "q106",
+      "split": "dev",
+      "type": "number",
+      "country": "erasmus",
+      "lang": "en",
+      "question": "What travel grant does Erasmus+ give for a 500-1999 km mobility?",
+      "gold": "417 EUR with green travel, 309 EUR otherwise.",
+      "answer": "For a mobility distance of 500–1999 km, Erasmus+ gives 417 EUR for green travel and 309 EUR for non-green travel. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-guide-he-mobility#91"
+      ],
+      "sources": [
+        "eu-guide-he-mobility#91",
+        "eu-guide-he-mobility#90",
+        "eu-guide-he-mobility#102",
+        "de-daaddb-10000121#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1124,
+        "cached_input_tokens": 0,
+        "output_tokens": 112,
+        "reasoning_tokens": 53
+      },
+      "cost_usd": 0.001347,
+      "latency_s": {
+        "retrieval": 3.628871799999615,
+        "generation": 1.2663826999996672,
+        "total": 4.895254499999282
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer exactly and is supported by the table in [S1]. The single factual sentence is properly cited."
+      }
+    },
+    {
+      "id": "q107",
+      "split": "dev",
+      "type": "fact",
+      "country": "erasmus",
+      "lang": "fr",
+      "question": "C'est quoi l'International Credit Mobility (ICM) d'Erasmus+ ?",
+      "gold": "Une action clé 1 (KA1) d'Erasmus+ qui permet à un établissement d'un pays partenaire (comme la Tunisie) d'envoyer des étudiants et du personnel en mobilité dans un établissement d'un pays du programme, et inversement.",
+      "answer": "L’International Credit Mobility (ICM) est une action clé 1 (KA1) du programme Erasmus+ qui permet à un établissement d’enseignement supérieur d’un pays partenaire d’envoyer des étudiants, du personnel enseignant et non enseignant en mission d’étude, d’enseignement et de formation dans un établissement d’enseignement supérieur d’un pays du programme, et vice versa. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-tn-icm#1",
+        "eu-tn-ka1#1"
+      ],
+      "sources": [
+        "eu-tn-icm#1",
+        "eu-tn-ka1#1",
+        "eu-tn-icm-etudiants#1",
+        "eu-tn-ka1#4"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 975,
+        "cached_input_tokens": 0,
+        "output_tokens": 125,
+        "reasoning_tokens": 15
+      },
+      "cost_usd": 0.00129375,
+      "latency_s": {
+        "retrieval": 9.578606499999296,
+        "generation": 1.54366900000241,
+        "total": 11.122275500001706
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "La réponse reprend correctement la définition de l’ICM comme une action clé 1 d’Erasmus+ et le principe d’échange réciproque entre un pays partenaire et un pays du programme. Les citations [S1][S2] soutiennent bien l’énoncé."
+      }
+    },
+    {
+      "id": "q108",
+      "split": "dev",
+      "type": "yes_no",
+      "country": "erasmus",
+      "lang": "en",
+      "question": "Can recent graduates do an Erasmus+ traineeship abroad?",
+      "gold": "Yes, Erasmus+ traineeships are also open to recent graduates.",
+      "answer": "Yes. Erasmus+ traineeships abroad are open to recent graduates. [S1][S2][S3]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-traineeships#2",
+        "eu-traineeships#1",
+        "eu-students#1"
+      ],
+      "sources": [
+        "eu-traineeships#2",
+        "eu-traineeships#1",
+        "eu-students#1",
+        "eu-traineeships#3"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1149,
+        "cached_input_tokens": 0,
+        "output_tokens": 79,
+        "reasoning_tokens": 25
+      },
+      "cost_usd": 0.00121725,
+      "latency_s": {
+        "retrieval": 3.9046879000015906,
+        "generation": 1.2674478000008094,
+        "total": 5.1721357000024
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer directly states that recent graduates can do an Erasmus+ traineeship abroad, which matches the gold answer. The citation(s) support this claim."
+      }
+    },
+    {
+      "id": "q109",
+      "split": "dev",
+      "type": "number",
+      "country": "erasmus",
+      "lang": "en",
+      "question": "How many students have taken part in Erasmus Mundus since 2004?",
+      "gold": "Almost 50,000.",
+      "answer": "Almost 50,000 students have taken part since 2004. [S1]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-emjm-students#4"
+      ],
+      "sources": [
+        "eu-emjm-students#4",
+        "eu-guide-emjm#29",
+        "eu-guide-emjm#34",
+        "eu-eacea-mundus-catalogue-p8#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1122,
+        "cached_input_tokens": 0,
+        "output_tokens": 53,
+        "reasoning_tokens": 10
+      },
+      "cost_usd": 0.00108,
+      "latency_s": {
+        "retrieval": 3.9101244999983464,
+        "generation": 1.1840002999997523,
+        "total": 5.094124799998099
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the source and the gold answer: almost 50,000 students have taken part since 2004. The citation [S1] directly supports this statement."
+      }
+    },
+    {
+      "id": "q110",
+      "split": "test",
+      "type": "list",
+      "country": "erasmus",
+      "lang": "en",
+      "question": "What does an Erasmus Mundus scholarship cover?",
+      "gold": "Your participation costs, plus a contribution to travel, visa and a living allowance.",
+      "answer": "An Erasmus Mundus scholarship covers travel, visa, installation, and subsistence costs. It is also described as covering participation costs and contributing to a living allowance. [S1][S2]",
+      "answerable_pred": true,
+      "citations": [
+        "eu-guide-emjm#35",
+        "eu-emjm-students#2"
+      ],
+      "sources": [
+        "eu-guide-emjm#35",
+        "eu-emjm-students#2",
+        "eu-guide-emjm#33",
+        "eu-eacea-mundus-catalogue#1"
+      ],
+      "gold_in_sources": true,
+      "usage": {
+        "input_tokens": 1120,
+        "cached_input_tokens": 0,
+        "output_tokens": 128,
+        "reasoning_tokens": 61
+      },
+      "cost_usd": 0.001416,
+      "latency_s": {
+        "retrieval": 3.7060418000000936,
+        "generation": 1.459525800000847,
+        "total": 5.165567600000941
+      },
+      "judge": {
+        "correctness": "correct",
+        "faithful": true,
+        "unsupported_claims": [],
+        "citations_correct": true,
+        "citation_problems": [],
+        "reason": "The answer matches the gold answer’s substance: Erasmus Mundus scholarships cover participation costs and contribute to travel, visa, and living expenses. The extra mention of installation and subsistence is also supported by the sources and does not contradict the gold answer."
+      }
+    },
+    {
+      "id": "u001",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": null,
+      "lang": "en",
+      "question": "What IELTS score do I need for a UK Student visa?",
+      "gold": "I don't know: the UK is outside this assistant's sources (France, Germany, Canada, Erasmus+).",
+      "answer": "I don’t know. The sources only say that IRCC accepts IELTS General Training as one of the language tests and that test results must be less than 2 years old, but they do not give any IELTS score for a UK Student visa. [S1]",
+      "answerable_pred": false,
+      "citations": [
+        "ca-ircc-pgwp-documents#4"
+      ],
+      "sources": [
+        "ca-ircc-pgwp-documents#4",
+        "ca-ircc-extend-how#2",
+        "ca-ircc-pgwp-apply#18",
+        "ca-ircc-pgwp-apply#16"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1214,
+        "cached_input_tokens": 0,
+        "output_tokens": 122,
+        "reasoning_tokens": 44
+      },
+      "cost_usd": 0.0014595,
+      "latency_s": {
+        "retrieval": 3.087958600001002,
+        "generation": 1.6192726000008406,
+        "total": 4.707231200001843
+      }
+    },
+    {
+      "id": "u002",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": null,
+      "lang": "fr",
+      "question": "Quel est le montant de la bourse Fulbright pour un master aux États-Unis ?",
+      "gold": "Je ne sais pas : les États-Unis et la bourse Fulbright ne sont pas couverts par les sources.",
+      "answer": "Je ne sais pas : les sources fournies ne donnent pas le montant de la bourse Fulbright pour un master aux États-Unis. [S1][S2][S3][S4]",
+      "answerable_pred": false,
+      "citations": [
+        "fr-cf-choisir-la-france-pdf#28",
+        "fr-cf-choisir-la-france-pdf#27",
+        "fr-cf-choisir-la-france-pdf#83",
+        "fr-cf-choisir-la-france-pdf#39"
+      ],
+      "sources": [
+        "fr-cf-choisir-la-france-pdf#28",
+        "fr-cf-choisir-la-france-pdf#27",
+        "fr-cf-choisir-la-france-pdf#83",
+        "fr-cf-choisir-la-france-pdf#39"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1190,
+        "cached_input_tokens": 0,
+        "output_tokens": 93,
+        "reasoning_tokens": 19
+      },
+      "cost_usd": 0.001311,
+      "latency_s": {
+        "retrieval": 5.2250741999996535,
+        "generation": 1.2687966000012239,
+        "total": 6.493870800000877
+      }
+    },
+    {
+      "id": "u003",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": "erasmus",
+      "lang": "en",
+      "question": "What is the application deadline for the EU-CORE Erasmus Mundus master?",
+      "gold": "I don't know: the Erasmus Mundus catalogue only lists EU-CORE by name; its deadline is on the programme's own website, which is not in the sources.",
+      "answer": "I don’t know the exact application deadline for the EU-CORE Erasmus Mundus master from these sources. The sources only say that most master’s programmes require applications between October and January, but they do not give a specific deadline for EU-CORE. [S1]",
+      "answerable_pred": false,
+      "citations": [
+        "eu-eacea-mundus-catalogue-p4#1"
+      ],
+      "sources": [
+        "eu-eacea-mundus-catalogue-p4#1",
+        "eu-eacea-mundus-catalogue-p9#1",
+        "eu-eacea-mundus-catalogue-p10#1",
+        "eu-eacea-mundus-catalogue-p6#1"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1496,
+        "cached_input_tokens": 0,
+        "output_tokens": 153,
+        "reasoning_tokens": 74
+      },
+      "cost_usd": 0.0018105,
+      "latency_s": {
+        "retrieval": 6.968190100000356,
+        "generation": 1.5000028999966162,
+        "total": 8.468192999996973
+      }
+    },
+    {
+      "id": "u004",
+      "split": "test",
+      "type": "unanswerable",
+      "country": "france",
+      "lang": "fr",
+      "question": "Combien coûte un billet d'avion Tunis–Paris pour un étudiant ?",
+      "gold": "Je ne sais pas : les prix des billets d'avion ne figurent pas dans les sources.",
+      "answer": "Je ne sais pas : les sources fournies ne donnent pas le prix d’un billet d’avion Tunis–Paris pour un étudiant.",
+      "answerable_pred": false,
+      "citations": [
+        "fr-cft-accepte#27",
+        "fr-cft-statistiques-pdf#3",
+        "fr-cft-arts#11",
+        "fr-cft-architecture#22"
+      ],
+      "sources": [
+        "fr-cft-accepte#27",
+        "fr-cft-statistiques-pdf#3",
+        "fr-cft-arts#11",
+        "fr-cft-architecture#22"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1537,
+        "cached_input_tokens": 0,
+        "output_tokens": 82,
+        "reasoning_tokens": 21
+      },
+      "cost_usd": 0.00152175,
+      "latency_s": {
+        "retrieval": 3.9633735999996134,
+        "generation": 1.2174247000002651,
+        "total": 5.1807982999998785
+      }
+    },
+    {
+      "id": "u005",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": "germany",
+      "lang": "en",
+      "question": "Can I bring my cat to Germany on a student visa?",
+      "gold": "I don't know: rules on travelling with pets are not in the sources.",
+      "answer": "I don’t know; the sources provided do not say whether you can bring a cat to Germany on a student visa. [S1][S2]",
+      "answerable_pred": false,
+      "citations": [
+        "de-amb-faq-visas#2",
+        "de-amb-visas-nationaux#16"
+      ],
+      "sources": [
+        "de-amb-faq-visas#2",
+        "de-amb-visas-nationaux#16",
+        "de-daaddb-57135742#8",
+        "ca-ircc-work-intern#18"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1149,
+        "cached_input_tokens": 0,
+        "output_tokens": 88,
+        "reasoning_tokens": 29
+      },
+      "cost_usd": 0.00125775,
+      "latency_s": {
+        "retrieval": 4.125799800000095,
+        "generation": 1.5961376999985077,
+        "total": 5.721937499998603
+      }
+    },
+    {
+      "id": "u006",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": "canada",
+      "lang": "fr",
+      "question": "Quels sont les frais de scolarité d'un master à l'Université de Toronto ?",
+      "gold": "Je ne sais pas : les frais propres à chaque université canadienne ne figurent pas dans les sources.",
+      "answer": "Je ne sais pas : les sources fournies ne donnent pas les frais de scolarité d’un master à l’Université de Toronto. [S1][S2][S3][S4]",
+      "answerable_pred": false,
+      "citations": [
+        "ca-edu-study-in-canada-sep#6",
+        "fr-cf-choisir-la-france-pdf#28",
+        "fr-cf-choisir-la-france-pdf#60",
+        "fr-cf-choisir-la-france-pdf#27"
+      ],
+      "sources": [
+        "ca-edu-study-in-canada-sep#6",
+        "fr-cf-choisir-la-france-pdf#28",
+        "fr-cf-choisir-la-france-pdf#60",
+        "fr-cf-choisir-la-france-pdf#27"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1252,
+        "cached_input_tokens": 0,
+        "output_tokens": 111,
+        "reasoning_tokens": 37
+      },
+      "cost_usd": 0.0014385,
+      "latency_s": {
+        "retrieval": 4.247154900000169,
+        "generation": 1.361523200001102,
+        "total": 5.608678100001271
+      }
+    },
+    {
+      "id": "u007",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": "germany",
+      "lang": "en",
+      "question": "What minimum grade average do I need to be admitted to a master's at TU Munich?",
+      "gold": "I don't know: admission criteria of individual German universities are not in the sources.",
+      "answer": "Je ne sais pas : les sources fournies ne donnent pas la moyenne minimale pour être admis en master à la TU Munich. [S2]",
+      "answerable_pred": false,
+      "citations": [
+        "de-daaddb-10000231#2"
+      ],
+      "sources": [
+        "de-daaddb-10000611#6",
+        "de-daaddb-10000231#2",
+        "de-daaddb-10000422#1",
+        "eu-guide-emjm#60"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1143,
+        "cached_input_tokens": 0,
+        "output_tokens": 119,
+        "reasoning_tokens": 64
+      },
+      "cost_usd": 0.00139275,
+      "latency_s": {
+        "retrieval": 3.813779299998714,
+        "generation": 1.5678626999979315,
+        "total": 5.381641999996646
+      }
+    },
+    {
+      "id": "u008",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": null,
+      "lang": "fr",
+      "question": "Comment obtenir un visa étudiant pour l'Italie ?",
+      "gold": "Je ne sais pas : l'Italie ne fait pas partie des pays couverts (France, Allemagne, Canada, Erasmus+).",
+      "answer": "Je ne sais pas : les sources fournies parlent du visa étudiant pour la France et de certains cas de mobilité, mais elles ne donnent pas d’informations sur l’obtention d’un visa étudiant pour l’Italie. [S1][S2][S3][S4]",
+      "answerable_pred": false,
+      "citations": [
+        "fr-fv-etudiant#8",
+        "fr-fv-etudiant#5",
+        "fr-fv-etudiant#3",
+        "fr-fv-etudiant#9"
+      ],
+      "sources": [
+        "fr-fv-etudiant#8",
+        "fr-fv-etudiant#5",
+        "fr-fv-etudiant#3",
+        "fr-fv-etudiant#9"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1162,
+        "cached_input_tokens": 0,
+        "output_tokens": 139,
+        "reasoning_tokens": 49
+      },
+      "cost_usd": 0.001497,
+      "latency_s": {
+        "retrieval": 3.503243700000894,
+        "generation": 1.4575492000003578,
+        "total": 4.960792900001252
+      }
+    },
+    {
+      "id": "u009",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": "canada",
+      "lang": "en",
+      "question": "How many weeks does the Canadian visa office currently take to process a study permit from Tunisia?",
+      "gold": "I don't know: current processing times are published on an IRCC tool that is not in the sources (only doctoral students' 2-week target is mentioned).",
+      "answer": "I don’t know from the provided sources. The sources say processing times vary by country, but they do not give a current processing time for a study permit from Tunisia. [S2]",
+      "answerable_pred": false,
+      "citations": [
+        "ca-ircc-study-permit#1"
+      ],
+      "sources": [
+        "ca-ircc-graduate-apply#4",
+        "ca-ircc-study-permit#1",
+        "ca-ircc-graduate-faster#6",
+        "ca-ircc-pgwp-apply#7"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1194,
+        "cached_input_tokens": 0,
+        "output_tokens": 115,
+        "reasoning_tokens": 52
+      },
+      "cost_usd": 0.001413,
+      "latency_s": {
+        "retrieval": 3.2272603000019444,
+        "generation": 1.3475819999985106,
+        "total": 4.574842300000455
+      }
+    },
+    {
+      "id": "u010",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": null,
+      "lang": "en",
+      "question": "Is the Chevening scholarship open to Tunisian students?",
+      "gold": "I don't know: Chevening (UK) is not covered by the sources.",
+      "answer": "I don’t know from the provided sources whether the Chevening scholarship is open to Tunisian students.",
+      "answerable_pred": false,
+      "citations": [],
+      "sources": [
+        "de-daaddb-10000344#1",
+        "de-daaddb-57593632#1",
+        "de-daaddb-57593632#2",
+        "de-daaddb-57593632#3"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1189,
+        "cached_input_tokens": 0,
+        "output_tokens": 63,
+        "reasoning_tokens": 21
+      },
+      "cost_usd": 0.00117525,
+      "latency_s": {
+        "retrieval": 3.6592800000034913,
+        "generation": 1.119351999997889,
+        "total": 4.77863200000138
+      }
+    },
+    {
+      "id": "u011",
+      "split": "test",
+      "type": "unanswerable",
+      "country": "canada",
+      "lang": "en",
+      "question": "What is the average salary of a software engineer in Montreal?",
+      "gold": "I don't know: salary data is not in the sources.",
+      "answer": "Je ne sais pas, car les sources fournies ne donnent aucune information sur le salaire moyen d’un ingénieur logiciel à Montréal. [S1][S2][S3][S4]",
+      "answerable_pred": false,
+      "citations": [
+        "eu-eacea-mundus-catalogue-p10#3",
+        "ca-edu-study-in-canada-sep#6",
+        "ca-edu-study-in-canada-sep#4",
+        "eu-eacea-mundus-catalogue#4"
+      ],
+      "sources": [
+        "eu-eacea-mundus-catalogue-p10#3",
+        "ca-edu-study-in-canada-sep#6",
+        "ca-edu-study-in-canada-sep#4",
+        "eu-eacea-mundus-catalogue#4"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1451,
+        "cached_input_tokens": 0,
+        "output_tokens": 87,
+        "reasoning_tokens": 14
+      },
+      "cost_usd": 0.00147975,
+      "latency_s": {
+        "retrieval": 6.469142000001739,
+        "generation": 1.3455431000002136,
+        "total": 7.814685100001952
+      }
+    },
+    {
+      "id": "u012",
+      "split": "test",
+      "type": "unanswerable",
+      "country": null,
+      "lang": "fr",
+      "question": "Quelles universités espagnoles proposent des masters en anglais ?",
+      "gold": "Je ne sais pas : l'Espagne n'est pas couverte par les sources (sauf indirectement via les programmes Erasmus Mundus).",
+      "answer": "Je ne sais pas : les sources fournies parlent des formations en France, mais ne सूचीent pas d’universités espagnoles proposant des masters en anglais. [S1][S3][S4]",
+      "answerable_pred": false,
+      "citations": [
+        "fr-cf-choisir-la-france-pdf#34",
+        "fr-cf-choisir-la-france-pdf#45",
+        "fr-cft-faq-q09#1"
+      ],
+      "sources": [
+        "fr-cf-choisir-la-france-pdf#34",
+        "fr-cf-choisir-la-france-pdf#42",
+        "fr-cf-choisir-la-france-pdf#45",
+        "fr-cft-faq-q09#1"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1445,
+        "cached_input_tokens": 0,
+        "output_tokens": 99,
+        "reasoning_tokens": 27
+      },
+      "cost_usd": 0.00152925,
+      "latency_s": {
+        "retrieval": 3.8492808000009973,
+        "generation": 1.1315013999992516,
+        "total": 4.980782200000249
+      }
+    },
+    {
+      "id": "u013",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": "germany",
+      "lang": "en",
+      "question": "Which Tunisian bank is cheapest for transferring money to a German blocked account?",
+      "gold": "I don't know: bank fees are not in the sources, and the Federal Foreign Office makes no recommendations about providers.",
+      "answer": "I don’t know which Tunisian bank is the cheapest for transferring money to a German blocked account; the sources do not name or compare Tunisian banks. [S2][S3]",
+      "answerable_pred": false,
+      "citations": [
+        "de-aa-compte-bloque-etudiants#3",
+        "de-aa-compte-bloque-etudiants#2"
+      ],
+      "sources": [
+        "de-amb-preparation-etudes-pdf#3",
+        "de-aa-compte-bloque-etudiants#3",
+        "de-aa-compte-bloque-etudiants#2",
+        "de-amb-faq-visas#2"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1181,
+        "cached_input_tokens": 0,
+        "output_tokens": 101,
+        "reasoning_tokens": 35
+      },
+      "cost_usd": 0.00134025,
+      "latency_s": {
+        "retrieval": 3.5833705000004556,
+        "generation": 1.6095482999990054,
+        "total": 5.192918799999461
+      }
+    },
+    {
+      "id": "u014",
+      "split": "test",
+      "type": "unanswerable",
+      "country": "germany",
+      "lang": "fr",
+      "question": "Combien coûte par mois une assurance santé privée pour un étudiant en Allemagne ?",
+      "gold": "Je ne sais pas : les sources disent qu'une assurance privée est nécessaire avant l'immatriculation, mais ne donnent pas de prix.",
+      "answer": "Je ne sais pas : les sources indiquent qu’une assurance maladie privée est nécessaire dans certains cas, mais elles ne donnent pas son coût mensuel. [S2][S3]",
+      "answerable_pred": false,
+      "citations": [
+        "de-amb-preparation-etudes#5",
+        "de-amb-etudes#3"
+      ],
+      "sources": [
+        "de-amb-etudes#2",
+        "de-amb-preparation-etudes#5",
+        "de-amb-etudes#3",
+        "de-amb-preparation-etudes#4"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1673,
+        "cached_input_tokens": 0,
+        "output_tokens": 107,
+        "reasoning_tokens": 42
+      },
+      "cost_usd": 0.00173625,
+      "latency_s": {
+        "retrieval": 4.88669519999894,
+        "generation": 1.3601525999984005,
+        "total": 6.24684779999734
+      }
+    },
+    {
+      "id": "u015",
+      "split": "dev",
+      "type": "unanswerable",
+      "country": "france",
+      "lang": "en",
+      "question": "Which Tunisian students won the Eiffel scholarship in 2025?",
+      "gold": "I don't know: the sources contain no list of laureates (and it would be personal data).",
+      "answer": "I don’t know; the sources do not list which Tunisian students won the Eiffel scholarship in 2025. [S1][S2][S3][S4]",
+      "answerable_pred": false,
+      "citations": [
+        "fr-cf-eiffel-phd-pdf#4",
+        "fr-cf-eiffel-phd-pdf#2",
+        "fr-cf-eiffel-master-pdf#9",
+        "fr-cf-eiffel#1"
+      ],
+      "sources": [
+        "fr-cf-eiffel-phd-pdf#4",
+        "fr-cf-eiffel-phd-pdf#2",
+        "fr-cf-eiffel-master-pdf#9",
+        "fr-cf-eiffel#1"
+      ],
+      "gold_in_sources": null,
+      "usage": {
+        "input_tokens": 1183,
+        "cached_input_tokens": 0,
+        "output_tokens": 100,
+        "reasoning_tokens": 30
+      },
+      "cost_usd": 0.00133725,
+      "latency_s": {
+        "retrieval": 3.3924522000015713,
+        "generation": 1.2551224999988335,
+        "total": 4.647574700000405
+      }
+    }
+  ]
+}

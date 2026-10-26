@@ -1,0 +1,365 @@
+{
+  "label": "final-150-test",
+  "index": "C:\\Users\\oussa\\OneDrive\\Desktop\\Ai Lab Project2\\index",
+  "n_questions": 31,
+  "unreachable": [],
+  "summary": {
+    "bm25": {
+      "recall@1": 0.3225806451612903,
+      "recall@3": 0.45161290322580644,
+      "recall@5": 0.5806451612903226,
+      "recall@10": 0.6451612903225806,
+      "mrr@10": 0.42634408602150536,
+      "latency_p50_ms": 0.09519999912299681,
+      "latency_p95_ms": 0.1297999988310039
+    },
+    "vector": {
+      "recall@1": 0.45161290322580644,
+      "recall@3": 0.5806451612903226,
+      "recall@5": 0.6774193548387096,
+      "recall@10": 0.7741935483870968,
+      "mrr@10": 0.5439452124935995,
+      "latency_p50_ms": 5.7993999998871,
+      "latency_p95_ms": 7.546050000200921
+    },
+    "hybrid": {
+      "recall@1": 0.3870967741935484,
+      "recall@3": 0.6129032258064516,
+      "recall@5": 0.6451612903225806,
+      "recall@10": 0.7419354838709677,
+      "mrr@10": 0.5011520737327189,
+      "latency_p50_ms": 5.7027000002563,
+      "latency_p95_ms": 6.542099999023776
+    },
+    "hybrid+rerank": {
+      "recall@1": 0.4838709677419355,
+      "recall@3": 0.8064516129032258,
+      "recall@5": 0.8064516129032258,
+      "recall@10": 0.8064516129032258,
+      "mrr@10": 0.629032258064516,
+      "latency_p50_ms": 2500.033700000131,
+      "latency_p95_ms": 5186.040249999678
+    }
+  },
+  "breakdown": {
+    "type": {
+      "conflict": {
+        "n": 1,
+        "bm25": 0.0,
+        "vector": 0.0,
+        "hybrid": 0.0,
+        "hybrid+rerank": 0.0
+      },
+      "cross_lingual": {
+        "n": 8,
+        "bm25": 0.125,
+        "vector": 0.375,
+        "hybrid": 0.125,
+        "hybrid+rerank": 0.5
+      },
+      "date": {
+        "n": 3,
+        "bm25": 0.6666666666666666,
+        "vector": 1.0,
+        "hybrid": 0.6666666666666666,
+        "hybrid+rerank": 1.0
+      },
+      "fact": {
+        "n": 4,
+        "bm25": 1.0,
+        "vector": 0.75,
+        "hybrid": 1.0,
+        "hybrid+rerank": 1.0
+      },
+      "list": {
+        "n": 2,
+        "bm25": 1.0,
+        "vector": 1.0,
+        "hybrid": 1.0,
+        "hybrid+rerank": 1.0
+      },
+      "number": {
+        "n": 10,
+        "bm25": 0.8,
+        "vector": 0.8,
+        "hybrid": 0.9,
+        "hybrid+rerank": 1.0
+      },
+      "yes_no": {
+        "n": 3,
+        "bm25": 0.3333333333333333,
+        "vector": 0.6666666666666666,
+        "hybrid": 0.6666666666666666,
+        "hybrid+rerank": 0.6666666666666666
+      }
+    },
+    "country": {
+      "canada": {
+        "n": 6,
+        "bm25": 0.5,
+        "vector": 0.6666666666666666,
+        "hybrid": 0.6666666666666666,
+        "hybrid+rerank": 0.8333333333333334
+      },
+      "erasmus": {
+        "n": 4,
+        "bm25": 0.5,
+        "vector": 0.75,
+        "hybrid": 0.5,
+        "hybrid+rerank": 1.0
+      },
+      "france": {
+        "n": 11,
+        "bm25": 0.5454545454545454,
+        "vector": 0.6363636363636364,
+        "hybrid": 0.6363636363636364,
+        "hybrid+rerank": 0.8181818181818182
+      },
+      "germany": {
+        "n": 10,
+        "bm25": 0.7,
+        "vector": 0.7,
+        "hybrid": 0.7,
+        "hybrid+rerank": 0.7
+      }
+    },
+    "lang": {
+      "en": {
+        "n": 13,
+        "bm25": 0.6153846153846154,
+        "vector": 0.6153846153846154,
+        "hybrid": 0.6923076923076923,
+        "hybrid+rerank": 0.7692307692307693
+      },
+      "fr": {
+        "n": 18,
+        "bm25": 0.5555555555555556,
+        "vector": 0.7222222222222222,
+        "hybrid": 0.6111111111111112,
+        "hybrid+rerank": 0.8333333333333334
+      }
+    },
+    "difficulty": {
+      "easy": {
+        "n": 13,
+        "bm25": 0.6923076923076923,
+        "vector": 0.9230769230769231,
+        "hybrid": 0.7692307692307693,
+        "hybrid+rerank": 0.9230769230769231
+      },
+      "hard": {
+        "n": 3,
+        "bm25": 0.0,
+        "vector": 0.0,
+        "hybrid": 0.3333333333333333,
+        "hybrid+rerank": 0.6666666666666666
+      },
+      "medium": {
+        "n": 15,
+        "bm25": 0.6,
+        "vector": 0.6,
+        "hybrid": 0.6,
+        "hybrid+rerank": 0.7333333333333333
+      }
+    }
+  },
+  "per_question": {
+    "q002": {
+      "bm25": null,
+      "vector": null,
+      "hybrid": null,
+      "hybrid+rerank": null
+    },
+    "q004": {
+      "bm25": 6,
+      "vector": 2,
+      "hybrid": 3,
+      "hybrid+rerank": 3
+    },
+    "q007": {
+      "bm25": 1,
+      "vector": 1,
+      "hybrid": 1,
+      "hybrid+rerank": 1
+    },
+    "q008": {
+      "bm25": 2,
+      "vector": 1,
+      "hybrid": 1,
+      "hybrid+rerank": 1
+    },
+    "q009": {
+      "bm25": null,
+      "vector": 1,
+      "hybrid": null,
+      "hybrid+rerank": 1
+    },
+    "q016": {
+      "bm25": 1,
+      "vector": 1,
+      "hybrid": 1,
+      "hybrid+rerank": 2
+    },
+    "q022": {
+      "bm25": 1,
+      "vector": 2,
+      "hybrid": 1,
+      "hybrid+rerank": 1
+    },
+    "q027": {
+      "bm25": null,
+      "vector": null,
+      "hybrid": null,
+      "hybrid+rerank": null
+    },
+    "q030": {
+      "bm25": null,
+      "vector": null,
+      "hybrid": null,
+      "hybrid+rerank": 2
+    },
+    "q039": {
+      "bm25": 1,
+      "vector": 1,
+      "hybrid": 1,
+      "hybrid+rerank": 1
+    },
+    "q040": {
+      "bm25": 4,
+      "vector": null,
+      "hybrid": 4,
+      "hybrid+rerank": 1
+    },
+    "q044": {
+      "bm25": null,
+      "vector": null,
+      "hybrid": null,
+      "hybrid+rerank": null
+    },
+    "q046": {
+      "bm25": 2,
+      "vector": 9,
+      "hybrid": 2,
+      "hybrid+rerank": 2
+    },
+    "q047": {
+      "bm25": null,
+      "vector": null,
+      "hybrid": null,
+      "hybrid+rerank": null
+    },
+    "q048": {
+      "bm25": 1,
+      "vector": 1,
+      "hybrid": 1,
+      "hybrid+rerank": 2
+    },
+    "q049": {
+      "bm25": null,
+      "vector": 2,
+      "hybrid": null,
+      "hybrid+rerank": null
+    },
+    "q051": {
+      "bm25": 1,
+      "vector": 1,
+      "hybrid": 1,
+      "hybrid+rerank": 1
+    },
+    "q057": {
+      "bm25": 1,
+      "vector": 1,
+      "hybrid": 1,
+      "hybrid+rerank": 1
+    },
+    "q059": {
+      "bm25": 1,
+      "vector": 1,
+      "hybrid": 1,
+      "hybrid+rerank": 1
+    },
+    "q062": {
+      "bm25": 4,
+      "vector": 1,
+      "hybrid": 2,
+      "hybrid+rerank": 1
+    },
+    "q070": {
+      "bm25": 1,
+      "vector": 1,
+      "hybrid": 1,
+      "hybrid+rerank": 1
+    },
+    "q079": {
+      "bm25": 2,
+      "vector": 1,
+      "hybrid": 1,
+      "hybrid+rerank": 1
+    },
+    "q080": {
+      "bm25": null,
+      "vector": 1,
+      "hybrid": 6,
+      "hybrid+rerank": 1
+    },
+    "q083": {
+      "bm25": null,
+      "vector": null,
+      "hybrid": null,
+      "hybrid+rerank": null
+    },
+    "q088": {
+      "bm25": 2,
+      "vector": 5,
+      "hybrid": 3,
+      "hybrid+rerank": 3
+    },
+    "q092": {
+      "bm25": 1,
+      "vector": 5,
+      "hybrid": 1,
+      "hybrid+rerank": 2
+    },
+    "q095": {
+      "bm25": 10,
+      "vector": 8,
+      "hybrid": 3,
+      "hybrid+rerank": 1
+    },
+    "q098": {
+      "bm25": null,
+      "vector": 4,
+      "hybrid": 7,
+      "hybrid+rerank": 1
+    },
+    "q099": {
+      "bm25": null,
+      "vector": 1,
+      "hybrid": 7,
+      "hybrid+rerank": 2
+    },
+    "q103": {
+      "bm25": 4,
+      "vector": 7,
+      "hybrid": 3,
+      "hybrid+rerank": 3
+    },
+    "q110": {
+      "bm25": 5,
+      "vector": 3,
+      "hybrid": 2,
+      "hybrid+rerank": 2
+    }
+  },
+  "misses_of_best": {
+    "setup": "hybrid+rerank",
+    "ids": [
+      "q002",
+      "q027",
+      "q044",
+      "q047",
+      "q049",
+      "q083"
+    ]
+  }
+}

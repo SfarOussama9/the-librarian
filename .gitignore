@@ -1,0 +1,8 @@
+*.pyc
+.env
+.venv/
+__pycache__/
+logs/
+PROGRESS.md
+project2-librarian.pdf
+logs-from-modal/

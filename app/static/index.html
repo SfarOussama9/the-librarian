@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le Bibliothécaire</title>
+  <meta name="description" content="Des réponses sourcées pour étudier en France, en Allemagne, au Canada ou avec Erasmus+, tirées de documents officiels.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@600;800&family=Schibsted+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <svg class="defs" aria-hidden="true" focusable="false">
+    <!-- Rubber-stamp ink: slightly uneven edges -->
+    <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.6"/>
+    </filter>
+  </svg>
+
+  <div class="guilloche" aria-hidden="true"><svg id="guilloche" preserveAspectRatio="none"></svg></div>
+
+  <header class="top">
+    <div class="brand">
+      <span class="brand-name" data-i18n="brand">Le Bibliothécaire</span>
+      <span class="brand-sub" data-i18n="brandSub">Études à l'étranger, sources officielles</span>
+    </div>
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <h1 data-i18n="headline">Posez votre question sur les études en France, en Allemagne, au Canada ou avec Erasmus+.</h1>
+
+    <form id="ask" class="ask" autocomplete="off">
+      <label for="question" class="visually-hidden" data-i18n="label">Votre question</label>
+      <textarea id="question" rows="1" maxlength="500" required
+                data-i18n-placeholder="placeholder"
+                placeholder="Par exemple : documents pour le visa étudiant allemand"></textarea>
+      <button type="submit" id="submit" data-i18n="ask">Demander</button>
+    </form>
+
+    <div class="examples">
+      <span data-i18n="try">Essayez :</span>
+      <ul>
+        <li><button type="button" class="example" data-q="Combien d'argent faut-il sur le compte bloqué pour étudier en Allemagne ?">Combien d'argent faut-il sur le compte bloqué pour étudier en Allemagne ?</button></li>
+        <li><button type="button" class="example" data-q="How many hours per week can I work off campus in Canada?">How many hours per week can I work off campus in Canada?</button></li>
+        <li><button type="button" class="example" data-q="Combien coûtent les frais de dossier Campus France en Tunisie ?">Combien coûtent les frais de dossier Campus France en Tunisie ?</button></li>
+      </ul>
+    </div>
+
+    <section id="result" class="result" aria-live="polite" hidden>
+      <p class="asked" id="asked"></p>
+      <div class="progress" id="progress"></div>
+      <div class="answer" id="answer"></div>
+      <div class="stamps" id="stamps"></div>
+      <div class="feedback" id="feedback" hidden>
+        <p class="feedback-q" data-i18n="feedbackQ">Cette réponse vous a-t-elle aidé ?</p>
+        <div class="feedback-buttons">
+          <button type="button" data-rating="up" data-i18n="useful">Oui, utile</button>
+          <button type="button" data-rating="down" data-i18n="notUseful">Non, erronée ou floue</button>
+        </div>
+        <form class="feedback-comment" id="comment-form" hidden>
+          <label for="comment" data-i18n="commentLabel">Qu'est-ce qui n'allait pas ? (facultatif)</label>
+          <textarea id="comment" rows="2" maxlength="1000"></textarea>
+          <button type="submit" data-i18n="send">Envoyer l'avis</button>
+        </form>
+        <p class="feedback-thanks" id="thanks" hidden data-i18n="thanks">Merci, votre avis est enregistré.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer1">Réponses tirées de 281 documents officiels (Campus France, ambassade d'Allemagne, DAAD, IRCC, Commission européenne…) collectés en octobre 2026. Vérifiez toujours auprès de l'organisme concerné avant une démarche.</p>
+    <p data-i18n="footer2">Les questions et les avis sont enregistrés de façon anonyme pour améliorer le service. Projet CS496, MedTech.</p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

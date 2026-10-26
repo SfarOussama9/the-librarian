@@ -1,0 +1,406 @@
+# Corpus sources for the Librarian: studying abroad from Tunisia.
+# Scope: France, Germany, Canada + Erasmus+ (admission, visa, costs, scholarships, work, arrival).
+#
+# Each [[group]] shares a publisher and metadata; each entry in `sources` is one document.
+#   id     unique, stable; used as the file name in corpus/raw/
+#   path   relative to the group's `base` (or give a full `url` instead)
+#   topic  procedure | admission | visa | costs | scholarship | work | housing | health | language | arrival | general
+#   lang   overrides the group language when needed
+#
+# fetch = "archive" means the live site blocks scripts from here, so the newest
+# Wayback Machine snapshot is used. fetch = "reader" goes through Jina Reader
+# (r.jina.ai) for sites whose live pages and archive copies are both refused
+# from our network. Citations always point to the original URL.
+
+# --------------------------------------------------------------------------- France
+
+[[group]]
+publisher = "Campus France Tunisie"
+country = "france"
+lang = "fr"
+base = "https://www.tunisie.campusfrance.org/"
+sources = [
+  { id = "fr-cft-procedure",            path = "la-procedure-pour-candidater-aux-etudes-en-france", topic = "procedure" },
+  { id = "fr-cft-plateforme-eef",       path = "candidater-sur-la-nouvelle-plateforme-etudes-en-france", topic = "procedure" },
+  { id = "fr-cft-frais-dossier",        path = "proceder-au-paiement-des-frais-de-dossier", topic = "costs" },
+  { id = "fr-cft-calendrier",           path = "calendrier-des-procedures-20262027-documentation-campus-france", topic = "procedure" },
+  { id = "fr-cft-guides-plateforme",    path = "parcourir-les-guides-de-la-plateforme-etudes-en-france-0", topic = "procedure" },
+  { id = "fr-cft-preparer-projet",      path = "mieux-preparer-son-projet-d-etudes", topic = "procedure" },
+  { id = "fr-cft-connectes",            path = "differencier-les-etablissements-connectes-et-non-connectes", topic = "procedure" },
+  { id = "fr-cft-entretien",            path = "l-entretien-campus-france", topic = "procedure" },
+  { id = "fr-cft-cas-particuliers",     path = "cas-particuliers", topic = "procedure" },
+  { id = "fr-cft-vigilance",            path = "rappels-et-points-de-vigilance", topic = "procedure" },
+  { id = "fr-cft-traducteurs",          path = "verifier-la-liste-officielle-des-traducteurs", topic = "procedure" },
+  { id = "fr-cft-faq",                  path = "faq", topic = "general" },
+  # The FAQ lists 44 questions over 5 result pages (?page=0..4).
+  { id = "fr-cft-faq-p2",               path = "faq?page=1", topic = "general" },
+  { id = "fr-cft-faq-p3",               path = "faq?page=2", topic = "general" },
+  { id = "fr-cft-faq-p4",               path = "faq?page=3", topic = "general" },
+  { id = "fr-cft-faq-p5",               path = "faq?page=4", topic = "general" },
+  # Answers: each FAQ question has its own page (36 distinct pages).
+  { id = "fr-cft-faq-q01", path = "faq/que-dois-je-apporter-le-jour-de-l-entretien-campus-france", topic = "general" },
+  { id = "fr-cft-faq-q02", path = "faq/qui-est-dispense-de-dap", topic = "general" },
+  { id = "fr-cft-faq-q03", path = "faq/que-dois-je-faire-apres-avoir-passe-l-entretien-campus-france", topic = "general" },
+  { id = "fr-cft-faq-q04", path = "faq/comment-envoyer-un-message-a-un-etablissement", topic = "general" },
+  { id = "fr-cft-faq-q05", path = "faq/je-suis-titulaire-du-baccalaureat-francais-quelles-procedures-dois-je-accomplir", topic = "general" },
+  { id = "fr-cft-faq-q06", path = "faq/a-quoi-sert-l-entretien-campus-france", topic = "general" },
+  { id = "fr-cft-faq-q07", path = "faq/je-souhaite-me-rendre-a-l-espace-campus-france-pour-m-informer-sur-les-etudes-en-france", topic = "general" },
+  { id = "fr-cft-faq-q08", path = "faq/a-quel-niveau-dois-je-postuler", topic = "general" },
+  { id = "fr-cft-faq-q09", path = "faq/comment-trouver-une-formation-grace-a-internet", topic = "general" },
+  { id = "fr-cft-faq-q10", path = "faq/a-quel-moment-mon-dossier-est-il-transmis-aux-etablissements-connectes", topic = "general" },
+  { id = "fr-cft-faq-q11", path = "faq/quel-est-l-interet-de-l-entretien-campus-france-quels-elements-sont-determinants", topic = "general" },
+  { id = "fr-cft-faq-q12", path = "faq/faut-il-un-visa-specifique-pour-travailler-pendant-ses-etudes", topic = "general" },
+  { id = "fr-cft-faq-q13", path = "faq/quand-dois-je-commencer-mes-demarches-pour-partir-etudier-en-france", topic = "general" },
+  { id = "fr-cft-faq-q14", path = "faq/quels-bulletins-de-notes-remplir-dans-le-formulaire-etude-en-france", topic = "general" },
+  { id = "fr-cft-faq-q15", path = "faq/comment-se-deroule-l-entretien-campus-france", topic = "general" },
+  { id = "fr-cft-faq-q16", path = "faq/quand-vais-je-recevoir-les-reponses-des-universites-aupres-desquelles-j-ai-depose-une", topic = "general" },
+  { id = "fr-cft-faq-q17", path = "faq/comment-vous-faire-parvenir-mon-dossier-pedagogique", topic = "general" },
+  { id = "fr-cft-faq-q18", path = "faq/quelles-sont-les-differences-entre-les-etablissements-connectes-et-non-connectes", topic = "general" },
+  { id = "fr-cft-faq-q19", path = "faq/comment-saurai-je-si-je-suis-accepte-ou-pas-dans-une-formation", topic = "general" },
+  { id = "fr-cft-faq-q20", path = "faq/comment-obtenir-des-renseignements-sur-les-concours-d-entree-aux-grandes-ecoles-d-ingenieurs", topic = "general" },
+  { id = "fr-cft-faq-q21", path = "faq/ou-passer-l-entretien", topic = "general" },
+  { id = "fr-cft-faq-q22", path = "faq/qu-est-ce-qu-un-etablissement-connecte", topic = "general" },
+  { id = "fr-cft-faq-q23", path = "faq/puis-je-travailler-en-france-apres-l-obtention-de-mon-diplome", topic = "general" },
+  { id = "fr-cft-faq-q24", path = "faq/je-souhaite-candidater-dans-des-etablissements-connectes-et-non-connectes-comment-dois-je", topic = "general" },
+  { id = "fr-cft-faq-q25", path = "faq/suis-je-concerne-par-la-procedure-campus-france", topic = "general" },
+  { id = "fr-cft-faq-q26", path = "faq/comment-s-inscrire-dans-un-etablissement-francais-creer-son-dossier-en-ligne", topic = "general" },
+  { id = "fr-cft-faq-q27", path = "faq/puis-je-etre-dispensee-du-tcf-dap", topic = "general" },
+  { id = "fr-cft-faq-q28", path = "faq/qu-est-ce-que-le-tcf-pour-la-dap", topic = "general" },
+  { id = "fr-cft-faq-q29", path = "faq/je-dois-passer-un-test-de-francais-a-qui-dois-je-m-adresser-pour-m-inscrire", topic = "general" },
+  { id = "fr-cft-faq-q30", path = "faq/la-poursuite-d-etudes-apres-un-diplome-de-technicien-superieur-bts", topic = "general" },
+  { id = "fr-cft-faq-q31", path = "faq/ou-faire-traduire-en-francais-mes-documents", topic = "general" },
+  { id = "fr-cft-faq-q32", path = "faq/combien-de-demandes-de-preinscription-puis-je-faire", topic = "general" },
+  { id = "fr-cft-faq-q33", path = "faq/dois-je-passer-un-test-ou-un-examen-de-francais", topic = "general" },
+  { id = "fr-cft-faq-q34", path = "faq/quand-et-comment-demander-une-pre-inscription-dans-un-etablissement-d-enseignement-superieur-en", topic = "general" },
+  { id = "fr-cft-faq-q35", path = "faq/faut-il-faire-certifier-ou-legaliser-mes-documents-originaux-arabe-et-francais", topic = "general" },
+  { id = "fr-cft-faq-q36", path = "faq/je-n-arrive-pas-a-retrouver-mon-login-et-mon-mot-de-passe-que-faire", topic = "general" },
+  { id = "fr-cft-horaires",             path = "les-horaires-d-ouverture-campus-france-tunisie", topic = "general" },
+  { id = "fr-cft-inscrire-en",          path = "je-veux-m-inscrire-en", topic = "admission" },
+  { id = "fr-cft-mon-master",           path = "la-plateforme-mon-master-fonctionnalites-et-candidats-concernes", topic = "admission" },
+  { id = "fr-cft-lmd-equivalence",      path = "diplome-francais-systeme-lmd-et-equivalence-0", topic = "admission" },
+  { id = "fr-cft-label-bienvenue",      path = "qu-est-ce-que-le-label-bienvenue-en-france", topic = "admission" },
+  { id = "fr-cft-licence1",             path = "licence-1-dap-blanche-0", topic = "admission" },
+  { id = "fr-cft-architecture",         path = "ecole-d-architecture-dap-jaune-0", topic = "admission" },
+  { id = "fr-cft-arts",                 path = "les-etudes-d-arts-et-d-architecture-campusart", topic = "admission" },
+  { id = "fr-cft-but",                  path = "but-ce-qu-il-faut-savoir-sur-ce-diplome", topic = "admission" },
+  { id = "fr-cft-etudes-sante",         path = "les-etudes-de-sante-en-france", topic = "admission" },
+  { id = "fr-cft-bac-francais",         path = "je-suis-titulaire-ou-future-titulaire-du-bac-francais", topic = "admission" },
+  { id = "fr-cft-accepte",              path = "je-suis-accepte-dans-un-etablissement-francais", topic = "admission" },
+  { id = "fr-cft-certif-langue",        path = "les-certifications-en-langue-francaise-0", topic = "language" },
+  { id = "fr-cft-cout-bourses",         path = "s-informer-sur-le-cout-et-les-bourses-d-etudes", topic = "costs" },
+  { id = "fr-cft-visas",                path = "visas", topic = "visa" },
+  { id = "fr-cft-vls-ts",               path = "visa-etudiant-vls-ts", topic = "visa" },
+  { id = "fr-cft-refus-visa",           path = "en-cas-de-refus-de-visa-que-puis-je-faire", topic = "visa" },
+  { id = "fr-cft-preparer-arrivee",     path = "preparer-son-arrivee-en-france-0", topic = "arrival" },
+  { id = "fr-cft-formalites-arrivee",   path = "les-formalites-a-accomplir-a-l-arrivee-0", topic = "arrival" },
+  { id = "fr-cft-sante",                path = "sante-securite-sociale-et-mutuelle-0", topic = "health" },
+  { id = "fr-cft-handicap",             path = "etudiant-en-situation-d-handicap-0", topic = "health" },
+  { id = "fr-cft-logement",             path = "trouver-son-logement", topic = "housing" },
+  { id = "fr-cft-travail-etudes",       path = "travailler-durant-mes-etudes-0", topic = "work" },
+  { id = "fr-cft-travail-apres",        path = "travailler-en-france-apres-mes-etudes", topic = "work" },
+  # PDFs
+  { id = "fr-cft-calendrier-2026-2027-pdf", path = "system/files/medias/documents/2026-10/calendrier%20EEF%202026_2027.pdf", topic = "procedure" },
+  { id = "fr-cft-tuto-candidat-pdf",    path = "system/files/medias/documents/2026-01/Tutoriel%20candidat%2020252026.pdf", topic = "procedure" },
+  { id = "fr-cft-tuto-paiement-pdf",    path = "system/files/medias/documents/2025-08/Tutoriel%20paiement%2020252026.pdf", topic = "costs" },
+  { id = "fr-cft-tuto-accepte-pdf",     path = "system/files/medias/documents/2026-01/Tutoriel%20accept%C3%A9%2020252026.pdf", topic = "admission" },
+  { id = "fr-cft-tuto-parcours-pdf",    path = "system/files/medias/documents/2026-01/Tutoriel%20parcours%2020252026.pdf", topic = "procedure" },
+  { id = "fr-cft-tuto-bac-f-pdf",       path = "system/files/medias/documents/2026-01/Tutoriel%20BAC%20F%2020252026.pdf", topic = "admission" },
+  { id = "fr-cft-etudes-sante-pdf",     path = "system/files/medias/documents/2025-12/e%CC%81tudes%20de%20sante%CC%81%2020252026_0.pdf", topic = "admission" },
+  { id = "fr-cft-statistiques-pdf",     path = "system/files/medias/documents/2024-09/Statistiques_TN_20232024.pdf", topic = "general" },
+]
+
+[[group]]
+publisher = "Campus France"
+country = "france"
+lang = "en"
+base = "https://www.campusfrance.org/"
+sources = [
+  { id = "fr-cf-eiffel",                path = "en/france-excellence-eiffel-scholarship-program", topic = "scholarship" },
+  { id = "fr-cf-eiffel-implementation", path = "en/france-excellence-eiffel-scholarship-implementation", topic = "scholarship" },
+  { id = "fr-cf-tuition-fees",          path = "en/tuition-fees-France", topic = "costs" },
+  { id = "fr-cf-cvec",                  path = "en/10-things-you-need-to-know-about-the-student-and-campus-life-contribution-cvec", topic = "costs" },
+  { id = "fr-cf-eiffel-master-pdf",     url = "https://ressources.campusfrance.org/pratique/programmes/en/plaquette_eiffel_1_en.pdf", topic = "scholarship" },
+  { id = "fr-cf-eiffel-phd-pdf",        url = "https://ressources.campusfrance.org/pratique/programmes/en/plaquette_eiffel_2_en.pdf", topic = "scholarship" },
+  { id = "fr-cf-choisir-la-france-pdf", url = "https://ressources.campusfrance.org/pratique/guides/fr/choisir_la_france_fr.pdf", topic = "general", lang = "fr" },
+]
+
+[[group]]
+publisher = "France-Visas"
+country = "france"
+lang = "fr"
+base = "https://france-visas.gouv.fr/"
+sources = [
+  { id = "fr-fv-etudiant",              path = "etudiant", topic = "visa" },
+  { id = "fr-fv-long-sejour",           path = "visa-de-long-sejour", topic = "visa" },
+  { id = "fr-fv-campagne-etudiante",    path = "campagne-etudiante", topic = "visa" },
+]
+
+# --------------------------------------------------------------------------- Germany
+
+[[group]]
+publisher = "Ambassade d'Allemagne à Tunis"
+country = "germany"
+lang = "fr"
+base = "https://tunis.diplo.de/"
+sources = [
+  { id = "de-amb-etudes",               path = "tn-fr/service/05-visaeinreise/2573172-2573172", topic = "visa" },
+  { id = "de-amb-preparation-etudes",   path = "tn-fr/service/05-visaeinreise/2573166-2573166", topic = "visa" },
+  { id = "de-amb-etudiant-boursier",    path = "tn-fr/service/05-visaeinreise/2585104-2585104", topic = "visa" },
+  { id = "de-amb-stage-recherche",      path = "tn-fr/service/05-visaeinreise/2585062-2585062", topic = "visa" },
+  { id = "de-amb-visas-nationaux",      path = "tn-fr/service/05-visaeinreise/1672716-1672716", topic = "visa" },
+  { id = "de-amb-faq-visas",            path = "tn-fr/service/05-visaeinreise/1672718-1672718", topic = "visa" },
+  { id = "de-amb-legalisation",         path = "tn-fr/service/1515184-1515184", topic = "procedure" },
+  { id = "de-amb-traducteurs",          path = "tn-fr/service/1515196-1515196", topic = "procedure" },
+  # PDFs
+  { id = "de-amb-preparation-etudes-pdf", path = "resource/blob/1684456/07ce3a90734df1f243e801db5d3539e3/pr%C3%A9paration-aux-%C3%A9tudes-data.pdf", topic = "visa" },
+  { id = "de-amb-cours-langue-pdf",     path = "resource/blob/2103598/115ab3c48d59f598a288dea0ea10b3b0/d16-cours-de-langue-data.pdf", topic = "language" },
+  { id = "de-amb-chercheur-pdf",        path = "resource/blob/1684426/754422d59676cde321d30f863adca9cb/d07-chercheur-data.pdf", topic = "visa" },
+  { id = "de-amb-faq-etudes-ar-pdf",    path = "resource/blob/2234040/7d126059fc97df5fb41d6877b86a2a5b/faq-studium-arabisch-data.pdf", topic = "visa", lang = "ar" },
+]
+
+# The embassy's own blocked-account page (tunis.diplo.de/en/sperrkonto-388600)
+# redirects to itself forever, so the Federal Foreign Office versions are used.
+[[group]]
+publisher = "Auswärtiges Amt (Federal Foreign Office)"
+country = "germany"
+lang = "en"
+base = "https://www.auswaertiges-amt.de/"
+sources = [
+  { id = "de-aa-compte-bloque-etudiants", path = "en/visa-service/visabestimmungen-node/sperrkonto-seite", topic = "costs" },
+  { id = "de-aa-compte-bloque",         path = "en/sperrkonto-388600", topic = "costs" },
+]
+
+[[group]]
+publisher = "DAAD Tunisie"
+country = "germany"
+lang = "fr"
+base = "https://www.daad.tn/fr/"
+# daad.tn refuses scripts, archive copies and the reader from our network, so
+# these pages are saved by hand in a browser: see corpus/manual_download.md.
+fetch = "manual"
+sources = [
+  { id = "de-daad-etudier-rechercher",  path = "etudier-et-faire-de-la-recherche-en-allemagne/", topic = "general" },
+  { id = "de-daad-etudier",             path = "etudier-et-faire-de-la-recherche-en-allemagne/etudier-en-allemagne/", topic = "admission" },
+  { id = "de-daad-huit-etapes",         path = "etudier-et-faire-de-la-recherche-en-allemagne/huit-etapes-pour-se-preparer/", topic = "procedure" },
+  { id = "de-daad-parents-15-questions", path = "etudier-et-faire-de-la-recherche-en-allemagne/etudier-en-allemagne/pour-les-parents-15-questions-et-reponses/", topic = "general" },
+  { id = "de-daad-offres-etablissements", path = "etudier-et-faire-de-la-recherche-en-allemagne/les-offres-des-etablissements-denseignement-superieur/", topic = "admission" },
+  { id = "de-daad-doctorat",            path = "etudier-et-faire-de-la-recherche-en-allemagne/doctorat-et-recherche-en-allemagne/", topic = "admission" },
+  { id = "de-daad-allemand",            path = "etudier-et-faire-de-la-recherche-en-allemagne/apprendre-lallemand/", topic = "language" },
+  { id = "de-daad-allemand-allemagne",  path = "etudier-et-faire-de-la-recherche-en-allemagne/apprendre-lallemand/apprendre-lallemand-en-allemagne/", topic = "language" },
+  { id = "de-daad-allemand-tunisie",    path = "etudier-et-faire-de-la-recherche-en-allemagne/apprendre-lallemand/apprendre-lallemand-en-tunisie/", topic = "language" },
+  { id = "de-daad-decouvrir",           path = "etudier-et-faire-de-la-recherche-en-allemagne/decouvrir-lallemagne/", topic = "general" },
+  { id = "de-daad-financement",         path = "trouver-un-financement/", topic = "scholarship" },
+  { id = "de-daad-base-bourses",        path = "trouver-un-financement/base-de-donnees-de-bourses/", topic = "scholarship" },
+  { id = "de-daad-telechargements",     path = "qui-sommes-nous/telechargements-et-publications/", topic = "general" },
+  { id = "de-daad-kospie-2027",         path = "2026/03/16/appel-a-candidatures-sejours-detudes-et-pratiques-combines-pour-les-ingenieurs-tunisiens-pour-2027-kospie/", topic = "scholarship" },
+  { id = "de-daad-master-financement-2026", path = "2026/02/19/seminaire-en-ligne-faire-un-master-en-allemagne-et-les-possibilites-de-financement-du-daad-3/", topic = "scholarship" },
+  { id = "de-daad-doctorat-2026",       path = "2026/05/13/sl-faire-un-doctorat-en-allemagne/", topic = "scholarship" },
+  { id = "de-daad-vorsprung-2025",      path = "2025/09/09/aac-vorsprung-f2/", topic = "scholarship" },
+  { id = "de-daad-hsk-2026",            path = "2025/09/11/aac-hsk-2026/", topic = "scholarship" },
+]
+
+# The full DAAD scholarship database (www2.daad.de). The search page builds its
+# result list in the browser from data/a/js/scholarships.js; these are the 88
+# programmes that file marks as open to applicants from Tunisia (origin id 189),
+# DAAD's own programmes first. Programme pages are fetched through the reader.
+[[group]]
+publisher = "DAAD Scholarship Database"
+country = "germany"
+lang = "en"
+base = "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/"
+fetch = "reader"
+sources = [
+  { id = "de-daaddb-50019749", path = "?detail=50019749", topic = "scholarship" },  # DLR/DAAD Research Fellowship Programme
+  { id = "de-daaddb-50076777", path = "?detail=50076777", topic = "scholarship" },  # Development-Related Postgraduate Courses (EPOS)
+  { id = "de-daaddb-10000344", path = "?detail=10000344", topic = "scholarship" },  # Government Scholarships Programme Tunisia
+  { id = "de-daaddb-57883183", path = "?detail=57883183", topic = "scholarship" },  # Heilbronn AI Fellowships
+  { id = "de-daaddb-50026397", path = "?detail=50026397", topic = "scholarship" },  # Helmut-Schmidt-Programme
+  { id = "de-daaddb-57352834", path = "?detail=57352834", topic = "scholarship" },  # IAESTE Incoming
+  { id = "de-daaddb-57593632", path = "?detail=57593632", topic = "scholarship" },  # KOSPIE Tunisia
+  { id = "de-daaddb-50015492", path = "?detail=50015492", topic = "scholarship" },  # Re-invitation Programme for Former Scholarship Holders
+  { id = "de-daaddb-57507783", path = "?detail=57507783", topic = "scholarship" },  # Research Grants - Bi-nationally Supervised Doctoral Degrees/Cotutelle
+  { id = "de-daaddb-57135739", path = "?detail=57135739", topic = "scholarship" },  # Research Grants - Doctoral Programmes in Germany
+  { id = "de-daaddb-57742121", path = "?detail=57742121", topic = "scholarship" },  # Research Grants in Germany
+  { id = "de-daaddb-57135744", path = "?detail=57135744", topic = "scholarship" },  # Study Scholarships - Postgraduate Studies in the Field of Architecture
+  { id = "de-daaddb-57135743", path = "?detail=57135743", topic = "scholarship" },  # Study Scholarships - Postgraduate Studies in the Field of Music
+  { id = "de-daaddb-50109971", path = "?detail=50109971", topic = "scholarship" },  # Study Scholarships - Postgraduate Studies in the Field of the Performing
+  { id = "de-daaddb-57135742", path = "?detail=57135742", topic = "scholarship" },  # Study Scholarships - Postgraduate Studies in the Fields of Fine Art,
+  { id = "de-daaddb-50110016", path = "?detail=50110016", topic = "scholarship" },  # Study Visits for Academics - Artistic Disciplines and Architecture
+  { id = "de-daaddb-57655437", path = "?detail=57655437", topic = "scholarship" },  # TheMuseumsLab
+  { id = "de-daaddb-50035295", path = "?detail=50035295", topic = "scholarship" },  # University Summer Courses
+  { id = "de-daaddb-10000169", path = "?detail=10000169", topic = "scholarship" },  # Alexander von Humboldt Foundation: Humboldt Research Fellowship for Experienced Researcher
+  { id = "de-daaddb-10000110", path = "?detail=10000110", topic = "scholarship" },  # Alexander von Humboldt Foundation: Humboldt Research Fellowships for Postdoctoral Research
+  { id = "de-daaddb-10000550", path = "?detail=10000550", topic = "scholarship" },  # Alexander von Humboldt Foundation: International Climate Protection Fellowship
+  { id = "de-daaddb-10000652", path = "?detail=10000652", topic = "scholarship" },  # Alfried Krupp Wissenschaftskolleg Greifswald: Alfried Krupp Fellowships
+  { id = "de-daaddb-10000178", path = "?detail=10000178", topic = "scholarship" },  # Baden-Württemberg Stiftung: The Baden-Württemberg-STIPENDIUM for Students
+  { id = "de-daaddb-10000551", path = "?detail=10000551", topic = "scholarship" },  # Bayer Foundation: Fellowship for Agricultural Science
+  { id = "de-daaddb-10000206", path = "?detail=10000206", topic = "scholarship" },  # Bayer Foundation: Fellowship for Medical Sciences
+  { id = "de-daaddb-10000221", path = "?detail=10000221", topic = "scholarship" },  # Bayer Foundation: Fellowship for STEM Student Teachers & Teachers
+  { id = "de-daaddb-10000208", path = "?detail=10000208", topic = "scholarship" },  # Bayer Foundation: Fellowship in Drug Discovery Sciences
+  { id = "de-daaddb-10000164", path = "?detail=10000164", topic = "scholarship" },  # Boehringer Ingelheim Fonds: PhD Fellowships
+  { id = "de-daaddb-10000148", path = "?detail=10000148", topic = "scholarship" },  # Boehringer Ingelheim Fonds: Travel Grants
+  { id = "de-daaddb-10000168", path = "?detail=10000168", topic = "scholarship" },  # Catholic Academic Exchange Service (KAAD): Scholarship Programme 1
+  { id = "de-daaddb-10000136", path = "?detail=10000136", topic = "scholarship" },  # Copernicus Hamburg: Copernicus Fellowship Programme
+  { id = "de-daaddb-10000159", path = "?detail=10000159", topic = "scholarship" },  # Cusanuswerk: Undergraduate and Postgraduate Fellowships
+  { id = "de-daaddb-10000612", path = "?detail=10000612", topic = "scholarship" },  # DAAD Konrad Zuse School of Excellence in Reliable Artificial Intelligence (relAI): Scholar
+  { id = "de-daaddb-10000611", path = "?detail=10000611", topic = "scholarship" },  # DAAD Zuse School of Embedded Composite Artificial Intelligence (SECAI): Scholarships for M
+  { id = "de-daaddb-10000418", path = "?detail=10000418", topic = "scholarship" },  # Ernst Ludwig Ehrlich Studienwerk: Doctoral Scholarship
+  { id = "de-daaddb-10000102", path = "?detail=10000102", topic = "scholarship" },  # European Union: Erasmus+ Mobility Programme for Higher Education Students
+  { id = "de-daaddb-10000121", path = "?detail=10000121", topic = "scholarship" },  # European Union: Erasmus+ Mobility Project for Higher Education Teachers and Staff
+  { id = "de-daaddb-10000210", path = "?detail=10000210", topic = "scholarship" },  # Evangelisches Studienwerk: Scholarship for Doctoral Students
+  { id = "de-daaddb-10000117", path = "?detail=10000117", topic = "scholarship" },  # Evangelisches Studienwerk: Scholarship for Students
+  { id = "de-daaddb-10000384", path = "?detail=10000384", topic = "scholarship" },  # Evangelisches Studienwerk: Scholarship for Students With Refugee Status
+  { id = "de-daaddb-10000139", path = "?detail=10000139", topic = "scholarship" },  # Evonik Foundation: Evonik Foundation Scholarship
+  { id = "de-daaddb-10000207", path = "?detail=10000207", topic = "scholarship" },  # Federal Ministry of Education and Research: Deutschlandstipendium
+  { id = "de-daaddb-10000437", path = "?detail=10000437", topic = "scholarship" },  # Federal Ministry of Education and Research: Digital GreenTalents Award
+  { id = "de-daaddb-10000162", path = "?detail=10000162", topic = "scholarship" },  # Federal Ministry of Education and Research: Federal Training Assistance Act (Bundesausbild
+  { id = "de-daaddb-10000119", path = "?detail=10000119", topic = "scholarship" },  # Foundation of German Business (sdw): Academic study sponsorship
+  { id = "de-daaddb-10000150", path = "?detail=10000150", topic = "scholarship" },  # Foundation of German Business (sdw): Support for doctoral candidates
+  { id = "de-daaddb-10000126", path = "?detail=10000126", topic = "scholarship" },  # Friedrich Ebert Foundation: Scholarship for International Doctoral Students
+  { id = "de-daaddb-10000153", path = "?detail=10000153", topic = "scholarship" },  # Friedrich Ebert Foundation: Scholarship for International Students
+  { id = "de-daaddb-10000165", path = "?detail=10000165", topic = "scholarship" },  # Gerda Henkel Foundation: PhD Scholarships
+  { id = "de-daaddb-10000130", path = "?detail=10000130", topic = "scholarship" },  # Gerda Henkel Foundation: Research Scholarships
+  { id = "de-daaddb-10000406", path = "?detail=10000406", topic = "scholarship" },  # German Academic Scholarship Foundation: Doctoral Scholarships
+  { id = "de-daaddb-10000412", path = "?detail=10000412", topic = "scholarship" },  # German Academic Scholarship Foundation: Scholarships for Students
+  { id = "de-daaddb-10000212", path = "?detail=10000212", topic = "scholarship" },  # German Bundestag: International Parliamentary Scholarships
+  { id = "de-daaddb-10000398", path = "?detail=10000398", topic = "scholarship" },  # German Bundestag: International Parliamentary Scholarships: Programme Arab Countries
+  { id = "de-daaddb-10000141", path = "?detail=10000141", topic = "scholarship" },  # German Cancer Research Center (DKFZ): International PhD Programme
+  { id = "de-daaddb-10000127", path = "?detail=10000127", topic = "scholarship" },  # German Federal Environmental Foundation (DBU): PhD Scholarship Programme
+  { id = "de-daaddb-10000198", path = "?detail=10000198", topic = "scholarship" },  # German National Academic Foundation: Leo Baeck Fellowship Programme
+  { id = "de-daaddb-10000137", path = "?detail=10000137", topic = "scholarship" },  # German Research Foundation (DFG): Heisenberg Programme
+  { id = "de-daaddb-10000161", path = "?detail=10000161", topic = "scholarship" },  # German Research Foundation (DFG): Research Grant
+  { id = "de-daaddb-10000689", path = "?detail=10000689", topic = "scholarship" },  # Göttingen Academy of Sciences and Humanities: Hannah Arendt Fellowships
+  { id = "de-daaddb-10000132", path = "?detail=10000132", topic = "scholarship" },  # Hanns Seidel Foundation: PhD scholarships
+  { id = "de-daaddb-10000134", path = "?detail=10000134", topic = "scholarship" },  # Hans Böckler Foundation: PhD Fellowship
+  { id = "de-daaddb-10000666", path = "?detail=10000666", topic = "scholarship" },  # Hanse-Wissenschaftskolleg (HWK): Funded Regular and Junior Fellowships
+  { id = "de-daaddb-10000113", path = "?detail=10000113", topic = "scholarship" },  # Heinrich Böll Foundation: PhD scholarship
+  { id = "de-daaddb-10000124", path = "?detail=10000124", topic = "scholarship" },  # Heinrich Böll Foundation: Student Scholarship
+  { id = "de-daaddb-10000123", path = "?detail=10000123", topic = "scholarship" },  # Herder Institute for Historical Research on East-Central Europe: Herder Fellowship
+  { id = "de-daaddb-10000429", path = "?detail=10000429", topic = "scholarship" },  # Hertie School: Human Rights Scholarship
+  { id = "de-daaddb-10000144", path = "?detail=10000144", topic = "scholarship" },  # Herzog August Bibliothek: Doctoral Fellowships
+  { id = "de-daaddb-10000183", path = "?detail=10000183", topic = "scholarship" },  # Herzog August Bibliothek: Short-term Fellowships
+  { id = "de-daaddb-10000575", path = "?detail=10000575", topic = "scholarship" },  # HessenFonds for Refugees and Researchers at Risk
+  { id = "de-daaddb-10000562", path = "?detail=10000562", topic = "scholarship" },  # Indo-German Science and Technology Centre (IGSTC): Paired Early Career Fellowship in Appli
+  { id = "de-daaddb-10000560", path = "?detail=10000560", topic = "scholarship" },  # Indo-German Science and Technology Centre (IGSTC): Women Involvement in Science and Engine
+  { id = "de-daaddb-10000103", path = "?detail=10000103", topic = "scholarship" },  # Institutions of Higher Education in Hesse: Doctoral Scholarships
+  { id = "de-daaddb-10000633", path = "?detail=10000633", topic = "scholarship" },  # International Scholarship Programme of the Avicenna Studienwerk
+  { id = "de-daaddb-10000543", path = "?detail=10000543", topic = "scholarship" },  # Klassik Stiftung Weimar Fellowships
+  { id = "de-daaddb-10000108", path = "?detail=10000108", topic = "scholarship" },  # Konrad-Adenauer-Stiftung (KAS): Scholarship Programme for International Students
+  { id = "de-daaddb-10000556", path = "?detail=10000556", topic = "scholarship" },  # Leibniz Institute of European History Mainz: Fellowships for Doctoral Students
+  { id = "de-daaddb-10000107", path = "?detail=10000107", topic = "scholarship" },  # Ministry for Science, Culture, Federal and European Affairs of Mecklenburg-West Pomerania:
+  { id = "de-daaddb-10000172", path = "?detail=10000172", topic = "scholarship" },  # Ministry of Science, Research and the Arts Baden-Württemberg: Mathilde Planck Contract Lec
+  { id = "de-daaddb-10000231", path = "?detail=10000231", topic = "scholarship" },  # Munich Aerospace: PhD Scholarships
+  { id = "de-daaddb-10000092", path = "?detail=10000092", topic = "scholarship" },  # Prussian Cultural Heritage Foundation: Grant Programme
+  { id = "de-daaddb-10000422", path = "?detail=10000422", topic = "scholarship" },  # RWTH International Academy: Women in Engineering Scholarship
+  { id = "de-daaddb-10000622", path = "?detail=10000622", topic = "scholarship" },  # Residential Fellowships at the Center for Advanced Internet Studies (CAIS)
+  { id = "de-daaddb-10000220", path = "?detail=10000220", topic = "scholarship" },  # Rosa Luxemburg Foundation: Scholarship Programme for International Doctoral Students
+  { id = "de-daaddb-10000494", path = "?detail=10000494", topic = "scholarship" },  # SBW Berlin Scholarship
+  { id = "de-daaddb-10000101", path = "?detail=10000101", topic = "scholarship" },  # State of Bavaria: Max Weber Programme
+  { id = "de-daaddb-10000681", path = "?detail=10000681", topic = "scholarship" },  # University of Konstanz: ZUKOnnect Fellowships for Scholars from Africa, Asia and Latin Ame
+  { id = "de-daaddb-10000187", path = "?detail=10000187", topic = "scholarship" },  # Universität Hamburg: Merit Scholarships for International Students
+]
+
+# --------------------------------------------------------------------------- Canada
+
+[[group]]
+publisher = "Immigration, Refugees and Citizenship Canada (IRCC)"
+country = "canada"
+lang = "en"
+base = "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/"
+fetch = "reader"
+sources = [
+  { id = "ca-ircc-study-canada",        url = "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html", topic = "general" },
+  { id = "ca-ircc-study-permit",        path = "study-permit.html", topic = "visa" },
+  { id = "ca-ircc-eligibility",         path = "study-permit/eligibility.html", topic = "visa" },
+  { id = "ca-ircc-study-without-permit", path = "study-permit/eligibility/study-without-permit.html", topic = "visa" },
+  { id = "ca-ircc-get-documents",       path = "study-permit/get-documents.html", topic = "visa" },
+  { id = "ca-ircc-financial-support",   path = "study-permit/get-documents/financial-support.html", topic = "costs" },
+  { id = "ca-ircc-proof-acceptance",    path = "study-permit/get-documents/proof-of-acceptance.html", topic = "visa" },
+  { id = "ca-ircc-proof-identity",      path = "study-permit/get-documents/proof-of-identity.html", topic = "visa" },
+  { id = "ca-ircc-pal",                 path = "study-permit/get-documents/provincial-attestation-letter.html", topic = "visa" },
+  { id = "ca-ircc-other-documents",     path = "study-permit/get-documents/other-documents.html", topic = "visa" },
+  { id = "ca-ircc-apply",               path = "study-permit/apply.html", topic = "visa" },
+  { id = "ca-ircc-after-apply",         path = "study-permit/after-apply-next-steps.html", topic = "visa" },
+  { id = "ca-ircc-prepare",             path = "study-permit/prepare.html", topic = "procedure" },
+  { id = "ca-ircc-prepare-arrival",     path = "study-permit/prepare-arrival.html", topic = "arrival" },
+  { id = "ca-ircc-while-you-study",     path = "study-permit/while-you-study.html", topic = "general" },
+  { id = "ca-ircc-permit-conditions",   path = "study-permit/while-you-study/study-permit-conditions.html", topic = "visa" },
+  { id = "ca-ircc-change-schools",      path = "change-schools.html", topic = "procedure" },
+  { id = "ca-ircc-extend-permit",       path = "extend-study-permit.html", topic = "visa" },
+  { id = "ca-ircc-extend-how",          path = "extend-study-permit/how-to-apply.html", topic = "visa" },
+  { id = "ca-ircc-extend-when",         path = "extend-study-permit/when-to-apply.html", topic = "visa" },
+  { id = "ca-ircc-graduate-student",    path = "graduate-student.html", topic = "admission" },
+  { id = "ca-ircc-graduate-faster",     path = "graduate-student/faster-processing.html", topic = "visa" },
+  { id = "ca-ircc-graduate-apply",      path = "graduate-student/how-to-apply.html", topic = "visa" },
+  { id = "ca-ircc-graduate-life",       path = "graduate-student/life-in-canada.html", topic = "general" },
+  { id = "ca-ircc-graduate-work-after", path = "graduate-student/work-after-graduation.html", topic = "work" },
+  { id = "ca-ircc-travel-outside",      path = "travel-outside-canada.html", topic = "visa" },
+  { id = "ca-ircc-work",                path = "work.html", topic = "work" },
+  { id = "ca-ircc-work-on-campus",      path = "work/work-on-campus.html", topic = "work" },
+  { id = "ca-ircc-work-off-campus",     path = "work/work-off-campus.html", topic = "work" },
+  { id = "ca-ircc-work-intern",         path = "work/intern.html", topic = "work" },
+  { id = "ca-ircc-pgwp",                path = "work/after-graduation.html", topic = "work" },
+  { id = "ca-ircc-pgwp-about",          path = "work/after-graduation/about.html", topic = "work" },
+  { id = "ca-ircc-pgwp-eligibility",    path = "work/after-graduation/eligibility.html", topic = "work" },
+  { id = "ca-ircc-pgwp-field-of-study", path = "work/after-graduation/eligibility/field-of-study.html", topic = "work" },
+  { id = "ca-ircc-pgwp-language",       path = "work/after-graduation/eligibility/language-results.html", topic = "work" },
+  { id = "ca-ircc-pgwp-documents",      path = "work/after-graduation/get-documents.html", topic = "work" },
+  { id = "ca-ircc-pgwp-apply",          path = "work/after-graduation/apply.html", topic = "work" },
+  { id = "ca-ircc-pgwp-path-to-pr",     path = "work/after-graduation/path-to-pr.html", topic = "work" },
+  { id = "ca-ircc-spouse-work",         path = "work/help-your-spouse-common-law-partner-work-canada.html", topic = "work" },
+]
+
+[[group]]
+publisher = "EduCanada (Global Affairs Canada)"
+country = "canada"
+lang = "en"
+base = "https://www.educanada.ca/scholarships-bourses/"
+sources = [
+  { id = "ca-edu-scholarships",         path = "non_can/index.aspx?lang=eng", topic = "scholarship" },
+  { id = "ca-edu-scholarships-faq",     path = "non_can/faq.aspx?lang=eng", topic = "scholarship" },
+  { id = "ca-edu-study-in-canada-sep",  path = "can/institutions/study-in-canada-sep-etudes-au-canada-pct.aspx?lang=eng", topic = "scholarship" },
+  { id = "ca-edu-bcdi-2030",            path = "non_can/bcdi2030.aspx?lang=eng", topic = "scholarship" },
+]
+
+# --------------------------------------------------------------------------- Erasmus+
+
+[[group]]
+publisher = "European Commission (Erasmus+)"
+country = "erasmus"
+lang = "en"
+base = "https://erasmus-plus.ec.europa.eu/"
+sources = [
+  { id = "eu-students",                 path = "opportunities/individuals/students", topic = "general" },
+  { id = "eu-studying-abroad",          path = "opportunities/individuals/students/studying-abroad", topic = "admission" },
+  { id = "eu-traineeships",             path = "opportunities/individuals/students/traineeships-abroad-for-students", topic = "work" },
+  { id = "eu-emjm-students",            path = "opportunities/individuals/students/erasmus-mundus-joint-masters", topic = "scholarship" },
+  { id = "eu-health-conditions",        path = "opportunities/individuals/students/students-and-staff-with-physical-mental-or-health-related-conditions", topic = "health" },
+  { id = "eu-guide-eligible-countries", path = "programme-guide/part-a/eligible-countries", topic = "admission" },
+  { id = "eu-guide-he-mobility",        path = "programme-guide/part-b/key-action-1/mobility-projects-for-higher-education-students-and-staff", topic = "scholarship" },
+  { id = "eu-guide-emjm",               path = "programme-guide/part-b/key-action-1/erasmus-mundus-joint-masters", topic = "scholarship" },
+  { id = "eu-eacea-mundus-catalogue",   url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en", topic = "scholarship" },
+  # The catalogue is paginated (?page=0..10); page 0 is the entry above.
+  { id = "eu-eacea-mundus-catalogue-p2",  url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=1", topic = "scholarship" },
+  { id = "eu-eacea-mundus-catalogue-p3",  url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=2", topic = "scholarship" },
+  { id = "eu-eacea-mundus-catalogue-p4",  url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=3", topic = "scholarship" },
+  { id = "eu-eacea-mundus-catalogue-p5",  url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=4", topic = "scholarship" },
+  { id = "eu-eacea-mundus-catalogue-p6",  url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=5", topic = "scholarship" },
+  { id = "eu-eacea-mundus-catalogue-p7",  url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=6", topic = "scholarship" },
+  { id = "eu-eacea-mundus-catalogue-p8",  url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=7", topic = "scholarship" },
+  { id = "eu-eacea-mundus-catalogue-p9",  url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=8", topic = "scholarship" },
+  { id = "eu-eacea-mundus-catalogue-p10", url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=9", topic = "scholarship" },
+  { id = "eu-eacea-mundus-catalogue-p11", url = "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=10", topic = "scholarship" },
+]
+
+[[group]]
+publisher = "Bureau National Erasmus+ Tunisie"
+country = "erasmus"
+lang = "fr"
+base = "https://www.erasmusplus.tn/"
+sources = [
+  { id = "eu-tn-etudiants",             path = "Index-Etudiants.php", topic = "general" },
+  { id = "eu-tn-ka1",                   path = "KA1%20Actions.php", topic = "scholarship" },
+  { id = "eu-tn-icm",                   path = "International-Credit-Mobility-(ICM).php", topic = "scholarship" },
+  { id = "eu-tn-icm-etudiants",         path = "Mobilit%C3%A9s-Internationales-Etudiants-ICM.php", topic = "scholarship" },
+  { id = "eu-tn-emjm",                  path = "EMJM-EMDM.php", topic = "scholarship" },
+]

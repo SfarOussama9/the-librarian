@@ -1,0 +1,7 @@
+{
+  "chunks_file": "chunks.jsonl",
+  "chunks_sha256": "7be9b7853584cb258b4ecd9bbe7659cb800e7b269e1ad1f7c0bdd08256c5627c",
+  "n_chunks": 1387,
+  "embedding_model": "intfloat/multilingual-e5-small",
+  "built_at": "2026-10-25T13:57:15"
+}

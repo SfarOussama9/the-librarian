@@ -1,0 +1,7 @@
+# Everything: corpus building, indexing, evaluation and the web service.
+-r requirements-app.txt
+requests==2.34.2
+beautifulsoup4==4.15.0
+markdownify==1.2.3
+trafilatura==2.3.1
+pymupdf==2.0

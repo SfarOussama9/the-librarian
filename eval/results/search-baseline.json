@@ -1,0 +1,1127 @@
+{
+ "q001": {
+  "chunks": [
+   "fr-fv-etudiant#14",
+   "fr-cft-travail-etudes#1",
+   "fr-cft-faq-q12#1",
+   "fr-cft-travail-etudes#2"
+  ],
+  "seconds": 2.248390199998539
+ },
+ "q002": {
+  "chunks": [
+   "ca-ircc-work-intern#7",
+   "ca-ircc-work-on-campus#3",
+   "ca-ircc-work-on-campus#8",
+   "ca-ircc-pgwp-path-to-pr#1"
+  ],
+  "seconds": 1.6510052000012365
+ },
+ "q003": {
+  "chunks": [
+   "fr-cft-faq-q12#2",
+   "fr-cft-faq-q12#1",
+   "fr-cft-faq-q23#1",
+   "fr-cft-faq-q23#2"
+  ],
+  "seconds": 2.77964190000057
+ },
+ "q004": {
+  "chunks": [
+   "fr-cft-vls-ts#6",
+   "fr-cft-vls-ts#5",
+   "fr-cft-formalites-arrivee#4",
+   "fr-cft-formalites-arrivee#3"
+  ],
+  "seconds": 2.325441699998919
+ },
+ "q005": {
+  "chunks": [
+   "fr-cft-formalites-arrivee#3",
+   "fr-cft-formalites-arrivee#4",
+   "fr-cft-accepte#14",
+   "fr-cft-arts#11"
+  ],
+  "seconds": 2.4124900000024354
+ },
+ "q006": {
+  "chunks": [
+   "fr-cft-entretien#8",
+   "fr-cft-arts#9",
+   "fr-cft-entretien#7",
+   "fr-cft-architecture#16"
+  ],
+  "seconds": 2.3682712000008905
+ },
+ "q007": {
+  "chunks": [
+   "fr-cft-arts#3",
+   "fr-cft-arts#1",
+   "de-daad-base-bourses#3",
+   "fr-cft-arts#4"
+  ],
+  "seconds": 2.454066400001466
+ },
+ "q008": {
+  "chunks": [
+   "fr-cft-arts#3",
+   "fr-cft-arts#4",
+   "fr-cft-arts#1",
+   "fr-cft-arts#2"
+  ],
+  "seconds": 2.442363699999987
+ },
+ "q009": {
+  "chunks": [
+   "fr-cft-but#1",
+   "fr-cft-calendrier-2026-2027-pdf#2",
+   "fr-cft-calendrier#1",
+   "fr-cft-calendrier#2"
+  ],
+  "seconds": 2.4505865999999514
+ },
+ "q010": {
+  "chunks": [
+   "fr-cft-but#1",
+   "fr-cf-choisir-la-france-pdf#17",
+   "fr-cf-choisir-la-france-pdf#32",
+   "fr-cf-eiffel-implementation#14"
+  ],
+  "seconds": 2.9138492999991286
+ },
+ "q011": {
+  "chunks": [
+   "fr-cft-licence1#16",
+   "fr-cft-calendrier-2026-2027-pdf#2",
+   "fr-cft-licence1#11",
+   "fr-cft-licence1#6"
+  ],
+  "seconds": 2.8481204000017897
+ },
+ "q012": {
+  "chunks": [
+   "fr-cft-licence1#11",
+   "fr-cft-architecture#11",
+   "fr-cft-faq-q34#2",
+   "fr-cft-architecture#13"
+  ],
+  "seconds": 2.7584921999987273
+ },
+ "q013": {
+  "chunks": [
+   "fr-cft-calendrier-2026-2027-pdf#2",
+   "fr-cft-licence1#11",
+   "fr-cft-architecture#11",
+   "fr-cft-architecture#6"
+  ],
+  "seconds": 3.023110900001484
+ },
+ "q014": {
+  "chunks": [
+   "fr-cft-etudes-sante-pdf#13",
+   "fr-cft-etudes-sante#9",
+   "fr-cft-accepte#18",
+   "fr-cft-etudes-sante#8"
+  ],
+  "seconds": 2.2905375999980606
+ },
+ "q015": {
+  "chunks": [
+   "fr-cft-vigilance#4",
+   "fr-cf-cvec#4",
+   "fr-cf-cvec#5",
+   "fr-cf-eiffel-phd-pdf#1"
+  ],
+  "seconds": 2.0673850999992283
+ },
+ "q016": {
+  "chunks": [
+   "fr-cft-faq-q11#1",
+   "fr-cft-entretien#1",
+   "fr-cft-faq-q15#1",
+   "fr-cft-entretien#3"
+  ],
+  "seconds": 2.1515967000013916
+ },
+ "q017": {
+  "chunks": [
+   "fr-cft-entretien#6",
+   "fr-cft-entretien#3",
+   "fr-cft-entretien#5",
+   "fr-cft-accepte#21"
+  ],
+  "seconds": 2.2797688000027847
+ },
+ "q018": {
+  "chunks": [
+   "fr-cft-accepte#8",
+   "fr-cft-entretien#2",
+   "fr-cft-licence1#21",
+   "fr-cft-entretien#6"
+  ],
+  "seconds": 2.2239206999984162
+ },
+ "q019": {
+  "chunks": [
+   "fr-cft-faq-q32#1",
+   "fr-cft-faq-q32#2",
+   "fr-cft-faq-q34#2",
+   "fr-cft-refus-visa#3"
+  ],
+  "seconds": 2.684914999998
+ },
+ "q020": {
+  "chunks": [
+   "fr-cft-faq-q28#1",
+   "fr-cft-licence1#3",
+   "fr-cft-architecture#3",
+   "fr-cft-architecture#2"
+  ],
+  "seconds": 2.5245289000013145
+ },
+ "q021": {
+  "chunks": [
+   "fr-cft-faq-q27#1",
+   "fr-cft-faq-q27#2",
+   "fr-cft-architecture#6",
+   "fr-cft-licence1#4"
+  ],
+  "seconds": 2.649249600002804
+ },
+ "q022": {
+  "chunks": [
+   "fr-cft-faq-q29#1",
+   "fr-cft-faq-q33#2",
+   "fr-cft-faq-q33#1",
+   "fr-cft-faq-p4#1"
+  ],
+  "seconds": 2.1083472999998776
+ },
+ "q023": {
+  "chunks": [
+   "fr-cft-faq-q16#1",
+   "fr-cft-faq-q34#2",
+   "fr-cf-choisir-la-france-pdf#24",
+   "fr-cft-architecture#11"
+  ],
+  "seconds": 2.6578707000007853
+ },
+ "q024": {
+  "chunks": [
+   "fr-cft-faq-q30#3",
+   "fr-cft-faq-q30#2",
+   "fr-cft-but#1",
+   "fr-cf-choisir-la-france-pdf#32"
+  ],
+  "seconds": 2.0802347999997437
+ },
+ "q025": {
+  "chunks": [
+   "fr-cf-choisir-la-france-pdf#41",
+   "fr-cft-lmd-equivalence#3",
+   "fr-cf-choisir-la-france-pdf#37",
+   "fr-cft-lmd-equivalence#1"
+  ],
+  "seconds": 6.721249300000636
+ },
+ "q026": {
+  "chunks": [
+   "fr-cf-tuition-fees#4",
+   "fr-cf-tuition-fees#2",
+   "fr-cf-choisir-la-france-pdf#26",
+   "fr-cf-choisir-la-france-pdf#42"
+  ],
+  "seconds": 2.5663641999999527
+ },
+ "q027": {
+  "chunks": [
+   "fr-cf-choisir-la-france-pdf#38",
+   "fr-cf-choisir-la-france-pdf#26",
+   "fr-cf-choisir-la-france-pdf#43",
+   "fr-cf-choisir-la-france-pdf#39"
+  ],
+  "seconds": 2.616035400002147
+ },
+ "q028": {
+  "chunks": [
+   "fr-cf-tuition-fees#4",
+   "fr-cf-tuition-fees#5",
+   "fr-cf-tuition-fees#2",
+   "fr-cf-tuition-fees#6"
+  ],
+  "seconds": 2.426496299998689
+ },
+ "q029": {
+  "chunks": [
+   "fr-cf-cvec#7",
+   "fr-cf-cvec#6",
+   "fr-cf-tuition-fees#2",
+   "ca-ircc-financial-support#8"
+  ],
+  "seconds": 2.267187000001286
+ },
+ "q030": {
+  "chunks": [
+   "fr-cft-entretien#9",
+   "fr-cf-cvec#3",
+   "fr-cf-cvec#6",
+   "fr-cf-cvec#7"
+  ],
+  "seconds": 2.3612007000010635
+ },
+ "q031": {
+  "chunks": [
+   "fr-cf-cvec#7",
+   "fr-cf-cvec#6",
+   "fr-cf-cvec#3",
+   "fr-cf-cvec#5"
+  ],
+  "seconds": 2.3033841000033135
+ },
+ "q032": {
+  "chunks": [
+   "fr-cf-eiffel#1",
+   "fr-cf-eiffel-implementation#11",
+   "fr-cf-eiffel-implementation#12",
+   "fr-cf-eiffel-implementation#10"
+  ],
+  "seconds": 1.9084093999990728
+ },
+ "q033": {
+  "chunks": [
+   "fr-cf-choisir-la-france-pdf#48",
+   "fr-cf-choisir-la-france-pdf#74",
+   "fr-cf-eiffel-implementation#22",
+   "fr-cf-eiffel-phd-pdf#9"
+  ],
+  "seconds": 1.980738800000836
+ },
+ "q034": {
+  "chunks": [
+   "fr-cf-choisir-la-france-pdf#74",
+   "fr-cf-choisir-la-france-pdf#48",
+   "fr-cf-eiffel#1",
+   "de-daad-base-bourses#4"
+  ],
+  "seconds": 2.074306800001068
+ },
+ "q035": {
+  "chunks": [
+   "fr-cft-sante#1",
+   "fr-cft-etudes-sante#7",
+   "fr-cf-choisir-la-france-pdf#128",
+   "fr-cft-sante#5"
+  ],
+  "seconds": 2.4730454000018653
+ },
+ "q036": {
+  "chunks": [
+   "fr-cft-travail-apres#2",
+   "fr-cft-travail-apres#3",
+   "fr-cft-faq-q23#1",
+   "fr-cft-faq-q23#4"
+  ],
+  "seconds": 2.3731292999982543
+ },
+ "q037": {
+  "chunks": [
+   "fr-cft-travail-etudes#4",
+   "fr-cft-travail-etudes#3",
+   "fr-cf-choisir-la-france-pdf#124",
+   "fr-cft-travail-etudes#1"
+  ],
+  "seconds": 2.2269310999981826
+ },
+ "q038": {
+  "chunks": [
+   "fr-cft-accepte#10",
+   "fr-cft-licence1#23",
+   "fr-cft-vls-ts#2",
+   "fr-cft-accepte#25"
+  ],
+  "seconds": 2.1550638000007893
+ },
+ "q039": {
+  "chunks": [
+   "fr-fv-long-sejour#1",
+   "fr-fv-long-sejour#3",
+   "fr-cf-choisir-la-france-pdf#75",
+   "fr-fv-long-sejour#7"
+  ],
+  "seconds": 2.1612165000005916
+ },
+ "q040": {
+  "chunks": [
+   "fr-cft-statistiques-pdf#1",
+   "fr-cft-statistiques-pdf#2",
+   "fr-cft-statistiques-pdf#3",
+   "fr-cft-procedure#1"
+  ],
+  "seconds": 4.206964199998765
+ },
+ "q041": {
+  "chunks": [
+   "fr-cft-plateforme-eef#1",
+   "fr-cft-plateforme-eef#2",
+   "fr-cf-choisir-la-france-pdf#43",
+   "fr-cft-plateforme-eef#3"
+  ],
+  "seconds": 2.312749499997153
+ },
+ "q042": {
+  "chunks": [
+   "fr-cft-faq-q36#1",
+   "fr-cft-faq-p5#1",
+   "fr-cft-plateforme-eef#3",
+   "fr-cft-accepte#15"
+  ],
+  "seconds": 2.162427499999467
+ },
+ "q043": {
+  "chunks": [
+   "de-amb-cours-langue-pdf#2",
+   "de-amb-preparation-etudes-pdf#3",
+   "de-amb-preparation-etudes-pdf#2",
+   "de-amb-preparation-etudes#4"
+  ],
+  "seconds": 2.9298927999989246
+ },
+ "q044": {
+  "chunks": [
+   "de-aa-compte-bloque-etudiants#3",
+   "de-aa-compte-bloque-etudiants#4",
+   "de-aa-compte-bloque-etudiants#1",
+   "de-aa-compte-bloque#1"
+  ],
+  "seconds": 1.7424936999996135
+ },
+ "q045": {
+  "chunks": [
+   "de-amb-preparation-etudes#4",
+   "de-amb-preparation-etudes#3",
+   "de-amb-cours-langue-pdf#2",
+   "de-amb-faq-visas#6"
+  ],
+  "seconds": 2.893283999997948
+ },
+ "q046": {
+  "chunks": [
+   "de-amb-preparation-etudes#2",
+   "de-amb-etudes#1",
+   "de-amb-preparation-etudes-pdf#1",
+   "de-amb-stage-recherche#1"
+  ],
+  "seconds": 2.7411465000004682
+ },
+ "q047": {
+  "chunks": [
+   "de-amb-faq-visas#3",
+   "de-daaddb-57593632#10",
+   "de-daaddb-57593632#11",
+   "de-amb-chercheur-pdf#1"
+  ],
+  "seconds": 2.0557754000001296
+ },
+ "q048": {
+  "chunks": [
+   "de-amb-preparation-etudes#5",
+   "de-amb-etudes#3",
+   "de-amb-etudes#2",
+   "de-amb-etudiant-boursier#2"
+  ],
+  "seconds": 2.754491200001212
+ },
+ "q049": {
+  "chunks": [
+   "de-amb-preparation-etudes#2",
+   "fr-cft-arts#11",
+   "fr-cft-architecture#22",
+   "fr-cft-vls-ts#4"
+  ],
+  "seconds": 2.2992018000004464
+ },
+ "q050": {
+  "chunks": [
+   "de-daaddb-57655437#9",
+   "ca-ircc-graduate-faster#4",
+   "de-daaddb-50035295#8",
+   "de-daaddb-50015492#8"
+  ],
+  "seconds": 2.276588000000629
+ },
+ "q051": {
+  "chunks": [
+   "de-amb-faq-visas#5",
+   "de-amb-faq-etudes-ar-pdf#3",
+   "de-amb-faq-visas#3",
+   "de-daad-etudier-rechercher#2"
+  ],
+  "seconds": 2.227719700000307
+ },
+ "q052": {
+  "chunks": [
+   "de-amb-stage-recherche#1",
+   "de-amb-preparation-etudes#2",
+   "de-amb-etudiant-boursier#1",
+   "de-amb-etudes#1"
+  ],
+  "seconds": 2.4756546999997227
+ },
+ "q053": {
+  "chunks": [
+   "de-aa-compte-bloque#2",
+   "de-aa-compte-bloque-etudiants#7",
+   "de-aa-compte-bloque-etudiants#2",
+   "de-aa-compte-bloque-etudiants#3"
+  ],
+  "seconds": 1.7732912999999826
+ },
+ "q054": {
+  "chunks": [
+   "de-daad-kospie-2027#1",
+   "de-daaddb-57593632#3",
+   "de-daaddb-57593632#1",
+   "de-daaddb-57593632#10"
+  ],
+  "seconds": 2.4729391999971995
+ },
+ "q055": {
+  "chunks": [
+   "de-daaddb-57593632#10",
+   "de-daaddb-57593632#16",
+   "de-daaddb-57593632#11",
+   "de-daaddb-57593632#6"
+  ],
+  "seconds": 4.658325000000332
+ },
+ "q056": {
+  "chunks": [
+   "de-daad-hsk-2026#3",
+   "de-daaddb-50035295#7",
+   "de-daad-hsk-2026#1",
+   "de-daad-base-bourses#2"
+  ],
+  "seconds": 2.464259200001834
+ },
+ "q057": {
+  "chunks": [
+   "de-daad-vorsprung-2025#2",
+   "de-daad-vorsprung-2025#1",
+   "de-daad-base-bourses#4",
+   "de-daad-hsk-2026#3"
+  ],
+  "seconds": 2.6234997999999905
+ },
+ "q058": {
+  "chunks": [
+   "de-daad-doctorat-2026#1",
+   "de-daad-doctorat-2026#2",
+   "de-daad-master-financement-2026#1",
+   "de-daad-doctorat#1"
+  ],
+  "seconds": 2.6504188000035356
+ },
+ "q059": {
+  "chunks": [
+   "de-daad-parents-15-questions#2",
+   "de-daad-telechargements#1",
+   "de-daad-etudier#2",
+   "de-daad-parents-15-questions#1"
+  ],
+  "seconds": 2.0675429000002623
+ },
+ "q060": {
+  "chunks": [
+   "de-daad-allemand-allemagne#1",
+   "de-daad-etudier-rechercher#5",
+   "de-daad-hsk-2026#1",
+   "de-daad-vorsprung-2025#1"
+  ],
+  "seconds": 2.613332699998864
+ },
+ "q061": {
+  "chunks": [
+   "de-daaddb-10000207#3",
+   "de-daaddb-10000207#1",
+   "de-daaddb-10000178#3",
+   "de-daaddb-10000406#3"
+  ],
+  "seconds": 1.996569200000522
+ },
+ "q062": {
+  "chunks": [
+   "de-daaddb-10000153#3",
+   "de-daaddb-10000126#3",
+   "de-daaddb-10000153#2",
+   "de-daaddb-10000126#1"
+  ],
+  "seconds": 2.149097500001517
+ },
+ "q063": {
+  "chunks": [
+   "de-daaddb-10000124#3",
+   "de-daaddb-10000113#3",
+   "de-daad-base-bourses#4",
+   "de-daaddb-10000113#2"
+  ],
+  "seconds": 2.5230520000004617
+ },
+ "q064": {
+  "chunks": [
+   "de-daaddb-10000429#2",
+   "de-daaddb-10000429#3",
+   "de-daaddb-10000429#1",
+   "eu-guide-he-mobility#14"
+  ],
+  "seconds": 2.5545325000020966
+ },
+ "q065": {
+  "chunks": [
+   "de-daaddb-10000422#2",
+   "de-daaddb-10000422#3",
+   "de-daaddb-57593632#8",
+   "de-daaddb-57593632#11"
+  ],
+  "seconds": 2.534357499996986
+ },
+ "q066": {
+  "chunks": [
+   "de-daaddb-10000398#3",
+   "de-daaddb-10000212#4",
+   "de-daaddb-10000212#3",
+   "de-daaddb-10000398#1"
+  ],
+  "seconds": 2.1491150000001653
+ },
+ "q067": {
+  "chunks": [
+   "de-daaddb-10000119#3",
+   "de-daaddb-10000150#4",
+   "de-daaddb-10000150#2",
+   "de-daaddb-10000119#1"
+  ],
+  "seconds": 2.1462352000016836
+ },
+ "q068": {
+  "chunks": [
+   "de-daaddb-10000178#3",
+   "de-daaddb-10000178#2",
+   "de-daaddb-10000178#1",
+   "de-daaddb-10000172#3"
+  ],
+  "seconds": 2.106922899998608
+ },
+ "q069": {
+  "chunks": [
+   "de-daaddb-10000101#4",
+   "de-daaddb-10000101#1",
+   "de-daaddb-10000101#2",
+   "de-daaddb-10000101#3"
+  ],
+  "seconds": 2.481233800001064
+ },
+ "q070": {
+  "chunks": [
+   "de-daaddb-57352834#3",
+   "de-daaddb-57352834#4",
+   "de-daaddb-57352834#1",
+   "de-daaddb-57352834#2"
+  ],
+  "seconds": 2.3234816000003775
+ },
+ "q071": {
+  "chunks": [
+   "de-daaddb-10000107#3",
+   "de-daaddb-10000107#1",
+   "de-daaddb-10000107#2",
+   "de-daaddb-10000107#5"
+  ],
+  "seconds": 2.5963415000005625
+ },
+ "q072": {
+  "chunks": [
+   "de-daaddb-10000406#9",
+   "de-daaddb-57135739#2",
+   "de-daaddb-57135739#5",
+   "de-daaddb-57135739#1"
+  ],
+  "seconds": 1.8678002999986347
+ },
+ "q073": {
+  "chunks": [
+   "de-daaddb-57135739#1",
+   "de-daaddb-57135739#4",
+   "de-daaddb-57135739#3",
+   "de-daad-base-bourses#1"
+  ],
+  "seconds": 1.9346960999973817
+ },
+ "q074": {
+  "chunks": [
+   "de-daaddb-10000168#4",
+   "de-daaddb-10000168#1",
+   "de-daaddb-10000168#2",
+   "de-daaddb-10000168#3"
+  ],
+  "seconds": 1.9833436999979313
+ },
+ "q075": {
+  "chunks": [
+   "ca-ircc-financial-support#9",
+   "ca-ircc-financial-support#8",
+   "ca-ircc-financial-support#7",
+   "ca-ircc-financial-support#1"
+  ],
+  "seconds": 2.2623329000016383
+ },
+ "q076": {
+  "chunks": [
+   "ca-ircc-work-off-campus#6",
+   "ca-ircc-work-off-campus#14",
+   "ca-ircc-work-off-campus#7",
+   "ca-ircc-work-off-campus#8"
+  ],
+  "seconds": 1.541789399998379
+ },
+ "q077": {
+  "chunks": [
+   "ca-ircc-work-off-campus#6",
+   "ca-ircc-work-off-campus#14",
+   "ca-ircc-work-off-campus#15",
+   "ca-ircc-work-off-campus#5"
+  ],
+  "seconds": 2.1122455000004265
+ },
+ "q078": {
+  "chunks": [
+   "ca-ircc-pgwp-apply#7",
+   "ca-ircc-pgwp-eligibility#2",
+   "ca-ircc-pgwp-about#2",
+   "ca-ircc-pgwp-about#3"
+  ],
+  "seconds": 1.5959844999997586
+ },
+ "q079": {
+  "chunks": [
+   "ca-ircc-pgwp#1",
+   "ca-ircc-pgwp-apply#7",
+   "ca-ircc-graduate-work-after#3",
+   "ca-ircc-graduate-work-after#10"
+  ],
+  "seconds": 1.5102293000018108
+ },
+ "q080": {
+  "chunks": [
+   "ca-ircc-pgwp-apply#7",
+   "ca-ircc-apply#10",
+   "ca-ircc-apply#19",
+   "ca-ircc-apply#23"
+  ],
+  "seconds": 2.425744300002407
+ },
+ "q081": {
+  "chunks": [
+   "ca-ircc-pgwp-eligibility#10",
+   "ca-ircc-pgwp-eligibility#3",
+   "ca-ircc-pgwp-about#3",
+   "ca-ircc-pgwp-about#2"
+  ],
+  "seconds": 2.254527799999778
+ },
+ "q082": {
+  "chunks": [
+   "ca-ircc-graduate-apply#3",
+   "ca-ircc-pal#5",
+   "ca-ircc-pal#8",
+   "ca-ircc-pal#7"
+  ],
+  "seconds": 2.2243549000013445
+ },
+ "q083": {
+  "chunks": [
+   "ca-ircc-graduate-apply#4",
+   "ca-ircc-while-you-study#6",
+   "ca-ircc-study-permit#1",
+   "ca-ircc-graduate-apply#10"
+  ],
+  "seconds": 2.047063899997738
+ },
+ "q084": {
+  "chunks": [
+   "ca-ircc-while-you-study#6",
+   "ca-ircc-extend-permit#1",
+   "ca-ircc-while-you-study#7",
+   "ca-ircc-after-apply#9"
+  ],
+  "seconds": 1.79036669999914
+ },
+ "q085": {
+  "chunks": [
+   "ca-ircc-extend-when#2",
+   "ca-ircc-extend-when#4",
+   "ca-ircc-graduate-apply#8",
+   "ca-ircc-graduate-apply#10"
+  ],
+  "seconds": 1.4040301999993972
+ },
+ "q086": {
+  "chunks": [
+   "ca-ircc-permit-conditions#7",
+   "ca-ircc-permit-conditions#6",
+   "ca-ircc-pgwp-eligibility#9",
+   "ca-ircc-permit-conditions#4"
+  ],
+  "seconds": 1.5375127000006614
+ },
+ "q087": {
+  "chunks": [
+   "ca-ircc-change-schools#9",
+   "ca-ircc-pal#15",
+   "ca-ircc-pal#16",
+   "ca-ircc-pal#14"
+  ],
+  "seconds": 2.1700659999987693
+ },
+ "q088": {
+  "chunks": [
+   "ca-ircc-change-schools#5",
+   "ca-ircc-extend-how#4",
+   "ca-ircc-extend-when#3",
+   "ca-ircc-graduate-apply#8"
+  ],
+  "seconds": 1.6144553999984055
+ },
+ "q089": {
+  "chunks": [
+   "ca-ircc-pal#11",
+   "ca-ircc-apply#2",
+   "ca-ircc-pal#8",
+   "ca-ircc-pal#14"
+  ],
+  "seconds": 1.9602884000014456
+ },
+ "q090": {
+  "chunks": [
+   "ca-ircc-work#1",
+   "ca-ircc-work-intern#6",
+   "ca-ircc-work-off-campus#11",
+   "ca-ircc-work-intern#1"
+  ],
+  "seconds": 2.9436172999994596
+ },
+ "q091": {
+  "chunks": [
+   "ca-ircc-prepare-arrival#1",
+   "ca-ircc-work-on-campus#1",
+   "ca-ircc-work-off-campus#1",
+   "ca-ircc-graduate-apply#5"
+  ],
+  "seconds": 1.5321284999990894
+ },
+ "q092": {
+  "chunks": [
+   "ca-ircc-work-on-campus#4",
+   "ca-ircc-work-off-campus#5",
+   "ca-ircc-work-intern#9",
+   "ca-ircc-work-intern#10"
+  ],
+  "seconds": 1.5121890000009444
+ },
+ "q093": {
+  "chunks": [
+   "ca-edu-study-in-canada-sep#4",
+   "ca-edu-study-in-canada-sep#9",
+   "ca-edu-study-in-canada-sep#1",
+   "ca-edu-study-in-canada-sep#8"
+  ],
+  "seconds": 1.939879799996561
+ },
+ "q094": {
+  "chunks": [
+   "ca-edu-study-in-canada-sep#6",
+   "ca-edu-study-in-canada-sep#7",
+   "ca-ircc-study-permit#1",
+   "fr-cf-choisir-la-france-pdf#28"
+  ],
+  "seconds": 4.246718999998848
+ },
+ "q095": {
+  "chunks": [
+   "ca-ircc-pgwp-path-to-pr#1",
+   "ca-ircc-pgwp-apply#9",
+   "ca-ircc-pgwp-path-to-pr#2",
+   "ca-ircc-eligibility#3"
+  ],
+  "seconds": 1.7065354000005755
+ },
+ "q096": {
+  "chunks": [
+   "ca-ircc-get-documents#3",
+   "ca-ircc-pal#2",
+   "ca-ircc-pal#3",
+   "ca-ircc-graduate-apply#3"
+  ],
+  "seconds": 2.1079361000010977
+ },
+ "q097": {
+  "chunks": [
+   "ca-ircc-graduate-faster#7",
+   "ca-ircc-graduate-student#1",
+   "ca-ircc-graduate-faster#1",
+   "ca-ircc-graduate-faster#6"
+  ],
+  "seconds": 2.0939740000030724
+ },
+ "q098": {
+  "chunks": [
+   "eu-emjm-students#2",
+   "eu-guide-emjm#7",
+   "eu-guide-emjm#20",
+   "eu-eacea-mundus-catalogue-p3#1"
+  ],
+  "seconds": 4.6581201999979385
+ },
+ "q099": {
+  "chunks": [
+   "eu-tn-ka1#3",
+   "eu-emjm-students#3",
+   "eu-eacea-mundus-catalogue-p9#1",
+   "eu-eacea-mundus-catalogue-p4#1"
+  ],
+  "seconds": 4.412560999997368
+ },
+ "q100": {
+  "chunks": [
+   "eu-emjm-students#1",
+   "eu-guide-emjm#8",
+   "eu-emjm-students#3",
+   "eu-eacea-mundus-catalogue-p6#1"
+  ],
+  "seconds": 4.646515799999179
+ },
+ "q101": {
+  "chunks": [
+   "eu-emjm-students#1",
+   "eu-guide-emjm#7",
+   "eu-guide-emjm#53",
+   "eu-guide-emjm#11"
+  ],
+  "seconds": 4.641016199999285
+ },
+ "q102": {
+  "chunks": [
+   "eu-emjm-students#3",
+   "eu-tn-emjm#4",
+   "eu-tn-ka1#3",
+   "eu-tn-emjm#1"
+  ],
+  "seconds": 4.543174099999305
+ },
+ "q103": {
+  "chunks": [
+   "eu-eacea-mundus-catalogue-p9#2",
+   "eu-eacea-mundus-catalogue-p7#3",
+   "eu-eacea-mundus-catalogue#4",
+   "eu-eacea-mundus-catalogue-p9#3"
+  ],
+  "seconds": 4.883528999998816
+ },
+ "q104": {
+  "chunks": [
+   "eu-eacea-mundus-catalogue#4",
+   "eu-eacea-mundus-catalogue-p8#3",
+   "eu-eacea-mundus-catalogue-p7#1",
+   "eu-eacea-mundus-catalogue-p7#2"
+  ],
+  "seconds": 5.291101200000412
+ },
+ "q105": {
+  "chunks": [
+   "eu-eacea-mundus-catalogue-p4#2",
+   "eu-eacea-mundus-catalogue#3",
+   "eu-eacea-mundus-catalogue-p4#3",
+   "eu-eacea-mundus-catalogue#4"
+  ],
+  "seconds": 4.823499600002833
+ },
+ "q106": {
+  "chunks": [
+   "eu-guide-he-mobility#91",
+   "eu-guide-he-mobility#90",
+   "eu-guide-he-mobility#102",
+   "de-daaddb-10000121#3"
+  ],
+  "seconds": 1.9849659999999858
+ },
+ "q107": {
+  "chunks": [
+   "eu-tn-icm#1",
+   "eu-tn-ka1#1",
+   "eu-tn-icm-etudiants#1",
+   "eu-tn-ka1#4"
+  ],
+  "seconds": 5.145557799998642
+ },
+ "q108": {
+  "chunks": [
+   "eu-traineeships#2",
+   "eu-traineeships#1",
+   "eu-students#1",
+   "eu-traineeships#3"
+  ],
+  "seconds": 1.8867363999997906
+ },
+ "q109": {
+  "chunks": [
+   "eu-emjm-students#4",
+   "eu-guide-emjm#29",
+   "eu-guide-emjm#34",
+   "eu-eacea-mundus-catalogue-p8#1"
+  ],
+  "seconds": 2.0347082000007504
+ },
+ "q110": {
+  "chunks": [
+   "eu-guide-emjm#35",
+   "eu-emjm-students#2",
+   "eu-guide-emjm#33",
+   "eu-eacea-mundus-catalogue#1"
+  ],
+  "seconds": 2.0091696999988926
+ },
+ "u001": {
+  "chunks": [
+   "ca-ircc-pgwp-documents#4",
+   "ca-ircc-extend-how#2",
+   "ca-ircc-pgwp-apply#18",
+   "ca-ircc-pgwp-apply#16"
+  ],
+  "seconds": 1.4901162999994995
+ },
+ "u002": {
+  "chunks": [
+   "fr-cf-choisir-la-france-pdf#28",
+   "fr-cf-choisir-la-france-pdf#27",
+   "fr-cf-choisir-la-france-pdf#83",
+   "fr-cf-choisir-la-france-pdf#39"
+  ],
+  "seconds": 2.72884730000078
+ },
+ "u003": {
+  "chunks": [
+   "eu-eacea-mundus-catalogue-p4#1",
+   "eu-eacea-mundus-catalogue-p9#1",
+   "eu-eacea-mundus-catalogue-p10#1",
+   "eu-eacea-mundus-catalogue-p6#1"
+  ],
+  "seconds": 4.340829000000667
+ },
+ "u004": {
+  "chunks": [
+   "fr-cft-accepte#27",
+   "fr-cft-statistiques-pdf#3",
+   "fr-cft-arts#11",
+   "fr-cft-architecture#22"
+  ],
+  "seconds": 2.2338759999984177
+ },
+ "u005": {
+  "chunks": [
+   "de-amb-faq-visas#2",
+   "de-amb-visas-nationaux#16",
+   "de-daaddb-57135742#8",
+   "ca-ircc-work-intern#18"
+  ],
+  "seconds": 2.197565200000099
+ },
+ "u006": {
+  "chunks": [
+   "ca-edu-study-in-canada-sep#6",
+   "fr-cf-choisir-la-france-pdf#28",
+   "fr-cf-choisir-la-france-pdf#60",
+   "fr-cf-choisir-la-france-pdf#27"
+  ],
+  "seconds": 2.4259492000019236
+ },
+ "u007": {
+  "chunks": [
+   "de-daaddb-10000611#6",
+   "de-daaddb-10000231#2",
+   "de-daaddb-10000422#1",
+   "eu-guide-emjm#60"
+  ],
+  "seconds": 1.9560308000000077
+ },
+ "u008": {
+  "chunks": [
+   "fr-fv-etudiant#8",
+   "fr-fv-etudiant#5",
+   "fr-fv-etudiant#3",
+   "fr-fv-etudiant#9"
+  ],
+  "seconds": 2.098138299999846
+ },
+ "u009": {
+  "chunks": [
+   "ca-ircc-graduate-apply#4",
+   "ca-ircc-study-permit#1",
+   "ca-ircc-graduate-faster#6",
+   "ca-ircc-pgwp-apply#7"
+  ],
+  "seconds": 1.625101599998743
+ },
+ "u010": {
+  "chunks": [
+   "de-daaddb-10000344#1",
+   "de-daaddb-57593632#1",
+   "de-daaddb-57593632#2",
+   "de-daaddb-57593632#3"
+  ],
+  "seconds": 2.027819899998576
+ },
+ "u011": {
+  "chunks": [
+   "eu-eacea-mundus-catalogue-p10#3",
+   "ca-edu-study-in-canada-sep#6",
+   "ca-edu-study-in-canada-sep#4",
+   "eu-eacea-mundus-catalogue#4"
+  ],
+  "seconds": 3.7369227000017418
+ },
+ "u012": {
+  "chunks": [
+   "fr-cf-choisir-la-france-pdf#34",
+   "fr-cf-choisir-la-france-pdf#42",
+   "fr-cf-choisir-la-france-pdf#45",
+   "fr-cft-faq-q09#1"
+  ],
+  "seconds": 2.0870109999996203
+ },
+ "u013": {
+  "chunks": [
+   "de-amb-preparation-etudes-pdf#3",
+   "de-aa-compte-bloque-etudiants#3",
+   "de-aa-compte-bloque-etudiants#2",
+   "de-amb-faq-visas#2"
+  ],
+  "seconds": 1.9855168000030972
+ },
+ "u014": {
+  "chunks": [
+   "de-amb-etudes#2",
+   "de-amb-preparation-etudes#5",
+   "de-amb-etudes#3",
+   "de-amb-preparation-etudes#4"
+  ],
+  "seconds": 2.6812915000009525
+ },
+ "u015": {
+  "chunks": [
+   "fr-cf-eiffel-phd-pdf#4",
+   "fr-cf-eiffel-phd-pdf#2",
+   "fr-cf-eiffel-master-pdf#9",
+   "fr-cf-eiffel#1"
+  ],
+  "seconds": 1.7354401999982656
+ }
+}
