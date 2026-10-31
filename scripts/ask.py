@@ -1,4 +1,4 @@
-"""Ask the Librarian questions from the terminal.
+"""Ask AbroadGuide questions from the terminal.
 
 Usage: python scripts/ask.py
 

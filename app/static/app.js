@@ -1,4 +1,4 @@
-// The Librarian page: ask, show progress, render the cited answer and its source stamps.
+// AbroadGuide page: ask, show progress, render the cited answer and its source stamps.
 
 const TEXT = {
   fr: {
@@ -32,7 +32,7 @@ const TEXT = {
     countries: { france: "France", germany: "Allemagne", canada: "Canada", erasmus: "Erasmus+" },
   },
   en: {
-    brand: "The Librarian",
+    brand: "AbroadGuide",
     brandSub: "Studying abroad, official sources",
     headline: "Ask about studying in France, Germany, Canada or with Erasmus+.",
     label: "Your question",

@@ -1,4 +1,4 @@
-"""Deploy the Librarian on Modal (free Starter plan: $30 of compute per month).
+"""Deploy AbroadGuide on Modal (free Starter plan: $30 of compute per month).
 
     .venv/Scripts/modal deploy deploy/modal_app.py
 

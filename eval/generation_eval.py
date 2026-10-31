@@ -1,4 +1,4 @@
-"""Generation evaluation: are the Librarian's answers correct, faithful and honest?
+"""Generation evaluation: are AbroadGuide's answers correct, faithful and honest?
 
 Each question goes through the full pipeline (search + reranker + answer). Then:
 

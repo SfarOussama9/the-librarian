@@ -1,4 +1,4 @@
-"""The Librarian web service.
+"""AbroadGuide web service.
 
     uvicorn app.server:app --port 8000        # then open http://localhost:8000
 
@@ -37,7 +37,7 @@ PER_VISITOR_PER_HOUR = int(os.getenv("PER_VISITOR_PER_HOUR", "20"))
 MAX_QUESTIONS_PER_DAY = int(os.getenv("MAX_QUESTIONS_PER_DAY", "500"))
 MAX_QUESTION_CHARS = 500
 
-app = FastAPI(title="The Librarian")
+app = FastAPI(title="AbroadGuide")
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
 
 librarian = Librarian()

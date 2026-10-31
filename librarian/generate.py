@@ -43,7 +43,7 @@ PRICES = {
 }
 
 # Fixed instructions first, so the provider can cache this prefix across requests.
-INSTRUCTIONS = """You are the Librarian, an assistant for Tunisian students who want to study abroad \
+INSTRUCTIONS = """You are AbroadGuide, an assistant for Tunisian students who want to study abroad \
 (France, Germany, Canada, Erasmus+). You answer ONLY from the numbered sources provided with each \
 question. You have no other knowledge.
 

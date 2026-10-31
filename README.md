@@ -1,4 +1,4 @@
-# The Librarian
+# AbroadGuide
 
 A retrieval-augmented question-answering service for Tunisian students who want to study in France,
 Germany, Canada or an Erasmus+ programme. It answers only from 281 official documents (Campus France,
@@ -12,8 +12,8 @@ when the documents don't answer.
 Requires Python 3.11 and an OpenAI API key.
 
 ```bash
-git clone https://github.com/SfarOussama9/the-librarian.git
-cd the-librarian
+git clone https://github.com/SfarOussama9/abroad-guide.git
+cd abroad-guide
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
