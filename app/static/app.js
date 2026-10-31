@@ -2,7 +2,7 @@
 
 const TEXT = {
   fr: {
-    brand: "Le Bibliothécaire",
+    brand: "AbroadGuide",
     brandSub: "Études à l'étranger, sources officielles",
     headline: "Posez votre question sur les études en France, en Allemagne, au Canada ou avec Erasmus+.",
     label: "Votre question",
